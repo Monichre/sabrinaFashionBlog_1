@@ -30,7 +30,7 @@ ul.portfolio-filter li a:hover {
     color: #fcc900;
 }
 .portfolio-mask-subtitle {
-    background-color: rgba(252, 201, 0, .9);
+    background-color: rgba(174,198,207, .9);
 }
 .blog-page-post-head-h2 a:hover{
     color: #fcc900;
@@ -46,7 +46,8 @@ ul.portfolio-filter li a:hover {
     border-color: #fcc900;
 }
 .subscribe-button:hover {
-    background-color: #fcc900;
+    background-color: rgb(174,198,207);
+    color: #333;
 }
 .blog_post_category li i.fa,
 .blog_post_tags li i.fa,
