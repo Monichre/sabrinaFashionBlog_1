@@ -1,6 +1,28 @@
 /* Smartphones ----------- */
 @media only screen and (max-width: 760px) {
     #isMobile { display: none; }
+    .hero-image {
+        background-position: right center;
+        background-size: cover;
+    }
+    .clipped_bg {
+
+        background-image: url('../img/sabrina-hero.jpg');
+        background-size: cover;
+        color: #fff;
+
+        -webkit-text-fill-color: transparent;
+        -webkit-background-clip: text;
+    }
+    .clipped_bg h1 {
+
+        font-size: 50px!important;
+    }
+    .clipped_bg h2 {
+        font-size: 26px;
+        font-weight: 700;
+    }
+
 }
 
 /* Small devices (tablets, 768px and up) */
@@ -46,7 +68,7 @@
     .hero-slider-content .text-top{
         font-size: 140px;
         letter-spacing: -10px;
-        line-height: 100px; 
+        line-height: 100px;
     }
     .hero-slider-content .text-mid{
         font-size: 50px;

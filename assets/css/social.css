@@ -1,0 +1,68 @@
+ul.floating-social {
+  list-style: none;
+  position: fixed;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  padding: 0;
+  z-index: 100; }
+  @media only screen and (max-width: 760px) {
+    ul.floating-social {
+      display: none; } }
+  ul.floating-social li a {
+    display: block;
+    margin-left: -2px;
+    height: 60px;
+    width: 60px;
+    border-radius: 0 25px 25px 0;
+    border: 2px solid #e7e9ed;
+    background: transparent;
+    margin-bottom: 1em;
+    transition: all 0.4s ease;
+    color: #aec6cf;
+    text-decoration: none;
+    line-height: 60px;
+    position: relative; }
+    ul.floating-social li a:hover {
+      cursor: pointer;
+      width: 180px;
+      color: #fff; }
+      ul.floating-social li a:hover span {
+        left: 0; }
+    ul.floating-social li a span {
+      padding: 0 30px 0 15px;
+      position: absolute;
+      left: -120px;
+      transition: left 0.4s ease; }
+    ul.floating-social li a i {
+      position: absolute;
+      top: 50%;
+      right: 20px;
+      transform: translateY(-50%);
+      font-size: 1.5em; }
+  ul.floating-social li .spotify {
+    background: rgba(39, 174, 96, 0.1);
+    border-color: #27ae60;
+    color: #27ae60; }
+    ul.floating-social li .spotify:hover {
+      background: #27ae60; }
+  ul.floating-social li .soundcloud {
+    background: rgba(230, 126, 34, 0.1);
+    border-color: #e67e22;
+    color: #e67e22; }
+    ul.floating-social li .soundcloud:hover {
+      background: #e67e22; }
+  ul.floating-social li .skype {
+    background: rgba(34, 167, 240, 0.1);
+    border-color: #22A7F0;
+    color: #22A7F0; }
+    ul.floating-social li .skype:hover {
+      background: #22a7f0; }
+  ul.floating-social li .dribbble {
+    background: rgba(210, 82, 127, 0.1);
+    border-color: #D2527F;
+    color: #D2527F; }
+    ul.floating-social li .dribbble:hover {
+      background: #d2527f; }
+
+/*# sourceMappingURL=social.css.map */

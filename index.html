@@ -6,7 +6,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
 
-        <title>Sathera Fashion</title>
+        <title>Theresa on the Town</title>
 
         <link rel="shortcut icon" type="image/x-icon" href="assets/img/sabrina-logo.png">
 
@@ -26,6 +26,11 @@
         <link href="assets/css/animations.css" rel="stylesheet" type="text/css"/>
         <link href="assets/css/font-awesome.min.css" rel="stylesheet" type="text/css"/>
         <link href="assets/css/owl.carousel.custom.css" rel="stylesheet" type="text/css"/>
+
+        <!-- Floating Social Div -->
+        <link href="assets/css/social.css" rel="stylesheet" type="text/css"/>
+
+        <!-- Template Styles -->
         <link href="assets/css/hedone.css" rel="stylesheet" type="text/css"/>
         <link href="assets/css/colors.css" rel="stylesheet" type="text/css"/>
 
@@ -42,6 +47,19 @@
         <!-- TOP SCROLL -->
         <div id="top-home-scroll"></div>
         <a href="#top-home-scroll" class="scroll-to-top-arrow-button"></a>
+
+        <ul class="floating-social">
+            <li>
+                <a href="#"><span>Share!</span><i class="fa fa-facebook" aria-hidden="true"></i></a>
+            </li>
+            <li>
+                <a href="#"><span>Follow!</span><i class="fa fa-instagram" aria-hidden="true"></i></a>
+            </li>
+            <li>
+                <a href="#"><span>Tweet!</span><i class="fa fa-twitter" aria-hidden="true"></i></a>
+            </li>
+        </ul>
+
 
         <!-- AJAX LOADER -->
         <div id="ajax-loader" class="loader loader-default" data-half="" data-text="Loading..."></div>
@@ -64,7 +82,7 @@
                                         <!-- SITE LOGO -->
                                         <div class="site-branding">
                                             <a href="index.html">
-                                                <img src="assets/img/sabrina-logo.png" alt="brand logo"/>
+                                                <!-- <img src="assets/img/sabrina-logo.png" alt="brand logo"/> -->
                                             </a>
                                         </div>
                                     </div>
@@ -72,10 +90,10 @@
                                     <div id="Hedone" class="hedone-menu-container">
                                         <div class="navbar-right">
                                             <ul class="hedone-menu">
-                                                <li class="menu-item">
+                                                <li class="menu-item current-page-ancestor current-menu-ancestor current-menu-parent current-page-parent current_page_parent current_page_ancestor">
                                                     <a href="index.html">Home</a>
                                                 </li>
-                                                <li class="menu-item menu-item-has-children current-page-ancestor current-menu-ancestor current-menu-parent current-page-parent current_page_parent current_page_ancestor">
+                                                <li class="menu-item menu-item-has-children">
 
                                                     <a href="#">Blog</a>
                                                         <ul class="sub-menu">
@@ -125,19 +143,18 @@
             <div class="slide-wrap">
                 <div class="container">
                     <div class="row">
-                        <div class="animatedParent animateOnce">
-                            <div class="slider-text-mid animated fadeInShake delay-750">Sathera</div>
+                        <div class="animatedParent animateOnce main-text">
+                            <div class="slider-text-mid animated fadeInShake delay-750 theresa-title">Theresa</div>
                             <div class="clipped_bg">
-                                <h1>Style & <br>
-                                    Fashion
+                                <h1>On the <br>
+                                    Town
                                 </h1>
 
                             </div>
-                            <!-- <div class="slider-text-top animated fadeInDown">Fashion</div> -->
+
 
                             <div class="slider-line animated fadeInUp delay-750"></div>
                             <div class="slider-text-bottom animated fadeInUp delay-1250">The Height of Style</div>
-                            <a href="#about-home" class="home-move-button animated fadeInUp delay-1500"></a>
                         </div>
                     </div>
                 </div>
@@ -156,13 +173,15 @@
                 <div class="row">
                     <div class="animatedParent animateOnce">
                         <div class="col-sm-4">
-                            <img id="profile-img" class="img-responsive animated fadeInUp" alt="about us" src="assets/img/sabrina_profile.jpg">
+                            <div class="profile-wrap animated fadeInUp">
+                                <img id="profile-img" class="img-responsive" alt="about us" src="assets/img/sabrina_profile.jpg">
+                            </div>
                         </div>
                         <div class="col-sm-8">
-                            <blockquote class="quote">
+                            <blockquote class="quote animated fadeInUp">
                                 " I love fashion but clothes shopping as a 5'9" tall woman requires creativity. I show the tips and tricks I use to make my clothes work for me, embracing my style in an unconventional way."
                             </blockquote>
-                            <div class="quote-bg">
+                            <div class="quote-bg animated fadeInUp">
                                 <p class="quotations">"</p>
                             </div>
                         </div>
@@ -171,121 +190,6 @@
             </div>
         </section>
 
-        <!-- VIDEO SECTION FULLSCREEN -->
-        <div id="scroll-from-top" class="container-fluid fullscreen-section fullscreen-bg-1">
-            <div class="row">
-                <div class="col-md-6 full-height">
-                    <div class="section-in-fullheight">
-                        <a href="https://vimeo.com/153959792" class="lightbox-on-sep popup-video">
-                            <img src="assets/img/play-button-white.png" class="play-button play-on-sep" alt="play button">
-                        </a>
-                        <div class="animatedParent animateOnce">
-                            <div class="sep-text white animated">
-                                Straight from Fashion Week
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6 full-height dark-fullscreen-background">
-                    <div class="section-in-fullheight">
-                        <div class="animatedParent animateOnce">
-                            <h3 class="head-h3 white animated">Runway</h3>
-                            <p class="head-subtitle white animated">magic</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <!-- SECTION 2 FULLSCREEN  -->
-        <div class="container-fluid fullscreen-section fullscreen-bg-2">
-            <div class="row">
-                <div class="col-md-6 full-height dark-fullscreen-background">
-                    <div class="section-in-fullheight">
-                        <div class="animatedParent animateOnce">
-                            <h3 class="head-h3 white animated">Possibilities</h3>
-                            <p class="head-subtitle white animated">huge</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6 full-height">
-                    <div class="section-in-fullheight">
-                        <div class="animatedParent animateOnce">
-                            <div class="brand-slider owl-carousel owl-theme animatedParent animateOnce">
-                                <div class="item">
-                                    <div class="brand-logo-holder">
-                                        <img src="assets/img/white1.png" alt="brand logo"/>
-                                    </div>
-                                </div>
-                                <div class="item">
-                                    <div class="brand-logo-holder">
-                                        <img src="assets/img/white2.png" alt="brand logo"/>
-                                    </div>
-                                </div>
-                                <div class="item">
-                                    <div class="brand-logo-holder">
-                                        <img src="assets/img/white3.png" alt="brand logo"/>
-                                    </div>
-                                </div><div class="item">
-                                    <div class="brand-logo-holder">
-                                        <img src="assets/img/white4.png" alt="brand logo"/>
-                                    </div>
-                                </div><div class="item">
-                                    <div class="brand-logo-holder">
-                                        <img src="assets/img/white5.png" alt="brand logo"/>
-                                    </div>
-                                </div><div class="item">
-                                    <div class="brand-logo-holder">
-                                        <img src="assets/img/white6.png" alt="brand logo"/>
-                                    </div>
-                                </div><div class="item">
-                                    <div class="brand-logo-holder">
-                                        <img src="assets/img/white1.png" alt="brand logo"/>
-                                    </div>
-                                </div><div class="item">
-                                    <div class="brand-logo-holder">
-                                        <img src="assets/img/white2.png" alt="brand logo"/>
-                                    </div>
-                                </div><div class="item">
-                                    <div class="brand-logo-holder">
-                                        <img src="assets/img/white3.png" alt="brand logo"/>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <!-- SECTION 3 FULLSCREEN -->
-        <div class="container-fluid fullscreen-section fullscreen-bg-3 padding-bottom-120px">
-            <div class="row">
-                <div class="col-md-6 full-height">
-                    <div class="section-in-fullheight">
-                        <div class="animatedParent animateOnce">
-                            <div class="animated">
-                                <form id="subscribe-form" name="subscribe-form" method="post">
-                                    <input id="subscribe-email" type="text" placeholder="subscribe (we hate spam)" name="email" required="required" class="subscribe-style fullscreen-form">
-                                    <button type="button" data-value="subscribe" data-wait="Please wait..." class="w-button subscribe-button">subscribe</button>
-                                </form>
-                            </div>
-                        </div>
-                        <div class="alert alert-success contact-form-done no-border-radius">
-                            <p>Thank you! Your submission has been received!</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6 full-height dark-fullscreen-background">
-                    <div class="section-in-fullheight">
-                        <div class="animatedParent animateOnce">
-                            <h3 class="head-h3 white animated">Subscribe</h3>
-                            <p class="head-subtitle white animated">for more</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
 
         <!-- Fashion Video Section -->
         <div class="padding-top-bottom-120px video-section element-with-video-bg jquery-background-video-wrapper">
@@ -365,14 +269,13 @@
             </div>
         </section>
 
-
-        <!-- PROJECTS SECTION -->
+        <!-- Favorite Blog Posts -->
         <section class="padding-top-bottom-120px white-background animation-overflow">
             <div class="container">
                 <div class="row">
                     <div class="animatedParent animateOnce">
                         <h3 class="head-h3">Favorites</h3>
-                        <p class="head-subtitle">Sort Posts</p>
+                        <p class="head-subtitle">Blog Posts</p>
                     </div>
                 </div>
                 <!-- FILTERS -->
@@ -398,6 +301,7 @@
                     <div class="portfolio-container">
                         <!-- 2 col grid @ xs, 3 col grid @ sm, 4 col grid @ md -->
                         <div class="grid-sizer col-xs-12 col-sm-6 col-md-4"></div>
+
                         <!-- 1 col @ xs, 2 col @ sm, 2 col @ md -->
                         <div class="grid-item col-xs-12 col-sm-6 col-md-4 design">
                             <div class="grid-item-content">
@@ -411,6 +315,7 @@
                                 </a>
                             </div>
                         </div>
+
                         <!-- 1 col @ xs, 2 col @ sm, 2 col @ md -->
                         <div class="grid-item col-xs-12 col-sm-6 col-md-4 photo">
                             <div class="grid-item-content">
@@ -424,6 +329,7 @@
                                 </a>
                             </div>
                         </div>
+
                         <!-- 1 col @ xs, 2 col @ sm, 2 col @ md -->
                         <div class="grid-item col-xs-12 col-sm-6 col-md-4 art web">
                             <div class="grid-item-content">
@@ -437,6 +343,7 @@
                                 </a>
                             </div>
                         </div>
+
                         <!-- 1 col @ xs, 2 col @ sm, 2 col @ md -->
                         <div class="grid-item col-xs-12 col-sm-6 col-md-4 food">
                             <div class="grid-item-content">
@@ -450,6 +357,7 @@
                                 </a>
                             </div>
                         </div>
+
                         <!-- 1 col @ xs, 2 col @ sm, 2 col @ md -->
                         <div class="grid-item col-xs-12 col-sm-6 col-md-4 design branding">
                             <div class="grid-item-content">
@@ -463,6 +371,7 @@
                                 </a>
                             </div>
                         </div>
+
                         <!-- 1 col @ xs, 2 col @ sm, 2 col @ md -->
                         <div class="grid-item col-xs-12 col-sm-6 col-md-4 photo">
                             <div class="grid-item-content">
@@ -476,6 +385,35 @@
                                 </a>
                             </div>
                         </div>
+
+                        <!-- 1 col @ xs, 2 col @ sm, 2 col @ md -->
+                        <div class="grid-item col-xs-12 col-sm-6 col-md-4 food">
+                            <div class="grid-item-content">
+                                <a href="project.html" class="masonry-portfolio-box-link">
+                                    <div class="masonry-portfolio-box-mask">
+                                        <div class="portfolio-mask-title">project title<br>
+                                            <span class="portfolio-mask-subtitle" style="">subtitle</span>
+                                        </div>
+                                    </div>
+                                    <img src="assets/img/sabrina-hero.jpg" alt="project" class="img-responsive"/>
+                                </a>
+                            </div>
+                        </div>
+
+                        <!-- 1 col @ xs, 2 col @ sm, 2 col @ md -->
+                        <div class="grid-item col-xs-12 col-sm-6 col-md-4 design branding">
+                            <div class="grid-item-content">
+                                <a href="project.html" class="masonry-portfolio-box-link">
+                                    <div class="masonry-portfolio-box-mask">
+                                        <div class="portfolio-mask-title">project title<br>
+                                            <span class="portfolio-mask-subtitle" style="">subtitle</span>
+                                        </div>
+                                    </div>
+                                    <img src="assets/img/sabrina.png" alt="project" class="img-responsive"/>
+                                </a>
+                            </div>
+                        </div>
+
                     </div>
                 </div>
                 <div class="clearfix"></div>
