@@ -827,6 +827,10 @@ blockquote {
     background-repeat: no-repeat;
     /*background-attachment: fixed;*/
 }
+.hero-image.one, .hero-image.last {
+    background-position: center;
+    background-size: cover;
+}
 .hero-overly-bg {
     position: absolute;
     height: 100%;
@@ -851,9 +855,7 @@ blockquote {
 }
 
 .clip-header {
-
     text-transform: uppercase;
-
     letter-spacing: 5px;
     line-height: 1;
     font-weight: 900;
@@ -927,6 +929,15 @@ blockquote {
     letter-spacing: 10px;
     text-transform: uppercase;
 }
+
+.first-feature .hero-slider-content .text-top, .theresa-title, .last-feature .hero-slider-content .text-top, .theresa-title {
+    color: #fff;
+}
+
+.first-feature .clipped_bg h1, .last-feature .clipped_bg h1, .first-feature .slider-text-bottom, .last-feature .slider-text-bottom {
+    color: #fff!important;
+}
+
 .slider-line {
     width: 80px;
     height: 3px;
@@ -960,6 +971,26 @@ blockquote {
 }
 .home-move-button.white{
     background-image: url(../img/arrow_down_white.png);
+}
+
+
+#home-page-blog {
+    background-image: url(../img/nyc-bw.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    border-bottom: 10px solid #fff;
+
+}
+#home-page-blog .overlay-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    /*background-color: rgba(255, 255, 255, 0.7);*/
+    background-image: linear-gradient(rgba(255, 255, 255, 1), rgba(255, 255, 255, 0.5));
 }
 /*
  * 3.1 HERO SLIDER
