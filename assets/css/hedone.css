@@ -1961,13 +1961,13 @@ input.subscribe-style.fullscreen-form:-webkit-autofill {
     position: absolute;
     right: 20px;
 }
-#loveCraft .blue {
+.footer .blue {
     color: #aec6cf;
 }
-#loveCraft .red {
+.footer .red {
     color: #ba2424;
 }
-#loveCraft .white {
+.footer .white {
     color: #fff;
 }
 .footer-logo img{
@@ -2018,6 +2018,21 @@ a.social-wrap i{
 }
 .footer-text-span {
     color: #ba2424;
+}
+
+.widget-row {
+    margin-bottom: 40px;
+    padding-bottom: 40px;
+    border-bottom: 2px solid #fff;
+}
+.widget-row h5 {
+    font-size: 24px;
+
+    font-family: "Fjalla One";
+}
+.widget-row h5, .widget-row p {
+    text-align: center;
+    color: #fff;
 }
 
 /*
@@ -2381,7 +2396,7 @@ input[type=checkbox], input[type=radio]{
 }
 #contact-form,
 #subscribe-form{
-    margin-bottom: 20px;
+    margin-top: 50px;
 }
 .contact-form-done,
 .contact-form-fail,
@@ -3632,15 +3647,10 @@ ul.hedone-menu > li > ul.sub-menu li a:hover{
 /* END MEDIA QUERY */
 
 
-/*Home Page Blog Post Timeline*/
-/*==========  Global  ==========*/
 
+/*--- Timeline ---*/
+/******************************************/
 
-/*==========  Basics  ==========*/
-
-
-
-/*==========  Sections  ==========*/
 #stem-section {
     position: relative;
 }
@@ -3679,9 +3689,6 @@ ul.hedone-menu > li > ul.sub-menu li a:hover{
     }
 }
 
-
-/*==========  Stem  ==========*/
-
 .svg-container {
     position: absolute;
     top: 100px;
@@ -3717,11 +3724,6 @@ ul.hedone-menu > li > ul.sub-menu li a:hover{
     /*background-color: rgba(255,255,255, 0.9);*/
 }
 
-
-
-
-/*==========  Post wrapper ==========*/
-
 .post-wrapper {
     *zoom: 1;
     /*background-color: rgba(255,255,255, 0.2);*/
@@ -3736,6 +3738,58 @@ ul.hedone-menu > li > ul.sub-menu li a:hover{
     clear: both;
 }
 
+/*==========  Post Image ==========*/
+.post-block {
+    margin-top: 100px;
+    position: relative;
+}
+.post-block:nth-of-type(1) {
+    margin-top: 0;
+}
+.hover-div {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.hover-indicator {
+    position: relative;
+    width: 0;
+    height: 4px;
+    background-color: #ba2424;
+    display: block;
+    margin: auto;
+    transition: all .4s;
+
+}
+.post-block:hover .hover-indicator {
+    width: 60px;
+}
+
+.post-img {
+    max-width: 432px;
+    height: 400px;
+    position: relative;
+}
+.image-post {
+    height: 100%;
+    display: block!important;
+    margin: -50px auto 0;
+}
+.left .post-img {
+
+    float: right;
+}
+.right .post-img {
+
+ float: left;
+}
+
 .post-wrapper .post {
     position: relative;
     width: 432px;
@@ -3746,57 +3800,46 @@ ul.hedone-menu > li > ul.sub-menu li a:hover{
     -moz-perspective: 1000px;
     perspective: 1000px;
 }
-.post-wrapper .post:nth-of-type(odd) {
-    padding-left: 5px;
+
+.left .post-content .entry-content {
+    padding-left: 10px;
     border-left: 2px solid #333;
+    position: relative;
 }
-.post-wrapper .post:nth-of-type(even) {
-    padding-right: 5px;
+.right .post-content .entry-content {
+    padding-right: 10px;
     border-right: 2px solid #333;
+    position: relative;
 }
-.post-wrapper .post:nth-of-type(odd) .post-content {
-    padding-left: 5px;
+.border-span {
+    position: absolute;
+    height: 2px;
+    width: 15px;
+    background: #333;
+    left: -8px;
 }
-.post-wrapper .post:nth-of-type(even) .post-content {
-    padding-right: 5px;
+.black-border-bottom {
+    bottom: 0;
 }
-
-
-.post-wrapper .post.hidden .post-content {
-    -webkit-transform: translateY(100px) rotateX(30deg);
-    -moz-transform: translateY(100px) rotateX(30deg);
-    -ms-transform: translateY(100px) rotateX(30deg);
-    -o-transform: translateY(100px) rotateX(30deg);
-    transform: translateY(100px) rotateX(30deg);
-    opacity: .5;
+.black-border-top {
+    top: 0;
 }
 
-.post-wrapper .post:hover .post-content, .post-wrapper .post.active .post-content {
-    opacity: 1;
-}
 
-.post-wrapper .post:hover .post-content .meta, .post-wrapper .post.active .post-content .meta {
-    opacity: 1;
-    -webkit-transform: none;
-    -moz-transform: none;
-    -ms-transform: none;
-    -o-transform: none;
-    transform: none;
-}
 
-.post-wrapper .post:nth-child(even) {
+.right .post {
     float: right;
 }
 
-.post-wrapper .post:nth-child(odd) {
+.left .post {
     float: left;
 }
 
-.post-wrapper .post:nth-child(even) .stem-overlay {
+.right .stem-overlay {
     left: -110px;
 }
 
-.post-wrapper .post:nth-child(odd) .stem-overlay {
+.left .stem-overlay {
     right: -110px;
 }
 
@@ -3823,19 +3866,6 @@ ul.hedone-menu > li > ul.sub-menu li a:hover{
     left: 0px;
     right: 0px;
     /*background: transparent url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/22043/stem-mask.png) repeat-y top center;*/
-}
-
-.post-wrapper .post .post-content {
-    opacity: .3;
-    -webkit-transition-duration: 0.4s;
-    -moz-transition-duration: 0.4s;
-    -o-transition-duration: 0.4s;
-    transition-duration: 0.4s;
-    -webkit-transform: none;
-    -moz-transform: none;
-    -ms-transform: none;
-    -o-transform: none;
-    transform: none;
 }
 
 .post-wrapper .post .post-content .meta {
@@ -3923,4 +3953,234 @@ ul.hedone-menu > li > ul.sub-menu li a:hover{
 
     margin: auto;
     padding: 10px;
+}
+
+
+/*Blog Header SAmple CSS*/
+span.blog-head {
+    font-family: "Fjalla One";
+    font-size: 48px;
+    line-height: 56px;
+    font-weight: 700;
+    position: relative;
+    left: 0;
+    height: 60px;
+    text-align: left;
+    padding: 0px;
+    border-bottom: 2px solid #333;
+}
+span.blog-head.dash {
+    line-height: normal;
+    color: #ba2424;
+    font-size: 20px;
+    padding: 0 10px;
+}
+
+.month {
+    font-size: 40px;
+    line-height: 56px;
+    font-weight: 700;
+    letter-spacing: 0;
+}
+
+
+/*--- Colors ---*/
+/******************************************/
+
+#royal_preloader.royal_preloader_progress .royal_preloader_meter,
+.slider-line{
+    background-color: #ba2424;
+}
+.quote{
+    border-color: #ba2424;
+}
+.facts-name{
+    color: #fcc900;
+}
+.hover-for-team-social ul li a:hover{
+    background-color: #fcc900;
+}
+.service-icon{
+    color: #fcc900;
+}
+.owl-theme .owl-dots .owl-dot.active span,
+.owl-theme .owl-dots .owl-dot:hover span {
+    background: #fcc900;
+}
+.owl-theme .owl-dots .owl-dot span {
+    background: #989898;
+}
+ul.portfolio-filter li a.current,
+ul.portfolio-filter li a:hover {
+    color: #ba2424;
+}
+.portfolio-mask-subtitle {
+    background-color: rgba(174,198,207, .9);
+}
+.blog-page-post-head-h2 a:hover{
+    color: #fcc900;
+}
+.blog-page-post-author a{
+    color: #fcc900;
+}
+.subscribe-style:active {
+    border-color: #fcc900;
+}
+
+.subscribe-style:focus {
+    border-color: #fcc900;
+}
+.subscribe-button:hover {
+    background-color: rgb(174,198,207);
+    color: #333;
+}
+.blog_post_category li i.fa,
+.blog_post_tags li i.fa,
+.blog-post-single-footer span.cat-links i.fa,
+.blog-post-single-footer span.tags-links i.fa{
+    color: #fcc900;
+}
+.blog_post_category li a:hover,
+.blog_post_tags li a:hover,
+.blog-post-single-footer .cat-links a:hover,
+.blog-post-single-footer .tags-links a:hover,
+.blog-post-single-meta a:hover{
+    color: #fcc900;
+}
+ul.hedone-menu > li > a:hover,
+ul.hedone-menu > li.current-menu-parent > a{
+    color: #ba2424;
+}
+ul.hedone-menu > li > ul.sub-menu li.current-menu-item > a{
+    color: #ba2424;
+}
+ul.hedone-menu > li.current-menu-item > a{
+    color: #ba2424;
+}
+@media only screen and (max-width: 1199px) {
+    ul.hedone-menu > li > a:hover {
+        color: #fff;
+    }
+    ul.hedone-menu > li.current-menu-parent > a:hover,
+    ul.hedone-menu > li > ul.sub-menu li.current-menu-item > a:hover{
+        color: #ba2424;
+    }
+
+}
+/*
+ * hero slider
+ */
+.hero-slider .owl-theme .owl-next:hover,
+.hero-slider .owl-theme .owl-prev:hover,
+.project-slider.owl-theme .owl-next:hover,
+.project-slider.owl-theme .owl-prev:hover{
+    background-color: #9e9ba4;
+    color: #fff;
+}
+.hero-slider .owl-theme .owl-next:hover.disabled,
+.hero-slider .owl-theme .owl-prev:hover.disabled,
+.project-slider.owl-theme .owl-next:hover.disabled,
+.project-slider.owl-theme .owl-prev:hover.disabled{
+    background-color: #fff;
+    color: #000;
+}
+/*
+ * hero video
+ */
+.jquery-background-video-pauseplay.play:before {
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    border-left: 15px solid #fcc900;
+}
+.jquery-background-video-pauseplay.pause:before,
+.jquery-background-video-pauseplay.pause:after {
+    border-top: 10px solid #fcc900;
+    border-bottom: 10px solid #fcc900;
+    border-left: 5px solid #fcc900;
+}
+/*
+ * nav-pills
+ */
+.nav-pills > li > a:hover,
+.nav-pills > li.active > a,
+.nav-pills > li.active > a:hover,
+.nav-pills > li.active > a:focus{
+    background-color: #fcc900;
+    color: #fff;
+}
+/*
+ * pricing box
+ */
+a:hover.pricing-button{
+    color: #fff;
+    background-color: #fcc900;
+}
+/*
+ * contact form
+ */
+.contact-button:hover,
+.contact-button:focus{
+    background-color: #fcc900;
+    color: #fff;
+    outline: none;
+}
+.text-field:focus {
+    border-bottom-color: #fcc900;
+}
+
+/* map */
+.lightbox-map:hover {
+    background-color: #fcc900;
+}
+
+/* buttons */
+.btn-default-main-color:hover,
+.btn-default-main-color:active,
+.btn-default-main-color:focus{
+    border-color: #fcc900;
+    background-color: #fcc900;
+    color: #fff;
+}
+.hover-zoom-in-white:hover{
+    color: #fcc900;
+}
+.btn-default-main-color-border-solid:hover{
+    border-color: #fcc900;
+    background-color: #fcc900;
+}
+.btn-default-main-color-border-dashed:hover{
+    border-color: #fcc900;
+    background-color: #fcc900;
+}
+
+/* dropcaps */
+.dropcap.main-color{
+    background-color: #fcc900;
+    color: #fff;
+}
+/* highlights */
+.highlights-main-color{
+    background-color: #fcc900;
+    color: #fff;
+}
+/* gallery */
+.gallery a:hover:before{
+    background-color: rgba(252, 201, 0, .8);/* color: #fcc900 with tranparent*/
+}
+
+/* single post */
+.post-wrap-section{
+    border-top-color: #fcc900;
+}
+.comment-metadata a:hover,
+.comment-author a:hover{
+    color: #fcc900;
+}
+.comment-form input[type="text"]:focus,
+.comment-form input[type="email"]:focus,
+.comment-form textarea:focus{
+    border-bottom-color: #fcc900;
+}
+.post-navigation a:hover{
+    color: #fcc900;
 }

@@ -1,12 +1,12 @@
-/*---------------------------------------------------- 
+/*----------------------------------------------------
 Theme Name: Being
 Version:    1.0
- 
+
 | ----------------------------------------------------------------------------------
 | TABLE OF CONTENT
 | ----------------------------------------------------------------------------------
--Fullpage js  
--Home  
+-Fullpage js
+-Home
 -Accolades
 -Projects
 -clients
@@ -108,10 +108,10 @@ $(function() {
             },
 
             onSlideLeave: function(anchorLink, index, slideIndex, direction) {
-                barStart(direction); //Start project line-up bars animation on slide leave 
+                barStart(direction); //Start project line-up bars animation on slide leave
                 $.fn.fullpage.setScrollingSpeed(0);
                 if (projectBack.hasClass('active')) {
-                    projectBack.removeClass('active'); //hide project project close button 
+                    projectBack.removeClass('active'); //hide project project close button
                 }
             },
             // Display the slides container by fading it in after the next slide has been loaded.
@@ -121,17 +121,17 @@ $(function() {
                     if (slideIndex !== 0) {
 
                         setTimeout(function() {
-                            // $('#project_head').hide();//show project close button 
+                            // $('#project_head').hide();//show project close button
                         }, 500);
                         setTimeout(function() {
-                            projectBack.addClass('active'); //show project close button 
+                            projectBack.addClass('active'); //show project close button
                         }, 1500);
                     } else {
                         setTimeout(function() {
-                            // $('#project_head').show();//show project close button 
+                            // $('#project_head').show();//show project close button
                         }, 500);
                         if (projectBack.hasClass('active')) {
-                            projectBack.removeClass('active'); //hide project close button 
+                            projectBack.removeClass('active'); //hide project close button
                         }
                         if (logoBackground.hasClass('hide_logo')) {
                             setTimeout(function() {
@@ -291,7 +291,7 @@ $(function() {
         // show all our items
         galleryHolder.children('div.item').fadeIn(500, '', function() {
             galleryHolder.children('div').addClass("animate");
-            //Reset gallery filterOptions 
+            //Reset gallery filterOptions
             $('#filterOptions li .hi-icon').removeClass('active').first().addClass('active');
 
         });
@@ -392,58 +392,58 @@ $(function() {
 
     /* Menu
     /*---------------------------------------------------- */
-    var eventType = 'click';
-    var menu = document.getElementById('bt-menu'),
-        trigger = menu.querySelector('a.bt-menu-trigger'),
-        trigger_link = menu.querySelectorAll('ul.menu-options li a'),
-        resetMenu = function() {
-
-            setTimeout(function() {
-                classie.remove(menu, 'show');
-
-            }, 400);
-            classie.remove(menu, 'bt-menu-open');
-            classie.add(menu, 'bt-menu-close');
-        },
-        closeClickFn = function(ev) {
-            resetMenu();
-            overlay.removeEventListener(eventType, closeClickFn);
-        };
-    var overlay = document.createElement('div');
-    overlay.className = 'bt-overlay';
-    menu.appendChild(overlay);
-    trigger.addEventListener(eventType, function(ev) {
-        ev.stopPropagation();
-        ev.preventDefault();
-        if (classie.has(menu, 'bt-menu-open')) {
-            resetMenu();
-        } else {
-            classie.remove(menu, 'bt-menu-close');
-            classie.add(menu, 'bt-menu-open');
-            classie.add(menu, 'show');
-            overlay.addEventListener(eventType, closeClickFn);
-        }
-    });
-
-    function init() {
-        $('#bt-menu ul.menu-options li a').each(function(index) {
-            $(this).on("click", function(ev) {
-                $(this).next('ul').toggleClass('active-sub-menu');
-                setTimeout(function() {
-                    if (classie.has(menu, 'bt-menu-open')) {
-
-                        resetMenu();
-                    } else {
-                        classie.remove(menu, 'bt-menu-close');
-                        classie.add(menu, 'bt-menu-open');
-                        classie.add(menu, 'show');
-                        overlay.addEventListener(eventType, closeClickFn);
-                    }
-                }, 500);
-            });
-        });
-    }
-    init();
+    // var eventType = 'click';
+    // var menu = document.getElementById('bt-menu'),
+    //     trigger = menu.querySelector('a.bt-menu-trigger'),
+    //     trigger_link = menu.querySelectorAll('ul.menu-options li a'),
+    //     resetMenu = function() {
+    //
+    //         setTimeout(function() {
+    //             classie.remove(menu, 'show');
+    //
+    //         }, 400);
+    //         classie.remove(menu, 'bt-menu-open');
+    //         classie.add(menu, 'bt-menu-close');
+    //     },
+    //     closeClickFn = function(ev) {
+    //         resetMenu();
+    //         overlay.removeEventListener(eventType, closeClickFn);
+    //     };
+    // var overlay = document.createElement('div');
+    // overlay.className = 'bt-overlay';
+    // menu.appendChild(overlay);
+    // trigger.addEventListener(eventType, function(ev) {
+    //     ev.stopPropagation();
+    //     ev.preventDefault();
+    //     if (classie.has(menu, 'bt-menu-open')) {
+    //         resetMenu();
+    //     } else {
+    //         classie.remove(menu, 'bt-menu-close');
+    //         classie.add(menu, 'bt-menu-open');
+    //         classie.add(menu, 'show');
+    //         overlay.addEventListener(eventType, closeClickFn);
+    //     }
+    // });
+    //
+    // function init() {
+    //     $('#bt-menu ul.menu-options li a').each(function(index) {
+    //         $(this).on("click", function(ev) {
+    //             $(this).next('ul').toggleClass('active-sub-menu');
+    //             setTimeout(function() {
+    //                 if (classie.has(menu, 'bt-menu-open')) {
+    //
+    //                     resetMenu();
+    //                 } else {
+    //                     classie.remove(menu, 'bt-menu-close');
+    //                     classie.add(menu, 'bt-menu-open');
+    //                     classie.add(menu, 'show');
+    //                     overlay.addEventListener(eventType, closeClickFn);
+    //                 }
+    //             }, 500);
+    //         });
+    //     });
+    // }
+    // init();
 
     /*  Blog Page */
     function createFullpageBlog() {
@@ -470,10 +470,10 @@ $(function() {
             controlArrows: false,
             onSlideLeave: function(anchorLink, index, slideIndex, direction) {
 
-                blogBarStart(direction); //Start blog line-up bars animation on slide leave 
+                blogBarStart(direction); //Start blog line-up bars animation on slide leave
                 $.fn.fullpage.setScrollingSpeed(0);
                 if (blogBack.hasClass('active')) {
-                    blogBack.removeClass('active'); //hide blog blog close button 
+                    blogBack.removeClass('active'); //hide blog blog close button
                 }
             },
             // Display the slides container by fading it in after the next slide has been loaded.
@@ -482,11 +482,11 @@ $(function() {
                 if (anchorLink === "blog-section") {
                     if (slideIndex !== 0) {
                         setTimeout(function() {
-                            blogBack.addClass('active'); //show blog close button 
+                            blogBack.addClass('active'); //show blog close button
                         }, 1500);
                     } else {
                         if (blogBack.hasClass('active')) {
-                            blogBack.removeClass('active'); //hide blog close button 
+                            blogBack.removeClass('active'); //hide blog close button
                         }
 
 
@@ -578,7 +578,7 @@ $(function() {
                     var contentHeight = $("#clients_details").height();
 
                     if (contentHeight > windowHeight)
-                        $(".client-section .vertical-center").css("height", "auto"); //Reset clients 
+                        $(".client-section .vertical-center").css("height", "auto"); //Reset clients
 
                     var resetOverflow = Overflow;
                     if (document.documentElement.clientWidth > 1200) {
