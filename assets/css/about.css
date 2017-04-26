@@ -178,6 +178,17 @@ a#scrollUp:hover {
 .about-header {
     width: 100%;
 }
+/*.team-carousel-container .carousel-header {
+    position: absolute;
+    width: 100%;
+    height: 100px;
+    background-image: url(../img/pink-dust.png);
+    background-position: center;
+    background-size: contain;
+    top: 200px;
+    z-index: 100;
+}*/
+
 .carousel-inner.onebyone-carosel {
     top: 0px;
     margin: auto;
@@ -327,7 +338,7 @@ ul.contact-social li a {
 #team-carousel .col-md-4:hover .team-details h1,
 #team-carousel .col-md-4:hover ul.contact-social li a {
     color: #ba2424;
-    
+
 }
 #team-carousel .col-md-4 {
     -webkit-backface-visibility: hidden;

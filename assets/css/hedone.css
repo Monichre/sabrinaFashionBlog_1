@@ -64,6 +64,9 @@ body.royal_preloader {
     background: none;
     visibility: hidden;
 }
+#logo {
+    margin-top: -20px;
+}
 #royal_preloader {
     visibility: visible;
     position: fixed;
@@ -1210,6 +1213,38 @@ blockquote {
  #about-home {
      padding-bottom: 120px;
  }
+ .about-row .section-header {
+     padding-bottom: 0;
+ }
+ .section-header .sub-title {
+     position: relative;
+ }
+ .header-underline-large {
+     position: absolute;
+    left: 0;
+    bottom: -30px;
+     width: 35%;
+     height: 4px;
+     background-color: #333;
+     display: block;
+     margin: auto;
+     transition: all .8s;
+ }
+ .sub-header-underline-small {
+     position: relative;
+    left: 70px;
+     width: 0;
+     height: 4px;
+     background-color: #333;
+     display: block;
+     margin: auto;
+     transition: all .8s;
+ }
+ .section-header:hover .sub-header-underline-small {
+     width: 160px;
+ }
+
+
  .profile-wrap {
      overflow: hidden;
  }
@@ -1488,8 +1523,11 @@ font-family: 'Rubik', sans-serif;*/
     text-align: center;
     letter-spacing: -2px;
     line-height: .75;
+    transition: all .8s;
 }
-
+.post-block:hover .team-expert {
+    color: #9e9ba4;
+}
 /*
  * 7.VIDEO SECTION
  */
@@ -1591,7 +1629,7 @@ font-family: 'Rubik', sans-serif;*/
     width: 100px;
 }
 .item img{
-    width: 100px;
+    width: 100%;
     height: auto;
 }
 .logo-slide-image {
@@ -3764,7 +3802,7 @@ ul.hedone-menu > li > ul.sub-menu li a:hover{
     background-color: #ba2424;
     display: block;
     margin: auto;
-    transition: all .4s;
+    transition: all .8s;
 
 }
 .post-block:hover .hover-indicator {
