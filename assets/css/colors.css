@@ -4,10 +4,10 @@
 
 #royal_preloader.royal_preloader_progress .royal_preloader_meter,
 .slider-line{
-    background-color: #aec6cf;
+    background-color: #ba2424;
 }
 .quote{
-    border-color: #aec6cf;
+    border-color: #ba2424;
 }
 .facts-name{
     color: #fcc900;
@@ -27,7 +27,7 @@
 }
 ul.portfolio-filter li a.current,
 ul.portfolio-filter li a:hover {
-    color: #aec6cf;
+    color: #ba2424;
 }
 .portfolio-mask-subtitle {
     background-color: rgba(174,198,207, .9);
@@ -64,13 +64,13 @@ ul.portfolio-filter li a:hover {
 }
 ul.hedone-menu > li > a:hover,
 ul.hedone-menu > li.current-menu-parent > a{
-    color: #aec6cf;
+    color: #ba2424;
 }
 ul.hedone-menu > li > ul.sub-menu li.current-menu-item > a{
-    color: #aec6cf;
+    color: #ba2424;
 }
 ul.hedone-menu > li.current-menu-item > a{
-    color: #aec6cf;
+    color: #ba2424;
 }
 @media only screen and (max-width: 1199px) {
     ul.hedone-menu > li > a:hover {
@@ -78,7 +78,7 @@ ul.hedone-menu > li.current-menu-item > a{
     }
     ul.hedone-menu > li.current-menu-parent > a:hover,
     ul.hedone-menu > li > ul.sub-menu li.current-menu-item > a:hover{
-        color: #aec6cf;
+        color: #ba2424;
     }
 
 }
@@ -89,7 +89,7 @@ ul.hedone-menu > li.current-menu-item > a{
 .hero-slider .owl-theme .owl-prev:hover,
 .project-slider.owl-theme .owl-next:hover,
 .project-slider.owl-theme .owl-prev:hover{
-    background-color: #fcc900;
+    background-color: #9e9ba4;
     color: #fff;
 }
 .hero-slider .owl-theme .owl-next:hover.disabled,

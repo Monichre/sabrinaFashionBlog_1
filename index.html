@@ -43,7 +43,7 @@
 
         <!-- Less Styles -->
 
-        <link href="assets/css/stem.css" rel="stylesheet" type="text/css"/>
+
 
 
         <!--[if lte IE 9]>
@@ -58,20 +58,6 @@
         <!-- TOP SCROLL -->
         <div id="top-home-scroll"></div>
         <a href="#top-home-scroll" class="scroll-to-top-arrow-button"></a>
-
-        <!-- <ul class="floating-social">
-            <li>
-                <a href="#"><span>Share!</span><i class="fa fa-facebook" aria-hidden="true"></i></a>
-            </li>
-            <li>
-                <a href="#"><span>Follow!</span><i class="fa fa-instagram" aria-hidden="true"></i></a>
-            </li>
-            <li>
-                <a href="#"><span>Tweet!</span><i class="fa fa-twitter" aria-hidden="true"></i></a>
-            </li>
-        </ul> -->
-
-
         <!-- AJAX LOADER -->
         <div id="ajax-loader" class="loader loader-default" data-half="" data-text="Loading..."></div>
 
@@ -124,7 +110,7 @@
                                                     <a href="#">Travel</a>
                                                 </li>
                                                 <li class="menu-item">
-                                                    <a href="#">Fashion</a>
+                                                    <a href="#">Health & Wellness</a>
                                                 </li>
 
                                                 <li class="menu-item">
@@ -175,13 +161,14 @@
                         <div class="container">
                             <div class="row">
                                 <div class="upSection animated slideOutUp">
-                                    <div class="text-top white-text">moving</div>
-                                    <div class="text-mid white-text">boundaries</div>
+                                    <div class="text-top">Check out</div>
+                                    <div class="clipped_bg">
+                                        <h1>Sample <br> Sale Savings</h1>
+                                    </div>
                                     <div class="slider-line"></div>
                                 </div>
                                 <div class="downSection animated slideOutDown">
-                                    <div class="text-bottom">into digital solution</div>
-                                    <a class="home-move-button white" href="#scroll-from-top"></a>
+                                    <div class="slider-text-bottom">My 6 tips</div>
                                 </div>
                             </div>
                         </div>
@@ -190,18 +177,22 @@
 
                 <!-- 3rd Slide -->
                 <div class="item">
-                    <div class="hero-image" style="background-image: url(assets/img/slide-6.jpg);"></div>
+
+                    <div class="hero-overlay-bg">
+                        <div class="hero-image last" style="background: url(assets/img/nyc-bw.png);"></div>
+                    </div>
                     <div class="hero-slider-content">
                         <div class="container">
                             <div class="row">
                                 <div class="upSection animated slideOutUp">
-                                    <div class="text-top white-text">magic</div>
-                                    <div class="text-mid white-text">& design</div>
+                                    <div class="text-top">Check out</div>
+                                    <div class="clipped_bg">
+                                        <h1>Sample <br> Sale Savings</h1>
+                                    </div>
                                     <div class="slider-line"></div>
                                 </div>
                                 <div class="downSection animated slideOutDown">
-                                    <div class="text-bottom">to connect people</div>
-                                    <a class="home-move-button white" href="#scroll-from-top"></a>
+                                    <div class="slider-text-bottom">My 6 tips</div>
                                 </div>
                             </div>
                         </div>
@@ -211,234 +202,122 @@
             </div>
         </div>
 
-                <!-- Stem -->
-        <div class="stem-wrapper">
-            <div class="stem"></div>
-            <div class="stem-background"></div>
-        </div>
+        <section id="stem-section" class="padding-top-bottom-120px white-background animation-overflow">
 
-        <header class="section header">
-            <div class="section-inner">
+            <div class="animatedParent animateOnce stem-header section-header">
+                <p class="head-subtitle">From the Blog</p>
+                <h3 class="head-h3">Latest</h3>
+            </div>
 
-                <div class="master-head">
-                    <h1 class="page-title">Colored Stem</h1>
-                    <p class="page-description">Your bones don't break, mine do. That's clear. Your cells react to bacteria and viruses differently than mine. You don't get sick, I do. That's also clear. But for some reason, you and I react the exact same way to water.</p>
-                    <p class="scroll-button" onClick="$('.post-wrapper .post:first-child .stem-overlay .icon').click();">Ready to go for a ride?</p>
+            <div id="scroll-body" class="section main-content">
+                <div class="overlay-bg"></div>
+                <div class="svg-container">
+                    <svg id="timeline" width="3px" height="1805px" viewBox="0 0 8 1805"></svg>
                 </div>
 
-            </div>
-            <!-- section-inner -->
-        </header>
-        <!-- header -->
+                <div class="section-inner">
 
-        <div class="section main-content">
-            <div class="section-inner">
+                    <div class="post-wrapper">
 
-                <div class="stem-padding"></div>
-
-                <div class="post-wrapper">
-
-                    <article class="post bitbucket-icon">
-                        <div class="stem-overlay">
-                            <div class="icon"></div>
-                            <div class="stem-mask"></div>
-                        </div>
-
-                        <div class="post-content">
-                            <p class="meta">Written yesterday at 8:56 pm</p>
-                            <h2 class="post-title">This is my post title</h2>
-                            <div class="entry-content">
-                                <p>Your bones don't break, mine do. That's clear. Your cells react to bacteria and viruses differently than mine. You don't get sick, I do. That's also clear. But for some reason, you and I react the exact same way to water. We swallow
-                                    it too fast, we choke. We get some in our lungs, we drown. However unreal it may seem, we are connected, you and I. We're on the same curve, just on opposite ends.</p>
+                        <article id="post-1" class="post bitbucket-icon">
+                            <div class="stem-overlay">
+                                <div class="ion-container">
+                                    <i class="ion ion-lightbulb ion-lg"></i>
+                                </div>
                             </div>
-                        </div>
-                    </article>
 
-                    <article class="post m-icon" data-stem-color="green">
-                        <div class="stem-overlay">
-                            <div class="icon"></div>
-                            <div class="stem-mask"></div>
-                        </div>
-
-                        <div class="post-content">
-                            <p class="meta">Written yesterday at 8:56 pm</p>
-                            <h2 class="post-title">This is my post title</h2>
-                            <div class="entry-content">
-                                <p>Your bones don't break, mine do. That's clear. Your cells react to bacteria and viruses differently than mine. You don't get sick, I do. That's also clear. But for some reason, you and I react the exact same way to water. We swallow
-                                    it too fast, we choke. We get some in our lungs, we drown. However unreal it may seem, we are connected, you and I. We're on the same curve, just on opposite ends.</p>
+                            <div class="post-content">
+                                <p class="meta">Written yesterday at 8:56 pm</p>
+                                <h2 class="post-title">THESE ARE MY BEST SAMPLE SALE FINDS</h2>
+                                <div class="entry-content">
+                                    <p>Depending on the selection and pricing, sample sales can be hit or miss. I’ve gone to a couple that I was completely disappointed in. However, I’ve walked away from others with bags of goodies, blown away by the great merchandise and discounts.</p>
+                                </div>
                             </div>
-                        </div>
-                    </article>
+                        </article>
 
-                    <article class="post music-icon" data-stem-color="yellow">
-                        <div class="stem-overlay">
-                            <div class="icon"></div>
-                            <div class="stem-mask"></div>
-                        </div>
-
-                        <div class="post-content">
-                            <p class="meta">Written yesterday at 8:56 pm</p>
-                            <h2 class="post-title">This is my post title</h2>
-                            <div class="entry-content">
-                                <p>Your bones don't break, mine do. That's clear. Your cells react to bacteria and viruses differently than mine. You don't get sick, I do. That's also clear. But for some reason, you and I react the exact same way to water. We swallow
-                                    it too fast, we choke. We get some in our lungs, we drown. However unreal it may seem, we are connected, you and I. We're on the same curve, just on opposite ends.</p>
+                        <article id="post-2" class="post m-icon">
+                            <div class="stem-overlay">
+                                <div class="ion-container">
+                                    <i class="ion-android-star-outline ion ion-lg"></i>
+                                </div>
                             </div>
-                        </div>
-                    </article>
 
-                    <article class="post twitter-icon" data-stem-color="white">
-                        <div class="stem-overlay">
-                            <div class="icon"></div>
-                            <div class="stem-mask"></div>
-                        </div>
-
-                        <div class="post-content">
-                            <p class="meta">Written yesterday at 8:56 pm</p>
-                            <h2 class="post-title">This is my post title</h2>
-                            <div class="entry-content">
-                                <p>Your bones don't break, mine do. That's clear. Your cells react to bacteria and viruses differently than mine. You don't get sick, I do. That's also clear. But for some reason, you and I react the exact same way to water. We swallow
-                                    it too fast, we choke. We get some in our lungs, we drown. However unreal it may seem, we are connected, you and I. We're on the same curve, just on opposite ends.</p>
+                            <div class="post-content">
+                                <p class="meta">Written yesterday at 8:56 pm</p>
+                                <h2 class="post-title">BEST WEBSITES TO LOCATE SAMPLE SALES</h2>
+                                <div class="entry-content">
+                                    <p>Sample sales happen frequently, especially in NYC. Here are the best sites that list upcoming sale information that helps alot to plan for them in advance.</p>
+                                </div>
                             </div>
-                        </div>
-                    </article>
+                        </article>
 
-                    <article class="post bitbucket-icon">
-                        <div class="stem-overlay">
-                            <div class="icon"></div>
-                            <div class="stem-mask"></div>
-                        </div>
+                        <article id="post-3" class="post music-icon">
+                            <div class="stem-overlay">
 
-                        <div class="post-content">
-                            <p class="meta">Written yesterday at 8:56 pm</p>
-                            <h2 class="post-title">This is my post title</h2>
-                            <div class="entry-content">
-                                <p>Your bones don't break, mine do. That's clear. Your cells react to bacteria and viruses differently than mine. You don't get sick, I do. That's also clear. But for some reason, you and I react the exact same way to water. We swallow
-                                    it too fast, we choke. We get some in our lungs, we drown. However unreal it may seem, we are connected, you and I. We're on the same curve, just on opposite ends.</p>
+                                    <div class="ion-container">
+                                        <i class="ion-android-star-outline ion ion-lg"></i>
+                                    </div>
+
                             </div>
-                        </div>
-                    </article>
 
-                    <article class="post music-icon" data-stem-color="yellow">
-                        <div class="stem-overlay">
-                            <div class="icon"></div>
-                            <div class="stem-mask"></div>
-                        </div>
-
-                        <div class="post-content">
-                            <p class="meta">Written yesterday at 8:56 pm</p>
-                            <h2 class="post-title">This is my post title</h2>
-                            <div class="entry-content">
-                                <p>Your bones don't break, mine do. That's clear. Your cells react to bacteria and viruses differently than mine. You don't get sick, I do. That's also clear. But for some reason, you and I react the exact same way to water. We swallow
-                                    it too fast, we choke. We get some in our lungs, we drown. However unreal it may seem, we are connected, you and I. We're on the same curve, just on opposite ends.</p>
+                            <div class="post-content">
+                                <p class="meta">Written yesterday at 8:56 pm</p>
+                                <h2 class="post-title">THESE ARE MY BEST SAMPLE SALE FINDS</h2>
+                                <div class="entry-content">
+                                    <p>Depending on the selection and pricing, sample sales can be hit or miss. I’ve gone to a couple that I was completely disappointed in. However, I’ve walked away from others with bags of goodies, blown away by the great merchandise and discounts.</p>
+                                </div>
                             </div>
-                        </div>
-                    </article>
-                    <article class="post bitbucket-icon">
-                        <div class="stem-overlay">
-                            <div class="icon"></div>
-                            <div class="stem-mask"></div>
-                        </div>
+                        </article>
 
-                        <div class="post-content">
-                            <p class="meta">Written yesterday at 8:56 pm</p>
-                            <h2 class="post-title">This is my post title</h2>
-                            <div class="entry-content">
-                                <p>Your bones don't break, mine do. That's clear. Your cells react to bacteria and viruses differently than mine. You don't get sick, I do. That's also clear. But for some reason, you and I react the exact same way to water. We swallow
-                                    it too fast, we choke. We get some in our lungs, we drown. However unreal it may seem, we are connected, you and I. We're on the same curve, just on opposite ends.</p>
+                        <article id="post-4" class="post twitter-icon">
+
+                                <div class="stem-overlay">
+                                    <div class="ion-container">
+                                        <i class="ion-android-star-outline ion ion-lg"></i>
+                                    </div>
+                                </div>
+
+
+                            <div class="post-content">
+                                <p class="meta">Written yesterday at 8:56 pm</p>
+                                <h2 class="post-title">BEST WEBSITES TO LOCATE SAMPLE SALES</h2>
+                                <div class="entry-content">
+                                    <p>Sample sales happen frequently, especially in NYC. Here are the best sites that list upcoming sale information that helps alot to plan for them in advance.</p>
+                                </div>
                             </div>
-                        </div>
-                    </article>
+                        </article>
 
-                    <article class="post m-icon" data-stem-color="green">
-                        <div class="stem-overlay">
-                            <div class="icon"></div>
-                            <div class="stem-mask"></div>
-                        </div>
+                        <article id="post-5" class="post twitter-icon">
 
-                        <div class="post-content">
-                            <p class="meta">Written yesterday at 8:56 pm</p>
-                            <h2 class="post-title">This is my post title</h2>
-                            <div class="entry-content">
-                                <p>Your bones don't break, mine do. That's clear. Your cells react to bacteria and viruses differently than mine. You don't get sick, I do. That's also clear. But for some reason, you and I react the exact same way to water. We swallow
-                                    it too fast, we choke. We get some in our lungs, we drown. However unreal it may seem, we are connected, you and I. We're on the same curve, just on opposite ends.</p>
+                                <div class="stem-overlay">
+                                    <div class="ion-container">
+                                        <i class="ion-android-star-outline ion ion-lg"></i>
+                                    </div>
+                                </div>
+
+
+                            <div class="post-content">
+                                <p class="meta">Written yesterday at 8:56 pm</p>
+                                <h2 class="post-title">This is my post title</h2>
+                                <div class="entry-content">
+                                    <p>Your bones don't break, mine do. That's clear. Your cells react to bacteria and viruses differently than mine. You don't get sick, I do. That's also clear. But for some reason, you and I react the exact same way to water. We swallow
+                                        it too fast, we choke. We get some in our lungs, we drown. However unreal it may seem, we are connected, you and I. We're on the same curve, just on opposite ends.</p>
+                                </div>
                             </div>
-                        </div>
-                    </article>
+                        </article>
 
-                    <article class="post music-icon" data-stem-color="yellow">
-                        <div class="stem-overlay">
-                            <div class="icon"></div>
-                            <div class="stem-mask"></div>
-                        </div>
+                    </div>
+                    <!-- post-wrapper -->
 
-                        <div class="post-content">
-                            <p class="meta">Written yesterday at 8:56 pm</p>
-                            <h2 class="post-title">This is my post title</h2>
-                            <div class="entry-content">
-                                <p>Your bones don't break, mine do. That's clear. Your cells react to bacteria and viruses differently than mine. You don't get sick, I do. That's also clear. But for some reason, you and I react the exact same way to water. We swallow
-                                    it too fast, we choke. We get some in our lungs, we drown. However unreal it may seem, we are connected, you and I. We're on the same curve, just on opposite ends.</p>
-                            </div>
-                        </div>
-                    </article>
-
-                    <article class="post twitter-icon" data-stem-color="white">
-                        <div class="stem-overlay">
-                            <div class="icon"></div>
-                            <div class="stem-mask"></div>
-                        </div>
-
-                        <div class="post-content">
-                            <p class="meta">Written yesterday at 8:56 pm</p>
-                            <h2 class="post-title">This is my post title</h2>
-                            <div class="entry-content">
-                                <p>Your bones don't break, mine do. That's clear. Your cells react to bacteria and viruses differently than mine. You don't get sick, I do. That's also clear. But for some reason, you and I react the exact same way to water. We swallow
-                                    it too fast, we choke. We get some in our lungs, we drown. However unreal it may seem, we are connected, you and I. We're on the same curve, just on opposite ends.</p>
-                            </div>
-                        </div>
-                    </article>
-
-                    <article class="post bitbucket-icon">
-                        <div class="stem-overlay">
-                            <div class="icon"></div>
-                            <div class="stem-mask"></div>
-                        </div>
-
-                        <div class="post-content">
-                            <p class="meta">Written yesterday at 8:56 pm</p>
-                            <h2 class="post-title">This is my post title</h2>
-                            <div class="entry-content">
-                                <p>Your bones don't break, mine do. That's clear. Your cells react to bacteria and viruses differently than mine. You don't get sick, I do. That's also clear. But for some reason, you and I react the exact same way to water. We swallow
-                                    it too fast, we choke. We get some in our lungs, we drown. However unreal it may seem, we are connected, you and I. We're on the same curve, just on opposite ends.</p>
-                            </div>
-                        </div>
-                    </article>
-
-                    <article class="post music-icon" data-stem-color="yellow">
-                        <div class="stem-overlay">
-                            <div class="icon"></div>
-                            <div class="stem-mask"></div>
-                        </div>
-
-                        <div class="post-content">
-                            <p class="meta">Written yesterday at 8:56 pm</p>
-                            <h2 class="post-title">This is my post title</h2>
-                            <div class="entry-content">
-                                <p>Your bones don't break, mine do. That's clear. Your cells react to bacteria and viruses differently than mine. You don't get sick, I do. That's also clear. But for some reason, you and I react the exact same way to water. We swallow
-                                    it too fast, we choke. We get some in our lungs, we drown. However unreal it may seem, we are connected, you and I. We're on the same curve, just on opposite ends.</p>
-                            </div>
-                        </div>
-                    </article>
                 </div>
-                <!-- post-wrapper -->
-
-                <div class="single-stem-icon scroll-to-top trigger-scroll-to-top"></div>
-
+                <!-- section-inner -->
             </div>
-            <!-- section-inner -->
-        </div>
-        <!-- main-content -->
 
-    
+        </section>
+
+
+
+
 
         <!-- ABOUT SECTION -->
         <!-- <section id="about-home" class="padding-top-120px white-background animation-overflow">
@@ -476,7 +355,6 @@
                 <source src="assets/video/fashion-vid.mp4" type="video/mp4">
                 <source src="assets/video/fashion-vid.webm" type="video/webm">
             </video>
-
         </div>
 
 
@@ -739,8 +617,12 @@
                         </a>
                     </div>
                     <div class="footer-text">
-                        © Brought to you by <span class="footer-text-span loveCraft">LoveCraft<span class="blue">.</span><span class="red">io</span></span> All rights reserved. 2017<br><span class="footer-text-span">Sabrina Theresa</span> Fashion
+                        <span class="footer-text-span">Sabrina Theresa</span> Fashion
                     </div>
+                    <div id="loveCraft">
+                        <span class="loveCraft"><span class="blue">Love</span><span class="red">Craft</span><span class="white">.io</span></span>
+                    </div>
+
                 </div>
             </div>
         </footer>
@@ -759,6 +641,14 @@
         <script src="assets/js/plugins.js" type="text/javascript"></script>
 
         <!-- Stem -->
+        <script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.2/ScrollMagic.min.js"></script>
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.1/TweenMax.min.js"></script>
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.3/plugins/animation.gsap.js"></script>
+
+
+
+
+
         <script src="assets/js/stem.js" type="text/javascript"></script>
 
         <!-- MAIN JS -->
