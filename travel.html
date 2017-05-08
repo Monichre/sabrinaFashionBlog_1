@@ -8,22 +8,23 @@
     <meta name="description" content="">
     <meta name="author" content="">
     <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
-    <title>Sabrina Smith Fashion</title>
+
+    <title>Theresa on the Town</title>
 
 
     <!-- BOOTSTRAP -->
-
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Icons -->
     <link rel="stylesheet" href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
 
-    <!-- FULLPAGE SCROLL  -->
 
-    <!-- Site Wide CSS -->
-    <link href="assets/css/hedone.css" rel="stylesheet" type="text/css"/>
 
     <!-- Map CSS  -->
     <link rel="stylesheet" type="text/css" href="map/css/map.css" />
+
+    <!-- Site Wide CSS -->
+    <link href="assets/css/hedone.css" rel="stylesheet" type="text/css"/>
 
 </head>
 
@@ -43,24 +44,22 @@
                                     </div>
                                     <div class="navbar-left social-nav">
                                         <ul class="list-inline">
+                                            <li><a href="index.html">
+                                                <!-- <img id="logo" src="assets/img/theresa-logo.png" alt=""> -->
+                                            </a></li>
                                             <li><a href="#"><i class="ion-social-facebook"></i></a></li>
                                             <li><a href="#"><i class="ion-social-instagram-outline"></i></a></li>
                                             <li><a href="#"><i class="ion-social-twitter"></i></a></li>
                                         </ul>
 
                                     </div>
-                                    <!-- SITE LOGO -->
-                                    <div class="site-branding">
-                                        <a href="index.html">
 
-                                        </a>
-                                    </div>
                                 </div>
                                 <!-- PRIMARY MENU -->
                                 <div id="Hedone" class="hedone-menu-container">
                                     <div class="navbar-right">
                                         <ul class="hedone-menu">
-                                            <li class="menu-item">
+                                            <li class="menu-item current-page-ancestor current-menu-ancestor current-menu-parent current-page-parent current_page_parent current_page_ancestor">
                                                 <a href="index.html">Home</a>
                                             </li>
 
@@ -69,18 +68,19 @@
                                             </li>
 
                                             <li class="menu-item">
-                                                <a href="#">Fashion & Style</a>
+                                                <a href="./fashion-style.html">Fashion & Style</a>
                                             </li>
-                                            <li class="menu-item current-page-ancestor current-menu-ancestor current-menu-parent current-page-parent current_page_parent current_page_ancestor">
+                                            <li class="menu-item">
                                                 <a href="./travel.html">Travel</a>
                                             </li>
                                             <li class="menu-item">
-                                                <a href="./health-wellness.html">Health & Wellness</a>
+                                                <a href="#">Health & Wellness</a>
                                             </li>
 
                                             <li class="menu-item">
                                                 <a href="#">contact</a>
                                             </li>
+
                                         </ul>
                                     </div>
                                 </div>
@@ -142,110 +142,119 @@
             <i class="menu-bar bottom"></i>
         </div>
 
-        <!-- city navigation -->
-        <div class="city-navigation-wrapper">
-            <nav>
-                <ul id="city-nav" class="city-navigation">
-                    <li data-menuanchor="venice-beach" class="active">
-                        <a href="#venice-beach">VB</a>
-                    </li>
-                    <li data-menuanchor="los-angeles" >
-                        <a href="#los-angeles">LA</a>
-                    </li>
-                    <li data-menuanchor="san-diego" >
-                        <a href="#san-diego">SD</a>
-                    </li>
-                </ul>
-            </nav>
+
+
+    </div>
+
+    <!-- city navigation -->
+    <div class="city-navigation-wrapper">
+        <nav>
+            <ul id="city-nav" class="city-navigation">
+                <li data-menuanchor="venice-beach" class="active">
+                    <a href="#venice-beach">VB</a>
+                </li>
+                <li data-menuanchor="los-angeles" >
+                    <a href="#los-angeles">LA</a>
+                </li>
+                <li data-menuanchor="san-diego" >
+                    <a href="#san-diego">SD</a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+
+    <div id="cities" class="main-wrapper">
+
+        <!-- VENICE BEACH -->
+        <div class="section city-wrapper venice-beach-wrapper" data-anchor="venice-beach">
+            <div class="container">
+                <div class="row">
+                    <div class="col-2">
+                        &nbsp;
+                    </div>
+                    <div class="col-8">
+                        <div class="city">
+                            <figure class="figure">
+                                <!-- class="img" id="venice-beach-cover" -->
+
+                                <img class="img" id="travel-1" src="assets/img/blog-post-1.jpeg" alt="">
+
+
+                            </figure>
+                            <div class="figcaption">
+                                <h3>Venice Beach</h3>
+                                            <span class="dates">
+                                                DAY  17 — 23
+                                            </span>
+                                <a class="view-more" href="#">View more</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-2">
+                        &nbsp;
+                    </div>
+                </div>
+            </div>
+
         </div>
 
-        <div id="cities" class="main-wrapper">
+        <!-- LOS ANGELES -->
+        <div class="section city-wrapper los-angeles-wrapper" data-anchor="los-angeles">
+            <div class="container">
+                <div class="row">
+                    <div class="col-2">
+                        &nbsp;
+                    </div>
+                    <div class="col-8">
+                        <div class="city">
+                            <figure class="figure">
+                                <!-- id="los-angeles-cover"  -->
+                                <img class="img" id="travel-2" src="assets/img/blog-post-2.jpg" alt="Blog Post">
 
-            <!-- VENICE BEACH -->
-            <div class="section city-wrapper venice-beach-wrapper" data-anchor="venice-beach">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-2">
-                            &nbsp;
-                        </div>
-                        <div class="col-8">
-                            <div class="city">
-                                <figure class="figure">
-                                    <img class="img" id="venice-beach-cover" src="http://truba.interaktivni-studio.com/iapps/state-of-cali/static/img/venice-beach.jpg" alt=""/>
-                                </figure>
-                                <div class="figcaption">
-                                    <h3>Venice Beach</h3>
-                                                <span class="dates">
-                                                    DAY  17 — 23
-                                                </span>
-                                    <a class="view-more" href="#">View more</a>
-                                </div>
+                            </figure>
+                            <div class="figcaption">
+                                <h3>Los Angeles</h3>
+                                            <span class="dates">
+                                                DAY  17 — 23
+                                            </span>
+                                <a class="view-more" href="#">View more</a>
                             </div>
                         </div>
-                        <div class="col-2">
-                            &nbsp;
-                        </div>
+                    </div>
+                    <div class="col-2">
+                        &nbsp;
                     </div>
                 </div>
-
             </div>
 
-            <!-- LOS ANGELES -->
-            <div class="section city-wrapper los-angeles-wrapper" data-anchor="los-angeles">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-2">
-                            &nbsp;
-                        </div>
-                        <div class="col-8">
-                            <div class="city">
-                                <figure class="figure">
-                                    <img class="img" id="los-angeles-cover" src="http://truba.interaktivni-studio.com/iapps/state-of-cali/static/img/los-angeles.jpg" alt=""/>
-                                </figure>
-                                <div class="figcaption">
-                                    <h3>Los Angeles</h3>
-                                                <span class="dates">
-                                                    DAY  17 — 23
-                                                </span>
-                                    <a class="view-more" href="#">View more</a>
-                                </div>
+        </div>
+
+        <!-- SAN DIEGO -->
+        <div class="section city-wrapper san-diego-wrapper" data-anchor="san-diego">
+            <div class="container">
+                <div class="row">
+                    <div class="col-2">
+                        &nbsp;
+                    </div>
+                    <div class="col-8">
+                        <div class="city">
+                            <figure class="figure">
+                                <!-- id="san-diego-cover"  -->
+                                <img class="img" id="travel-3" src="assets/img/blog-post-3.jpg" alt="Blog Post">
+                            </figure>
+                            <div class="figcaption">
+                                <h3>San Diego</h3>
+                                            <span class="dates">
+                                                DAY  17 — 23
+                                            </span>
+                                <a class="view-more" href="#">View more</a>
                             </div>
                         </div>
-                        <div class="col-2">
-                            &nbsp;
-                        </div>
+                    </div>
+                    <div class="col-2">
+                        &nbsp;
                     </div>
                 </div>
-
-            </div>
-
-            <!-- SAN DIEGO -->
-            <div class="section city-wrapper san-diego-wrapper" data-anchor="san-diego">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-2">
-                            &nbsp;
-                        </div>
-                        <div class="col-8">
-                            <div class="city">
-                                <figure class="figure">
-                                    <img class="img" id="san-diego-cover" src="http://truba.interaktivni-studio.com/iapps/state-of-cali/static/img/san-diego.jpg" alt=""/>
-                                </figure>
-                                <div class="figcaption">
-                                    <h3>San Diego</h3>
-                                                <span class="dates">
-                                                    DAY  17 — 23
-                                                </span>
-                                    <a class="view-more" href="#">View more</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-2">
-                            &nbsp;
-                        </div>
-                    </div>
-                </div>
-
             </div>
 
         </div>

@@ -262,8 +262,8 @@ body {
     height: 40px;
     background-color: $black-100;
     border-radius: 100%;
-    position: absolute;
-    left: 20px;
+    position: fixed;
+    right: 20px;
     top: 50%;
     margin-top: -20px;
     z-index: 5;
@@ -438,27 +438,9 @@ $typekit-fallbacks:  $arial;
 }
 
 //RESET
-html,body,input,button {
-    -webkit-text-size-adjust: none;
-    -webkit-font-smoothing: antialiased;
-    text-rendering: optimizeLegibility;
-}
 
-body,h1,h2,h3,h4,h5,h6,ul,ol,p,hr,form {
-    margin: 0px;
-    padding: 0px;
-    border: none;
-}
 
-html, body, body div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp, small, strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, figure, footer, header, menu, nav, section, time, mark, audio, video, details, summary {
-    margin: 0;
-    padding: 0;
-    border: 0;
-    font-size: 100%;
-    font-weight: normal;
-    vertical-align: baseline;
-    background: transparent;
-}
+
 
 //HTML5 fix
 section,nav,article,aside,header,footer,main,figure,figcaption { display: block; }
@@ -553,7 +535,11 @@ $maximum-columns:  12;       // set max number of columns
     @include border-box;
 }
 
-.row { @include row(); }
+#cities {
+    .row { @include row(); }
+}
+
+
 
 $i: 1;
 @while $i < ($maximum-columns + 1) {
@@ -584,14 +570,7 @@ $i: 1;
  * Copyright (C) 2013 alvarotrigo.com - A project by Alvaro Trigo
  *
  * ========================================================== */
-html, body {
-    overflow:hidden;
-    margin:0;
-    padding:0;
 
-    /*Avoid flicker on slides transitions for mobile phones #336 */
-    -webkit-tap-highlight-color: rgba(0,0,0,0);
-}
 .pp-section {
     height:100%;
     position:absolute;

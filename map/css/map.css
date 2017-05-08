@@ -184,8 +184,8 @@ body {
   height: 40px;
   background-color: black;
   border-radius: 100%;
-  position: absolute;
-  left: 20px;
+  position: fixed;
+  right: 20px;
   top: 50%;
   margin-top: -20px;
   z-index: 5;
@@ -211,25 +211,6 @@ body {
 /* TRANSITION */
 /*FONT SIZE - LINE HEIGHT EM*/
 /* TRANSFORM  */
-html, body, input, button {
-  -webkit-text-size-adjust: none;
-  -webkit-font-smoothing: antialiased;
-  text-rendering: optimizeLegibility; }
-
-body, h1, h2, h3, h4, h5, h6, ul, ol, p, hr, form {
-  margin: 0px;
-  padding: 0px;
-  border: none; }
-
-html, body, body div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp, small, strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, figure, footer, header, menu, nav, section, time, mark, audio, video, details, summary {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  font-size: 100%;
-  font-weight: normal;
-  vertical-align: baseline;
-  background: transparent; }
-
 section, nav, article, aside, header, footer, main, figure, figcaption {
   display: block; }
 
@@ -285,18 +266,18 @@ input:focus, textarea:focus, select:focus {
   -moz-box-sizing: border-box;
   box-sizing: border-box; }
 
-.row {
+#cities .row {
   width: 100%;
   max-width: 1170px;
   margin: 0 auto;
   zoom: 1;
   padding: 0; }
-  .row:before, .row:after {
+  #cities .row:before, #cities .row:after {
     content: "";
     display: table; }
-  .row:after {
+  #cities .row:after {
     clear: both; }
-  .row > div {
+  #cities .row > div {
     float: left;
     margin-right: gutter;
     -webkit-box-sizing: border-box;
@@ -444,13 +425,6 @@ input:focus, textarea:focus, select:focus {
  * Copyright (C) 2013 alvarotrigo.com - A project by Alvaro Trigo
  *
  * ========================================================== */
-html, body {
-  overflow: hidden;
-  margin: 0;
-  padding: 0;
-  /*Avoid flicker on slides transitions for mobile phones #336 */
-  -webkit-tap-highlight-color: transparent; }
-
 .pp-section {
   height: 100%;
   position: absolute;
