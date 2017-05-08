@@ -3327,8 +3327,8 @@ body.logged-in .YouTubePopUp-Wrap{ /* For WordPress */
     top: 0;
     left: 0;
     width: 100%;
-    padding-top: 30px;
-    padding-bottom: 30px;
+    /*padding-top: 30px;
+    padding-bottom: 30px;*/
     background-color: hsla(0, 0%, 100%, .93);
     z-index: 1000;
 }
@@ -3436,7 +3436,7 @@ ul.hedone-menu > li{
 }
 ul.hedone-menu a{
     display: block;
-    padding: 12px 15px;
+    padding: 12px 15px 5px;
 }
 ul.hedone-menu a i {
     cursor: pointer;
@@ -3535,8 +3535,8 @@ ul.hedone-menu > li > ul.sub-menu li a:hover{
         top: 0;
         left: 0;
         width: 100%;
-        padding-top: 30px;
-        padding-bottom: 30px;
+        /*padding-top: 30px;*/
+        /*padding-bottom: 30px;*/
         background-color: hsla(0, 0%, 100%, .93);
         z-index: 1000;
     }
