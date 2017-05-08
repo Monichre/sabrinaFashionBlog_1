@@ -1274,6 +1274,14 @@ blockquote {
  .section-header:hover .sub-header-underline-small {
      width: 160px;
  }
+ .travel-header {
+     /*color: #fff;*/
+     position: relative;
+     z-index: 5;
+ }
+ .travel-header .head-subtitle {
+     /*color: #fff;*/
+ }
 
 
  .profile-wrap {
@@ -2837,43 +2845,7 @@ a.lightbox-map{
     -webkit-transform: translate(-50%,-50%);
     transform: translate(-50%,-50%);
 }
-.map-overlay {
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: 99996;
-    background-color: rgba(0,0,0,0.5);
-    width: 100%;
-    height: 100%;
-    display: none;
-}
-.map-overlay-bg {
-    background-color: transparent;
-    width: 100%;
-    height: 100%;
-    z-index: 99998;
-}
-.google-maps {
-    position: absolute;
-    width: 65%;
-    height: 80%;
-    left: 50%;
-    top: 10%;
-    overflow: hidden;
-    z-index: 99997;
-    border: 10px solid #000;
-    border-radius: 15px;
-    box-shadow: 0 0 17px rgba(0,0,0,5);
-    -webkit-transform: translate(-50%,0);
-    transform: translate(-50%,0);
-}
-.google-maps iframe {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100% !important;
-    height: 100% !important;
-}
+
 /*
  * 21.FULLSCREEN HOMEPAGE
  */

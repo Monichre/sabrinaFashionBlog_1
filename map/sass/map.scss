@@ -1,0 +1,873 @@
+//FONT IMPORT
+@import url(https://fonts.googleapis.com/css?family=Raleway:400,900);
+//VARIABLES
+//Black
+$black-100: rgba(0,0,0,1);
+$black-90: rgba(0,0,0,0.9);
+$black-80: rgba(0,0,0,0.8);
+$black-70: rgba(0,0,0,0.7);
+$black-60: rgba(0,0,0,0.6);
+$black-50: rgba(0,0,0,0.5);
+$black-40: rgba(0,0,0,0.4);
+$black-30: rgba(0,0,0,0.3);
+$black-20: rgba(0,0,0,0.2);
+$black-10: rgba(0,0,0,0.1);
+//White
+$white-100: rgba(255,255,255,1);
+$white-90: rgba(255,255,255,0.9);
+$white-80: rgba(255,255,255,0.8);
+$white-70: rgba(255,255,255,0.7);
+$white-60: rgba(255,255,255,0.6);
+$white-50: rgba(255,255,255,0.5);
+$white-40: rgba(255,255,255,0.4);
+$white-30: rgba(255,255,255,0.3);
+$white-20: rgba(255,255,255,0.2);
+$white-10: rgba(255,255,255,0.1);
+//Invisible
+$transparent: rgba(255,255,255,0); //
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #ffffff;
+    font-family: 'Raleway', sans-serif;
+    text-align: left;
+    font-size: 15px;
+    line-height: 1.4em;
+    position: relative;
+    height: 100vh;
+    width: 100%;
+}
+
+.map-wrapper {
+    width: 100%;
+    height: 100vh;
+}
+
+.map {
+    width: 100%;
+    position: relative;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    background: url("../../assets/img/nyc-color.png");
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+.map-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    z-index: 0;
+}
+
+.hello-message,
+.map-logo {
+    width: 240px;
+    height: 60px;
+    font-weight: 900;
+    font-size: 24px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -30px;
+    margin-left: -120px;
+    text-align: center;
+    z-index: 2;
+}
+
+.borrough-header {
+    display: inline-block;
+    margin: 0 auto;
+    color: #fff;
+    padding: 3px 25px;
+    position: absolute!important;
+    top: 50%;
+    left: 30%;
+    margin-top: 10px;
+    margin-left: -50px;
+    text-align: center;
+    z-index: 2;
+    cursor: pointer;
+    opacity: 0;
+    visibility: hidden;
+    cursor: pointer;
+
+    .head-subtitle {
+        color: #fff;
+    }
+
+    .head-h3 {}
+}
+
+.logo-line,
+.logo-line-loader {
+    position: absolute;
+    bottom: 25px;
+    left: 17%;
+    height: 4px;
+    width: 66%;
+    background-color: $black-20;
+    opacity: 0;
+}
+
+.logo-line-loader {
+    background-color: #ba2424;
+    width: 0;
+    bottom: 0;
+    left: 0;
+    opacity: 1;
+}
+
+.map-pin {
+    position: absolute;
+    display: block;
+    height: 10px;
+    width: 10px;
+    top: 50%;
+    left: 10%;
+    background-color: #fff;
+    border-radius: 100%;
+    opacity: 0;
+
+    &.pin-1 {}
+
+    &.pin-2 {
+        top: 60%;
+        left: 30%;
+    }
+
+    &.pin-3 {
+        top: 68%;
+        left: 62%;
+    }
+
+    &.pin-4 {
+        top: 50%;
+        left: 80%;
+    }
+
+    &.pin-5 {
+        top: 57%;
+        left: 76%;
+    }
+}
+
+.pulse {
+    border: 5px solid #fff;
+    background: transparent;
+    -webkit-border-radius: 60px;
+    -moz-border-radius: 60px;
+    border-radius: 60px;
+    height: 50px;
+    width: 50px;
+    -webkit-animation: pulse 3s ease-out;
+    -moz-animation: pulse 3s ease-out;
+    animation: pulse 3s ease-out;
+    -webkit-animation-iteration-count: infinite;
+    -moz-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+    position: absolute;
+    top: -20px;
+    left: -20px;
+    z-index: 5;
+    opacity: 0;
+}
+@-moz-keyframes pulse {
+    0% {
+        -moz-transform: scale(0);
+        opacity: 0.0;
+    }
+
+    25% {
+        -moz-transform: scale(0);
+        opacity: 0.1;
+    }
+
+    50% {
+        -moz-transform: scale(0.1);
+        opacity: 0.3;
+    }
+
+    75% {
+        -moz-transform: scale(0.5);
+        opacity: 0.5;
+    }
+
+    100% {
+        -moz-transform: scale(1);
+        opacity: 0.0;
+    }
+}
+
+@-webkit-keyframes "pulse" {
+    0% {
+        -webkit-transform: scale(0);
+        opacity: 0.0;
+    }
+
+    25% {
+        -webkit-transform: scale(0);
+        opacity: 0.1;
+    }
+
+    50% {
+        -webkit-transform: scale(0.1);
+        opacity: 0.3;
+    }
+
+    75% {
+        -webkit-transform: scale(0.5);
+        opacity: 0.5;
+    }
+
+    100% {
+        -webkit-transform: scale(1);
+        opacity: 0.0;
+    }
+}
+
+.button {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    background-color: $black-100;
+    color: $white-100;
+    text-align: center;
+    padding: 5px 15px;
+    transition: 0.25s all ease-in-out;
+    z-index: 3;
+    cursor: pointer;
+
+    &:hover {
+        background-color: $black-80;
+    }
+
+    &.button-restart {
+        visibility: hidden;
+        opacity: 0;
+    }
+}
+
+.menu {
+    display: block;
+    width: 40px;
+    height: 40px;
+    background-color: $black-100;
+    border-radius: 100%;
+    position: absolute;
+    left: 20px;
+    top: 50%;
+    margin-top: -20px;
+    z-index: 5;
+    opacity: 0;
+    cursor: pointer;
+
+    &:hover {
+        background-color: $black-80;
+    }
+}
+
+.menu-bar {
+    position: absolute;
+    display: block;
+    width: 20px;
+    height: 1px;
+    background-color: $white-100;
+    top: 20px;
+    left: 10px;
+
+    &.top {
+        top: 16px;
+    }
+
+    &.middle {}
+
+    &.bottom {
+        top: 24px;
+    }
+}
+
+// Map / Travel Blog Post Preview Section Styles
+
+//VARIABLES
+//Black
+$black-100: 	rgba(0,0,0,1);
+$black-90: 		rgba(0,0,0,0.9);
+$black-80: 		rgba(0,0,0,0.8);
+$black-70: 		rgba(0,0,0,0.7);
+$black-60: 		rgba(0,0,0,0.6);
+$black-50: 		rgba(0,0,0,0.5);
+$black-40: 		rgba(0,0,0,0.4);
+$black-30: 		rgba(0,0,0,0.3);
+$black-20: 		rgba(0,0,0,0.2);
+$black-10: 		rgba(0,0,0,0.1);
+
+//White
+$white-100: 	rgba(255,255,255,1);
+$white-90: 		rgba(255,255,255,0.9);
+$white-80: 		rgba(255,255,255,0.8);
+$white-70: 		rgba(255,255,255,0.7);
+$white-60: 		rgba(255,255,255,0.6);
+$white-50: 		rgba(255,255,255,0.5);
+$white-40: 		rgba(255,255,255,0.4);
+$white-30: 		rgba(255,255,255,0.3);
+$white-20: 		rgba(255,255,255,0.2);
+$white-10: 		rgba(255,255,255,0.1);
+
+//TRANSPARENT
+$transparent: 		rgba(255,255,255,0);
+
+//State of Cali colors
+$gold: rgba(183, 135, 39, 1);
+
+$hover: all, 0.25s, cubic-bezier(0.62,0.28,0.23,0.99);
+$hover-slow: all, 0.5s, cubic-bezier(0.62,0.28,0.23,0.99);
+$slide: all, 0.75s, cubic-bezier(0.62,0.28,0.23,0.99);
+$slide-slow: all, 1s, cubic-bezier(0.62,0.28,0.23,0.99);
+
+//z-indexes
+
+$city-image: 1;
+$city-caption: 2;
+$navigation: 10;
+
+
+//MIXINS
+@mixin border-box {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+/* ADDS A BROWSER PREFIX TO THE PROPERTY */
+@mixin css3-prefix($property, $value) {
+    -webkit-#{$property}: #{$value};
+    -khtml-#{$property}: #{$value};
+    -moz-#{$property}: #{$value};
+    -ms-#{$property}: #{$value};
+    -o-#{$property}: #{$value};
+    #{$property}: #{$value};
+}
+/* TRANSITION */
+@mixin transition($what: all, $length: 1s, $easing: ease-in-out) {
+    @include css3-prefix('transition', $what $length $easing);
+}
+
+//Sass Mixin for typekit variation-specific font-family names
+//Typekit IE6-8 Support (http://help.typekit.com/customer/portal/articles/6855-Using-multiple-weights-and-styles)
+
+//Based on https://gist.github.com/plapier/3988984
+
+$arial: Arial, sans-serif;
+$georgia: Georgia, "Times New Roman", serif;
+
+// Must include fallbacks for EACH typekit font — set them each as variables
+//************************************************************************//
+$typekit-fonts:     ' ', ' ';  // index [1, 2]
+$typekit-fallbacks:  $arial;
+
+@mixin font($weight: 400, $style: normal, $font: 1) {
+    $font-weight: $weight;
+    $font-style:  $style;
+
+    // Translate Weight
+    @if ($weight == 100) or ($weight == thin) or ($weight == ultralight) {
+        $weight: 1;
+    }
+    @if ($weight == 200) or ($weight == extralight) {
+        $weight: 2;
+    }
+    @if ($weight == 300) or ($weight == light) {
+        $weight: 3;
+    }
+    @if ($weight == 400) or ($weight == normal) or ($weight == regular) {
+        $weight: 4;
+    }
+    @if ($weight == 500) or ($weight == medium) {
+        $weight: 5;
+    }
+    @if ($weight == 600) or ($weight == semibold) or ($weight == demi) {
+        $weight: 6;
+    }
+    @if ($weight == 700) or ($weight == bold) {
+        $weight: 7;
+    }
+    @if ($weight == 800) or ($weight == extrabold) {
+        $weight: 8;
+    }
+    @if ($weight == 900) or ($weight == black) or ($weight == heavy) {
+        $weight: 9;
+    }
+
+    // Translate Style
+    @if $style == normal {
+        $style: n;
+    }
+    @else if $style == italic {
+        $style: i;
+    }
+
+    // Assemble $font-family
+    $primary-font:   nth($typekit-fonts, $font) + "-" + $style + $weight;
+    $secondary-font: nth($typekit-fonts, $font);
+    $fallback-fonts: nth($typekit-fallbacks, $font);
+    $font-family:    quote($primary-font), quote($secondary-font), $fallback-fonts;
+
+    font-family: $font-family;
+    font-style:  $font-style;
+    font-weight: $font-weight;
+}
+
+
+/*FONT SIZE - LINE HEIGHT EM*/
+@mixin font-size($psd-font-size, $psd-line-height: $psd-font-size) {
+    font-size: $psd-font-size;
+    line-height: ($psd-line-height)/$psd-font-size;
+}
+
+/* TRANSFORM  */
+@mixin transform($params) {
+    @include css3-prefix('transform', $params);
+}
+
+//RESET
+html,body,input,button {
+    -webkit-text-size-adjust: none;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+}
+
+body,h1,h2,h3,h4,h5,h6,ul,ol,p,hr,form {
+    margin: 0px;
+    padding: 0px;
+    border: none;
+}
+
+html, body, body div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp, small, strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, figure, footer, header, menu, nav, section, time, mark, audio, video, details, summary {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font-weight: normal;
+    vertical-align: baseline;
+    background: transparent;
+}
+
+//HTML5 fix
+section,nav,article,aside,header,footer,main,figure,figcaption { display: block; }
+
+hr          { float: left; width: 100%; height: 1px; }
+ul,ol       { list-style: none; }
+
+//text selection
+::selection { background: rgba(255,255,255,0); color: $gold; }
+::-moz-selection { background: rgba(255,255,255,0); color: $gold; }
+
+//inputs
+input { width: auto; }
+input[type="text"],
+input[type="password"],
+input[type="email"],
+textarea {
+    width: 100%;
+    float: left;
+    margin: 0px;
+    padding: 0px;
+    border: none;
+
+    //You can easily use border without messing up the layout with this
+    @include border-box();
+}
+textarea { resize: vertical; }
+input:focus, textarea:focus, select:focus { outline: none; }
+
+*:before, *:after, * {
+    @include border-box();
+}
+//GRID
+/*GRID*/
+$max-width:        1170px; // set page max-width
+$column-width:     5.9829%;    // set column width
+$gutter-width:     2.5641%;     // set gutter width
+$maximum-columns:  12;       // set max number of columns
+
+@mixin clearfix {
+    zoom: 1;
+
+    &:before, &:after {
+        content: "";
+        display: table;
+    }
+
+    &:after {
+        clear: both;
+    }
+}
+
+@mixin border-box {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+@function columns($columns, $container-columns: $maximum-columns) {
+    $width: $columns * $column-width;
+    $container-width: $container-columns * $column-width;
+    @return percentage($width / $container-width);
+}
+
+@function gutter($container-columns: $maximum-columns, $gutter: $gutter-width) {
+    $container-width: $container-columns * $column-width + ($container-columns - 1) * $gutter-width;
+    @return percentage($gutter / $container-width);
+}
+
+@mixin nesting {
+    padding: 0; // no padding so nested elements fit
+
+    & > div { // affect only immediate children
+        float: left;
+        margin-right: gutter;
+        @include border-box; // math is hard. let’s use border-box
+    }
+}
+
+@mixin row {
+    width: 100%; // make sure to fill its container
+    max-width: $max-width; // but no more than our max width
+    margin: 0 auto;
+    @include clearfix; // clear our floats
+    @include nesting; // add nesting styles to rows
+}
+
+.container {
+    margin-left: auto;
+    margin-right: auto;
+    width: $max-width;
+    @include border-box;
+}
+
+.row { @include row(); }
+
+$i: 1;
+@while $i < ($maximum-columns + 1) {
+    .col-#{$i} {
+        width: columns($i);
+        padding-left: gutter();
+        padding-right: gutter();
+
+      /*HELP CLASS to disable left gutter*/
+        &.p-l-0 {
+            padding-left: 0;
+        }
+      /*HELP CLASS to disable right gutter*/
+        &.p-r-0 {
+            padding-right: 0;
+        }
+    }
+    $i: $i + 1;
+}
+
+
+/* ===========================================================
+ * pagepiling.js 1.5
+ *
+ * https://github.com/alvarotrigo/fullPage.js
+ * MIT licensed
+ *
+ * Copyright (C) 2013 alvarotrigo.com - A project by Alvaro Trigo
+ *
+ * ========================================================== */
+html, body {
+    overflow:hidden;
+    margin:0;
+    padding:0;
+
+    /*Avoid flicker on slides transitions for mobile phones #336 */
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+}
+.pp-section {
+    height:100%;
+    position:absolute;
+    width:100%;
+}
+.pp-easing {
+    @include transition(all, 1.25s, cubic-bezier(0.62,0.28,0.23,0.99));
+    /* custom */
+    -webkit-transition-timing-function: cubic-bezier(0.550, 0.085, 0.000, 0.990);
+    -moz-transition-timing-function: cubic-bezier(0.550, 0.085, 0.000, 0.990);
+    -o-transition-timing-function: cubic-bezier(0.550, 0.085, 0.000, 0.990);
+    transition-timing-function: cubic-bezier(0.550, 0.085, 0.000, 0.990);
+    /* custom */
+}
+#pp-nav {
+    position: fixed;
+    z-index: 100;
+    margin-top: -32px;
+    top: 50%;
+    opacity: 1;
+}
+#pp-nav.right {
+    right: 17px;
+}
+#pp-nav.left {
+    left: 17px;
+}
+.pp-section.pp-table{
+    display: table;
+}
+.pp-tableCell {
+    display: table-cell;
+    vertical-align: middle;
+    width: 100%;
+    height: 100%;
+}
+.pp-slidesNav{
+    position: absolute;
+    z-index: 4;
+    left: 50%;
+    opacity: 1;
+}
+.pp-slidesNav.bottom {
+    bottom: 17px;
+}
+.pp-slidesNav.top {
+    top: 17px;
+}
+#pp-nav ul,
+.pp-slidesNav ul {
+    margin: 0;
+    padding: 0;
+}
+#pp-nav li,
+.pp-slidesNav li {
+    display: block;
+    width: 14px;
+    height: 13px;
+    margin: 7px;
+    position:relative;
+}
+.pp-slidesNav li {
+    display: inline-block;
+}
+#pp-nav li a,
+.pp-slidesNav li a {
+    display: block;
+    position: relative;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+    text-decoration: none;
+}
+#pp-nav li .active span,
+.pp-slidesNav .active span {
+    background: $black-100;
+}
+#pp-nav span,
+.pp-slidesNav span {
+    top: 2px;
+    left: 2px;
+    width: 8px;
+    height: 8px;
+    border: 1px solid $black-10;
+    background: rgba(0, 0, 0, 0);
+    border-radius: 50%;
+    position: absolute;
+    z-index: 1;
+}
+.pp-tooltip {
+    position: absolute;
+    top: -2px;
+    color: #fff;
+    font-size: 14px;
+    font-family: arial, helvetica, sans-serif;
+    white-space: nowrap;
+    max-width: 220px;
+}
+.pp-tooltip.right {
+    right: 20px;
+}
+.pp-tooltip.left {
+    left: 20px;
+}
+.pp-scrollable{
+    overflow-y: scroll;
+    height: 100%;
+}
+
+//GENERAL STUFF
+a {
+  text-decoration: none;
+}
+
+/*CITY NAVIGATION*/
+.city-navigation-wrapper {
+    position: fixed;
+    top: 50%;
+    left: 50px;
+    margin-top: -90px;
+    z-index: $navigation;
+    nav {
+
+    }
+
+    ul {
+        li {
+            a {
+                font-family: $georgia;
+                color: $black-50;
+                @include font-size(10px, 55px);
+                position: relative;
+                display: block;
+                width: 55px;
+                height: 45px;
+                text-align: center;
+                &:before {
+                    content: "";
+                    right: 100%;
+                    opacity: 0;
+                    top: 27px;
+                    width: 0;
+                    height: 1px;
+                    background-color: $black-100;
+                    position: absolute;
+                    @include transition($hover-slow);
+                }
+
+            }
+            &.active {
+                a {
+                    color: $black-100;
+                    &:before {
+                        opacity: 1;
+                        width: 45px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+/*CITY WRAPPER*/
+.city-wrapper {
+    background: $white-100;
+    &:before {
+        content: "";
+        height: 12px;
+        width: 1px;
+        background-color: $black-100;
+        position: absolute;
+        top: 1px;
+        left: 50%;
+        display: block;
+        @include transition($hover-slow);
+    }
+
+    &:after {
+        content: "";
+        height: 12px;
+        width: 1px;
+        background-color: $black-100;
+        position: absolute;
+        bottom: 1px;
+        left: 50%;
+        display: block;
+        @include transition($hover-slow);
+    }
+
+    &.venice-beach-wrapper {
+
+    }
+
+    &.los-angeles-wrapper {
+
+    }
+
+    &.san-diego-wrapper {
+
+    }
+
+    &.active {
+        .figure {
+            opacity: 1;
+            padding-top: 18%;
+            padding-bottom: 18%;
+            .img {
+                @include transform(translateX(-50%) translateY(-50%));
+            }
+        }
+        .figcaption {
+            top: 68%;
+            opacity: 1;
+            h3 {
+                line-height: 1.3em;
+            }
+        }
+        &:before {
+            opacity: 1;
+            height: 62px;
+        }
+        &:after {
+            opacity: 1;
+            height: 62px;
+        }
+    }
+}
+
+
+.city {
+    position: relative;
+    figure {
+        overflow: hidden;
+        height: 0;
+        padding-top: 14%;
+        padding-bottom: 14%;
+        opacity: 0;
+        position: relative;
+        text-align: center;
+        z-index: $city-image;
+        @include transition($hover-slow);
+        img {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            @include transform(translateX(-50%) translateY(5%));
+            @include transition($slide-slow);
+        }
+    }
+    .figcaption {
+        position: absolute;
+        text-align: center;
+        top: 48%;
+        opacity: 0;
+        left: 0;
+        width: 100%;
+        z-index: $city-caption;
+        @include transition($slide-slow);
+        h3 {
+            font-family: $georgia;
+            color: $black-100;
+            font-size: 116px;
+            line-height: 0.8em;
+            @include transition($slide-slow);
+        }
+        .dates {
+            display: block;
+            font-family: $arial;
+            @include font-size(10px, 37px);
+        }
+        .view-more {
+            font-family: $georgia;
+            color: $black-100;
+            font-style: italic;
+            @include font-size(12px, 37px);
+        }
+    }
+}
