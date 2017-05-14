@@ -1,16 +1,7 @@
-@font-face {
-	font-weight: normal;
-	font-style: normal;
-	font-family: 'icomoon';
-	src:url('../fonts/icomoon/icomoon.eot?-ee0u0f');
-	src:url('../fonts/icomoon/icomoon.eot?#iefix-ee0u0f') format('embedded-opentype'),
-		url('../fonts/icomoon/icomoon.woff?-ee0u0f') format('woff'),
-		url('../fonts/icomoon/icomoon.ttf?-ee0u0f') format('truetype'),
-		url('../fonts/icomoon/icomoon.svg?-ee0u0f#icomoon') format('svg');
-}
 
 html, body, .container, .header {
 	height: 100%;
+	color: #333;
 }
 
 /* Header */
@@ -56,23 +47,25 @@ html, body, .container, .header {
 
 .title h1 {
 	padding: 0 0 0.2em;
-	color: #fff;
+	font-family: 'Fjalla One', sans-serif;
 	font-weight: 800;
 	font-size: 3.25em;
 	margin: 0 auto;
 }
 
-.title p {
-	color: #fff;
-	padding: 0 0 0.6em;
-	font-weight: 300;
-	font-size: 0.85em;
-	margin: 0 auto;
-}
 
 .title h1,
 .title p.subline {
 	line-height: 1;
+}
+
+p {
+	font-family: "Lato", sans-serif;
+    color: #333;
+    font-size: 16px;
+    line-height: 23px;
+    font-weight: 300;
+    letter-spacing: 1px;
 }
 
 .title p.subline {
@@ -115,7 +108,7 @@ button.trigger::before {
 	left: -100%;
 	padding: 0.8em;
 	width: 300%;
-	color: #fff;
+	color: #333;
 	content: attr(data-info);
 	font-size: 0.35em;
 	-webkit-backface-visibility: hidden;
@@ -137,11 +130,12 @@ button.trigger span {
 button.trigger span::before {
 	position: absolute;
 	top: 0;
-	left: 0;
+	left: 20%;
+
 	width: 100%;
 	height: 100%;
-	color: #fff;
-	content: "\e097";
+	color: #333;
+	content: "\2193";
 	text-transform: none;
 	font-weight: normal;
 	font-style: normal;
@@ -159,22 +153,18 @@ button.trigger span::before {
 	padding: 0 0 3em;
 }
 
-.content > div:not(.title) {
+/*.content > div:not(.title) {
 	margin: -80px auto 0;
 	max-width: 900px;
 	padding: 0 1.25em;
-}
+}*/
 
-.content > div:not(.title) p {
+/*.content > div:not(.title) p {
 	margin: 0 auto 1.5em auto;
-}
-
-.content > div:not(.title) p:first-child {
-	font-size: 1.35em;
-}
+}*/
 
 .content h3 {
-	margin: 0;
+
 	font-size: 1.4em;
 }
 
@@ -182,7 +172,7 @@ button.trigger span::before {
 	padding: 0.25em;
 	font-style: italic;
 	font-size: 1.65em;
-	font-family: 'Lora', serif;
+
 	line-height: 1.4;
 }
 
@@ -286,11 +276,11 @@ button.trigger span::before {
 }
 
 .intro-effect-jam3.modify .header h1 {
-	color: #514753;
+
 }
 
 .intro-effect-jam3 .header p {
-	color: #514753;
+
 	opacity: 0;
 	-webkit-transform: translateY(150px);
 	transform: translateY(150px);
@@ -324,7 +314,7 @@ button.trigger span::before {
 }
 
 .intro-effect-jam3.modify .codrops-top a {
-	color: #514753;
+
 }
 
 /* Delays */
@@ -796,7 +786,7 @@ button.trigger span::before {
 }
 
 .intro-effect-sidefixed .bg-img::after {
-	background: #f8ebda;
+	background: #fff;
 	top: 0;
 	right: 0;
 	width: 60%;
@@ -817,7 +807,7 @@ button.trigger span::before {
 }
 
 .intro-effect-sidefixed.modify .bg-img::before {
-	background-color: rgba(247,214,169,0.4);
+	background-color: rgba(0,0,0,0.4);
 }
 
 .intro-effect-sidefixed .codrops-demos a {
@@ -839,10 +829,10 @@ button.trigger span::before {
 }
 
 .intro-effect-sidefixed .title h1 {
-	font-family: 'Playfair Display', serif;
-	font-weight: 700;
+	/*font-family: 'Playfair Display', serif;*/
+	/*font-weight: 700;*/
 	padding: 0 0 0.5em 0;
-	color: #585a66;
+	/*color: #585a66;*/
 }
 
 .intro-effect-sidefixed .title p {
@@ -863,7 +853,7 @@ button.trigger span::before {
 .intro-effect-sidefixed .content div {
 	position: relative;
 	margin: 70px 0;
-	color: #77726b;
+
 }
 
 .intro-effect-sidefixed .content div:nth-child(2) {

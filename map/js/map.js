@@ -3,15 +3,15 @@ var $mapOverlay = $('.map-overlay');
 var $logo = $('.map-logo');
 var $logoLine = $('.logo-line');
 var $logoLineLoader = $('.logo-line-loader');
+var $travelBlog = $('#travel-blog');
 
-var $helloMessage = $('.hello-message');
+
 var $mapPin = $('.map-pin');
 
 var $menu = $('.menu');
 
 var $button = $('.travel-header');
-var $restart = $('.button-restart');
-// var $explore = $('.explore');
+
 var $borrough = $('.borrough-header');
 
 //TIMELINE
@@ -24,8 +24,8 @@ var timelineClose = new TimelineMax({
     paused: true
 });
 
-TweenMax.set("#hello", {
-    perspective: 1000
+TweenMax.set($travelBlog, { // Dont know what Im doing with this yet, I need to animate the blog portion itself
+
 });
 
 timeline.add(function() {
@@ -42,26 +42,7 @@ timeline.add(function() {
         ease: Power4.easeOut
     }, "loading")
     .add("loadMap")
-    .to($logo, 0.8, {
-        autoAlpha: 0,
-        y: -30,
-        ease: Back.easeInOut
-    }, "preloadMap")
-    .fromTo($helloMessage, 1, {
-        y: -30,
-        autoAlpha: 0
-    }, {
-        y: 0,
-        autoAlpha: 1,
-        delay: 0.6,
-        ease: Back.easeInOut
-    }, "preloadMap")
 
-    .add("loadMap")
-    .to($helloMessage, 0.8, {
-        y: -50,
-        ease: Power4.easeInOut
-    }, "loadMap")
     .to($mapOverlay, 0.8, {
         autoAlpha: 0,
         ease: Power4.easeInOut
@@ -109,10 +90,8 @@ timelineClose.add(function() {
         scale: 1,
         delay: 0.8,
         ease: Elastic.easeOut
-    }, "closeMap")
-    .to($restart, 0.2, {
-        autoAlpha: 1
-    });
+    }, "closeMap");
+
 
 //PLAY ON CLICK
 $button.on('click', function() {
@@ -124,15 +103,9 @@ $button.on('click', function() {
 
 $mapPin.on('click', function() {
     timelineClose.play();
+    $travelBlog.fadeIn(1000);
 });
 
-$restart.on('click', function() {
-    timeline.restart().pause();
-    timelineClose.restart().pause();
-    TweenMax.to($button, 0.2, {
-        autoAlpha: 1
-    });
-});
 
 $menu.on('click', function() {
     if ($(this).attr('data-toggle') == 'closed') {
@@ -141,6 +114,8 @@ $menu.on('click', function() {
         timelineClose.play();
     }
 });
+
+// Blog Scroll Functionality
 
 /* ===========================================================
  * pagepiling.js 1.5.1

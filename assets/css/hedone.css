@@ -65,7 +65,7 @@ body.royal_preloader {
     visibility: hidden;
 }
 #logo {
-    margin-top: -20px;
+    height: 100px;
 }
 #royal_preloader {
     visibility: visible;
@@ -974,7 +974,7 @@ blockquote {
 }
 
 
-#home-page-blog {
+#home-page-blog, #contact {
     background-image: url(../img/nyc-bw.png);
     background-position: center;
     background-size: cover;
@@ -983,7 +983,7 @@ blockquote {
     border-bottom: 10px solid #fff;
 
 }
-#home-page-blog .overlay-bg {
+#home-page-blog .overlay-bg, #contact .overlay-bg {
     position: absolute;
     top: 0;
     left: 0;
@@ -1275,9 +1275,15 @@ blockquote {
      width: 160px;
  }
  .travel-header {
-     /*color: #fff;*/
+     top: 20%;
      position: relative;
      z-index: 5;
+     padding: 0!important;
+ }
+ .travel-header img {
+     display: block;
+     margin: auto;
+     cursor: pointer;
  }
  .travel-header .head-subtitle {
      /*color: #fff;*/
@@ -1556,7 +1562,7 @@ font-family: 'Rubik', sans-serif;*/
 
     font-family: "Montserrat", sans-serif;
     color: rgba(0, 0, 0, .15);
-    font-size: 33px;
+    font-size: 25px;
     font-style: normal;
     font-weight: 700;
     text-align: center;
@@ -3852,6 +3858,30 @@ ul.hedone-menu > li > ul.sub-menu li a:hover{
     border-right: 2px solid #333;
     position: relative;
 }
+.left .post-content .entry-content .date {
+    float: left;
+    padding: 10px;
+}
+.left .post-content .entry-content p {
+    float: left;
+
+}
+
+/*----------------
+    Float right Styles
+------------------------------*/
+
+.right .post-content .entry-content .date {
+    float: right;
+    padding: 10px;
+}
+.right .post-content .entry-content p {
+    clear: both;
+    float: right;
+
+}
+
+
 .border-span {
     position: absolute;
     height: 2px;
@@ -4000,7 +4030,7 @@ ul.hedone-menu > li > ul.sub-menu li a:hover{
 /*Blog Header SAmple CSS*/
 span.blog-head {
     font-family: "Fjalla One";
-    font-size: 48px;
+    font-size: 38px;
     line-height: 56px;
     font-weight: 700;
     position: relative;
@@ -4018,7 +4048,7 @@ span.blog-head.dash {
 }
 
 .month {
-    font-size: 40px;
+    font-size: 35px;
     line-height: 56px;
     font-weight: 700;
     letter-spacing: 0;

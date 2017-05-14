@@ -22,8 +22,8 @@ body {
   top: 0;
   left: 0;
   height: 100vh;
-  background: url("../../assets/img/nyc-color.png");
-  background-size: cover;
+  background: url("../../assets/img/world-map.jpg");
+  background-size: contain;
   background-position: center center;
   background-repeat: no-repeat; }
 
@@ -57,7 +57,7 @@ body {
   padding: 3px 25px;
   position: absolute !important;
   top: 50%;
-  left: 30%;
+  left: 50%;
   margin-top: 10px;
   margin-left: -50px;
   text-align: center;
@@ -93,7 +93,7 @@ body {
   width: 10px;
   top: 50%;
   left: 10%;
-  background-color: #fff;
+  background-color: #ba2424;
   border-radius: 100%;
   opacity: 0; }
   .map-pin.pin-2 {
@@ -110,7 +110,7 @@ body {
     left: 76%; }
 
 .pulse {
-  border: 5px solid #fff;
+  border: 5px solid #ba2424;
   background: transparent;
   -webkit-border-radius: 60px;
   -moz-border-radius: 60px;
@@ -180,38 +180,34 @@ body {
 
 .menu {
   display: block;
-  width: 40px;
-  height: 40px;
-  background-color: black;
-  border-radius: 100%;
+  width: 100px;
+  height: 100px;
   position: fixed;
-  right: 20px;
+  right: 100px;
   top: 50%;
   margin-top: -20px;
   z-index: 5;
   opacity: 0;
   cursor: pointer; }
-  .menu:hover {
-    background-color: rgba(0, 0, 0, 0.8); }
-
-.menu-bar {
-  position: absolute;
-  display: block;
-  width: 20px;
-  height: 1px;
-  background-color: white;
-  top: 20px;
-  left: 10px; }
-  .menu-bar.top {
-    top: 16px; }
-  .menu-bar.bottom {
-    top: 24px; }
+  .menu #compassNav {
+    height: 100%;
+    width: 100%;
+    position: relative;
+    z-index: 5; }
 
 /* ADDS A BROWSER PREFIX TO THE PROPERTY */
 /* TRANSITION */
 /*FONT SIZE - LINE HEIGHT EM*/
 /* TRANSFORM  */
-section, nav, article, aside, header, footer, main, figure, figcaption {
+article,
+aside,
+figcaption,
+figure,
+footer,
+header,
+main,
+nav,
+section {
   display: block; }
 
 hr {
@@ -219,7 +215,8 @@ hr {
   width: 100%;
   height: 1px; }
 
-ul, ol {
+ol,
+ul {
   list-style: none; }
 
 ::selection {
@@ -233,14 +230,14 @@ ul, ol {
 input {
   width: auto; }
 
-input[type="text"],
-input[type="password"],
 input[type="email"],
+input[type="password"],
+input[type="text"],
 textarea {
   width: 100%;
   float: left;
-  margin: 0px;
-  padding: 0px;
+  margin: 0;
+  padding: 0;
   border: none;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -249,10 +246,14 @@ textarea {
 textarea {
   resize: vertical; }
 
-input:focus, textarea:focus, select:focus {
+input:focus,
+select:focus,
+textarea:focus {
   outline: none; }
 
-*:before, *:after, * {
+*,
+*:after,
+*:before {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box; }
@@ -272,7 +273,7 @@ input:focus, textarea:focus, select:focus {
   margin: 0 auto;
   zoom: 1;
   padding: 0; }
-  #cities .row:before, #cities .row:after {
+  #cities .row:after, #cities .row:before {
     content: "";
     display: table; }
   #cities .row:after {
