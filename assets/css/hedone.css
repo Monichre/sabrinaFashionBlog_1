@@ -521,7 +521,7 @@ blockquote {
 .btn{
     display: inline-block;
     padding: 9px 15px;
-    background-color: #3898EC;
+    background-color: #ba2424;
     color: white;
     font-size: 11px;
     font-weight: 400;
@@ -4255,3 +4255,181 @@ a:hover.pricing-button{
 .post-navigation a:hover{
     color: #fcc900;
 }
+
+/*-----------------------------------------------------------------*/
+                    /*Fashion & Style*/
+/*-----------------------------------------------------------------*/
+
+
+
+.fashion .portfolio .item {
+  position: relative;
+  background-color: #1a1a1a;
+  overflow: hidden; }
+  .fashion .portfolio .item:before, .fashion .portfolio .item:after {
+    content: " ";
+    display: table; }
+  .fashion .portfolio .item:after {
+    clear: both; }
+  .fashion .portfolio .item.reverse .img {
+    right: auto;
+    left: 0; }
+  .fashion .portfolio .item.reverse .caption {
+    float: right; }
+  .fashion .portfolio .item .img {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 50%;
+    margin: 0; }
+  @media (max-width: 992px) {
+    .fashion .portfolio .item .img {
+      display: none; } }
+  .fashion .portfolio .item .caption {
+    padding: 50px 50px 25px 50px;
+    float: left;
+    width: 50%; }
+    @media (min-width: 1200px) {
+      .fashion .portfolio .item .caption {
+        padding: 25px 25px 20px 25px; } }
+    .fashion .portfolio .item .caption small {
+      font-family: "Droid Serif", Helvetica, Arial, sans-serif;
+      display: block;
+      font-size: 12px;
+      color: #fff;
+      margin-bottom: 10px;
+      text-transform: none; }
+    .fashion .portfolio .item .caption h4 {
+      color: #fff;
+      font-size: 20px;
+      text-transform: uppercase; }
+      .fashion .portfolio .item .caption h4:after {
+        content: ' ';
+        display: block;
+        width: 15px;
+        height: 1px;
+        background-color: #ba2424;
+        margin: 15px 0; }
+    .fashion .portfolio .item .caption p {
+      margin-bottom: 40px;
+      color: #fff; }
+    .fashion .portfolio .item .caption .list {
+      margin-bottom: 0; }
+      .fashion .portfolio .item .caption .list li {
+        display: inline-block;
+        margin-right: 10px;
+        margin-bottom: 5px; }
+      .fashion .portfolio .item .caption .list a {
+        color: #fff;
+        font-size: 12px;
+        -webkit-transition: color 0.5s;
+        -moz-transition: color 0.5s;
+        -ms-transition: color 0.5s;
+        -o-transition: color 0.5s;
+        transition: color 0.5s; }
+        .fashion .portfolio .item .caption .list a:hover {
+          color: #fff;
+          text-decoration: none; }
+          .fashion .portfolio .item .caption .list a:hover i {
+            color: #ba2424; }
+      .fashion .portfolio .item .caption .list i {
+        margin-right: 10px;
+        position: relative;
+        bottom: -2px;
+        -webkit-transition: color 0.5s;
+        -moz-transition: color 0.5s;
+        -ms-transition: color 0.5s;
+        -o-transition: color 0.5s;
+        transition: color 0.5s; }
+  @media (max-width: 992px) {
+    .fashion .portfolio .item .caption {
+      width: 100%; } }
+.fashion .promo-video .play {
+  display: block;
+  position: absolute;
+  top: 50%;
+  right: 0;
+  left: 0;
+  margin: 0 auto;
+  width: 60px;
+  height: 60px;
+  text-align: center;
+  line-height: 60px;
+  background-color: #ba2424;
+  color: #fff;
+  font-size: 16px;
+  opacity: .9;
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%); }
+.fashion .banner {
+  padding: 150px 0;
+  background: url(http://placehold.it/1400x600) center center;
+  text-align: center; }
+  .fashion .banner h2 {
+    text-transform: uppercase;
+    color: #fff;
+    font-size: 48px;
+    letter-spacing: 8px;
+    margin: 0 0 30px 0;
+    padding: 40px 0 30px 0;
+    border: 1px solid #fff; }
+  .fashion .banner .btn-default {
+    color: #1a1a1a; }
+  .fashion .banner .btn-light:hover {
+    color: #1a1a1a; }
+  .fashion .banner .btn + .btn {
+    margin-left: 10px; }
+.fashion .updates .item {
+  text-align: center; }
+  .fashion .updates .item .item-img {
+    height: 300px;
+    overflow: hidden; }
+  .fashion .updates .item figcaption {
+    padding: 30px 0 20px 0;
+    background-color: #1a1a1a; }
+    .fashion .updates .item figcaption h3 {
+      margin: 0 0 10px 0;
+      font-size: 18px;
+      letter-spacing: 2px;
+      color: #fff;
+      text-transform: uppercase;
+      font-family: "Fjalla One", sans-serif;
+      }
+      .fashion .updates .item figcaption h3 a {
+        color: #fff; }
+    .fashion .updates .item figcaption .date {
+      font-family: "Fjalla One", sans-serif;
+      font-size: 12px;
+      color: #ba2424;
+      text-transform: uppercase; }
+      .fashion .updates .item figcaption .date:after {
+        content: ' ';
+        display: block;
+        width: 100px;
+        margin: 20px auto;
+        height: 1px;
+        background-color: #303030; }
+    .fashion .updates .item figcaption .author {
+      font-style: italic;
+      color: #fff; }
+@media (max-width: 992px) {
+  .fashion .updates .item {
+    margin-bottom: 30px; } }
+.fashion .features .item {
+  padding: 50px; }
+  .fashion .features .item h4 {
+    margin-bottom: 40px;
+    color: #fff;
+    letter-spacing: 3px;
+    text-transform: uppercase; }
+    .fashion .features .item h4 + p {
+      margin-bottom: 30px;
+      color: #fff; }
+  .fashion .features .item.dark {
+    background-color: #1a1a1a; }
+  .fashion .features .item.light {
+    background-color: #242424; }
+  .fashion .features .item.lighter {
+    background-color: #363636; }

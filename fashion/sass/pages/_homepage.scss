@@ -1,0 +1,424 @@
+/* -----------------------------------------------------------------------------
+// 1. Homepage
+// ----------------------------------------------------------------------------- */
+
+//
+// Table of content
+// -----------------------------------------------------------------------------
+// - Section Headline
+// - SECTION 1 - Hero Splash
+// - Section 2 - Portfolio
+// - Section 4 - Promo Vudeo
+// - Section 5 - Banner
+// - Section 6 - Updates
+// - Section 7 - Features
+
+
+//
+// Homepage
+// --------------------------------------------------
+.homepage {
+
+// Section Headline
+// --------------------------------------------------
+    .section-headline {
+        margin-bottom: 50px;
+        text-align: left;
+
+        h3 {
+            display: inline-block;
+            font-size: 30px;
+            margin: 0 0 20px 0;
+            font-weight: 500;
+            letter-spacing: 5px;
+            text-transform: uppercase;
+        }
+    }
+
+    .section-buttons {
+        margin-top: 40px;
+
+        .btn + .btn {
+            margin-left: 10px;
+        }
+    }
+
+    @media (max-width:992px) {
+        .section-headline {
+            margin-bottom: 0;
+        }
+
+        .section-buttons {
+            margin-bottom: 50px;
+            text-align: left;
+        }
+    }
+
+
+// Section 1 - Hero Splash
+// --------------------------------------------------
+    .hero-splash {
+        position: relative;
+        height: 800px;
+        height: 100vh;
+        text-align: center;
+        overflow: hidden;
+        font-family: $headings-font-family;
+        background: url(../img/bg.jpg) center center no-repeat;
+        -webkit-background-size: cover;
+           -moz-background-size: cover;
+            -ms-background-size: cover;
+             -o-background-size: cover;
+                background-size: cover;
+
+        .splash-slider {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+
+            @media (max-width:992px) {
+                img {
+                    max-width: initial;
+                }
+            }
+        }
+
+        // positioning it in the center
+        .align {
+            position: absolute;
+            top: 50%;
+            right: 0;
+            left: 0;
+            margin: 0 auto;
+
+            -webkit-transform: translateY(-50%);
+               -moz-transform: translateY(-50%);
+                -ms-transform: translateY(-50%);
+                 -o-transform: translateY(-50%);
+                    transform: translateY(-50%);
+        }
+
+        h1 {
+            padding: 0 0 15px 0;
+            color: #fff;
+            font-size: 100px;
+            letter-spacing: 4px;
+            line-height: 120px;
+            text-transform: uppercase;
+        }
+
+        @media (max-width:768px){
+            h1 {
+                font-size: 36px;
+                line-height: 46px;
+            }
+        }
+
+        .owl-buttons {
+            .owl-prev,
+            .owl-next {
+                position: absolute;
+                top: initial;
+                bottom: 0;
+                left: 0;
+                width: auto;
+                height: auto;
+                background-color: transparent;
+                opacity: .5;
+                @include transition(opacity, .5s);
+
+                &:hover {
+                    opacity: 1;
+                }
+            }
+
+            .owl-prev {
+                right: initial;
+                left: 12%;
+                bottom: 50px;
+            }
+
+            .owl-next {
+                left: 17%;
+                right: initial;
+                bottom: 50px;
+            }
+        }
+
+        @media (max-width:992px) {
+            .owl-buttons {
+                display: none;
+            }
+        }
+    }
+
+
+// Section 2 - Portfolio
+// --------------------------------------------------
+    .portfolio {
+        .item {
+            position: relative;
+            background-color: #181818;
+            overflow: hidden;
+            @include clearfix();
+
+            &.reverse {
+                .img {
+                    right: auto;
+                    left: 0;
+                }
+
+                .caption {
+                    float: right;
+                }
+            }
+
+            .img {
+                position: absolute;
+                top: 0;
+                right: 0;
+                width: 50%;
+                margin: 0;
+            }
+
+            @media (max-width:992px){
+                .img {
+                    display: none;
+                }
+            }
+
+            .caption {
+                padding: 50px 50px 25px 50px;
+                float: left;
+                width: 50%;
+
+                @media (min-width:1200px) {
+                    & {
+                        padding: 25px 25px 20px 25px;
+                    }
+                }
+
+                small {
+                    font-family: $font-family-base;
+                    display: block;
+                    font-size: 12px;
+                    color: #717171;
+                    margin-bottom: 10px;
+                    text-transform: none;
+                }
+
+                h4 {
+                    color: #fff;
+                    font-size: 20px;
+                    text-transform: uppercase;
+
+                    &:after {
+                        content: ' ';
+                        display: block;
+                        width: 15px;
+                        height: 1px;
+                        background-color: $brand-color;
+                        margin: 15px 0;
+                    }
+                }
+
+                p {
+                    margin-bottom: 40px;
+                    color: #717171;
+                }
+
+                .list {
+                    margin-bottom: 0;
+
+                    li {
+                        display: inline-block;
+                        margin-right: 10px;
+                        margin-bottom: 5px;
+                    }
+
+                    a {
+                        color: #717171;
+                        font-size: 12px;
+                        @include transition(color, .5s);
+
+                        &:hover {
+                            color: #fff;
+                            text-decoration: none;
+
+                            i {
+                                color: $brand-color;
+                            }
+                        }
+                    }
+
+                    i {
+                        margin-right: 10px;
+                        position: relative;
+                        bottom: -2px;
+
+                        @include transition(color, .5s);
+                    }
+                }
+            }
+
+            @media (max-width:992px) {
+                .caption {
+                    width: 100%;
+                }
+            }
+        }
+    }
+
+
+// Section 4 - Promo Vudeo
+// --------------------------------------------------
+    .promo-video {
+        .play {
+            display: block;
+            position: absolute;
+            top: 50%;
+            right: 0;
+            left: 0;
+            margin: 0 auto;
+
+            width: 60px;
+            height: 60px;
+            text-align: center;
+            line-height: 60px;
+
+            background-color: $brand-color;
+            color: #fff;
+            font-size: 16px;
+            opacity: .9;
+
+            -webkit-transform: translateY(-50%);
+               -moz-transform: translateY(-50%);
+                -ms-transform: translateY(-50%);
+                    transform: translateY(-50%);
+        }
+    }
+
+
+// Section 5 - Banner
+// --------------------------------------------------
+    .banner {
+        padding: 150px 0;
+        background: url(http://placehold.it/1400x600) center center;
+        text-align: center;
+
+        h2 {
+            text-transform: uppercase;
+            color: #fff;
+            font-size: 48px;
+            letter-spacing: 8px;
+            margin: 0 0 30px 0;
+            padding: 40px 0 30px 0;
+            border: 1px solid #fff;
+        }
+
+        .btn-default {
+            color: #181818;
+        }
+
+        .btn-light:hover {
+            color: #181818;
+        }
+
+        .btn + .btn {
+            margin-left: 10px;
+        }
+    }
+
+
+// Section 6 - Updates
+// --------------------------------------------------
+    .updates {
+        .item {
+            text-align: center;
+
+            .item-img {
+                height: 300px;
+                overflow: hidden;
+            }
+
+            figcaption {
+                padding: 30px 0 20px 0;
+                background-color: #181818;
+
+                h3 {
+                    margin: 0 0 10px 0;
+                    font-size: 18px;
+                    letter-spacing: 2px;
+                    color: #fff;
+                    text-transform: uppercase;
+
+                    a {
+                        color: #fff;
+                    }
+                }
+
+                .date {
+                    font-family: $headings-font-family;
+                    font-size: 12px;
+                    color: $brand-color;
+                    text-transform: uppercase;
+
+                    &:after {
+                        content: ' ';
+                        display: block;
+                        width: 100px;
+                        margin: 20px auto;
+                        height: 1px;
+                        background-color: #303030;
+                    }
+                }
+
+                .author {
+                    font-style: italic;
+                    color: #717171;
+                }
+            }
+        }
+
+        @media (max-width:992px) {
+            .item {
+                margin-bottom: 30px;
+            }
+        }
+    }
+
+
+// Section 7 - Features
+// --------------------------------------------------
+    .features {
+        .item {
+            padding: 50px;
+
+            h4 {
+                margin-bottom: 40px;
+                color: #fff;
+                letter-spacing: 3px;
+                text-transform: uppercase;
+
+                & + p {
+                    margin-bottom: 30px;
+                    color: #717171;
+                }
+            }
+
+            &.dark {
+                background-color: #181818;
+            }
+
+            &.light {
+                background-color: #242424;
+            }
+
+            &.lighter {
+                background-color: #363636;
+            }
+        }
+    }
+}

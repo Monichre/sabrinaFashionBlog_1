@@ -1,0 +1,36 @@
+@charset 'UTF-8';
+
+@import
+  'utils/utils';
+
+/*
+// Table of content
+// -----------------------------------------------------------------------------
+// - 1. Homepage
+// - 2. About Page
+// - 3. Look Book Detail Page
+// - 4. Updates Page
+// - 5. Updates Detail Page
+// - 6. Contact Page
+*/
+
+// Page-specific styles
+@import
+
+  // home page
+  'pages/homepage',
+
+  // about 
+  'pages/about',
+
+  // lookbook detail 
+  'pages/lookbook-detail',
+
+  // updates
+  'pages/updates',
+
+  // updates detail
+  'pages/updates-detail',
+
+  // contact
+  'pages/contact';

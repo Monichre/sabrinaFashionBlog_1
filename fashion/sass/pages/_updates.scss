@@ -1,0 +1,89 @@
+/* -----------------------------------------------------------------------------
+// 4. Updates Page
+// ----------------------------------------------------------------------------- */
+
+//
+// Table of content
+// -----------------------------------------------------------------------------
+// - Section Headline
+// - Section 1 - Hero Title
+// - Section 2 - Updates
+
+
+//
+// Updates Page
+// --------------------------------------------------
+.updates-page {
+
+// Section 1 - Hero Title
+// --------------------------------------------------
+    .hero-title {
+        background: url(http://placehold.it/1895x500);
+    }
+
+
+// Section 2 - Updates
+// --------------------------------------------------
+    .updates {
+        .item {
+            margin-bottom: 30px;
+            text-align: center;
+
+            .item-img {
+                height: 300px;
+                overflow: hidden;
+            }
+
+            figcaption {
+                padding: 30px 0 20px 0;
+                background-color: #181818;
+
+                h3 {
+                    margin: 0 0 10px 0;
+                    font-size: 18px;
+                    letter-spacing: 2px;
+                    color: #fff;
+                    text-transform: uppercase;
+
+                    a {
+                        color: #fff;
+                    }
+                }
+
+                .date {
+                    font-family: $headings-font-family;
+                    font-size: 12px;
+                    color: $brand-color;
+                    text-transform: uppercase;
+
+                    &:after {
+                        content: ' ';
+                        display: block;
+                        width: 100px;
+                        margin: 20px auto;
+                        height: 1px;
+                        background-color: #303030;
+                    }
+                }
+
+                .author {
+                    font-style: italic;
+                    color: #717171;
+                }
+            }
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

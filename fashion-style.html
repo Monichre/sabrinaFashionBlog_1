@@ -1,56 +1,63 @@
-<!DOCTYPE html>
-<html>
+<!doctype html>
+<html class="no-js" lang="">
     <head>
         <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
         <title>Theresa on the Town</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <link rel="shortcut icon" type="image/x-icon" href="assets/img/sabrina-logo.png">
+        <!-- FAVICONS -->
 
-        <!-- Bootstrap -->
-        <link href="assets/css/bootstrap.min.css" rel="stylesheet">
 
-        <!-- Icons -->
-        <link rel="stylesheet" href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+        <!-- FONTS -->
+        <link href='https://fonts.googleapis.com/css?family=Josefin+Sans:400,700,600italic,600,400italic' rel='stylesheet' type='text/css'>
+        <link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,400italic,700,700italic' rel='stylesheet' type='text/css'>
 
-        <!-- Google Fonts -->
-        <link href="https://fonts.googleapis.com/css?family=Abril+Fatface|Bungee|Playfair+Display|Rubik:900" rel="stylesheet">
+        <!-- FONT AWESOME -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
 
-        <!-- Google Fonts -->
+        <!-- STYLESHEETS -->
+        <link rel="stylesheet" href="fashion/css/vendor.css">
+        <link rel="stylesheet" href="fashion/css/base.css">
+
+
+        <!-- Template Assets -->
+        <!-- <link href="assets/css/bootstrap.min.css" rel="stylesheet"> -->
         <link href="https://fonts.googleapis.com/css?family=Arsenal|Fjalla+One" rel="stylesheet">
-
-        <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-        <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-        <!--[if lt IE 9]>
-          <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
-          <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-        <![endif]-->
-
         <link href="assets/css/animations.css" rel="stylesheet" type="text/css"/>
         <link href="assets/css/font-awesome.min.css" rel="stylesheet" type="text/css"/>
+        <link rel="stylesheet" href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
         <link href="assets/css/owl.carousel.custom.css" rel="stylesheet" type="text/css"/>
 
         <!-- Template Styles -->
         <link href="assets/css/hedone.css" rel="stylesheet" type="text/css"/>
-        <link href="assets/css/colors.css" rel="stylesheet" type="text/css"/>
 
-        <!--[if lte IE 9]>
-        <link href="assets/css/animations-ie-fix.css" rel="stylesheet" type="text/css"/>
-        <![endif]-->
+        <!-- MODERNIZR -->
+        <script src="fashion/js/vendor/modernizr-2.8.3.min.js"></script>
     </head>
+    <body class="royal_preloader fashion">
 
-    <body class="royal_preloader">
-        <!-- PRELOADER -->
-        <div id="royal_preloader"></div>
+		<!-- PRELOADER -->
+		<div id="royal_preloader"></div>
 
         <!-- AJAX LOADER -->
         <div id="ajax-loader" class="loader loader-default" data-half="" data-text="Loading..."></div>
 
         <!-- IS MOBILE HACK -->
         <div id="isMobile"></div>
+
+        <!--[if lt IE 8]>
+            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+
+        <!-- PRELOADER -->
+        <!-- <div id="preloader">
+            <div class="spinner"></div>
+        </div> -->
+        <!-- // PRELOADER -->
+
+
 
         <!-- HEADER -->
         <header>
@@ -66,6 +73,9 @@
                                         </div>
                                         <div class="navbar-left social-nav">
                                             <ul class="list-inline">
+                                                <li><a href="index.html">
+                                                    <!-- <img id="logo" src="assets/img/logo-2.jpg" alt=""> -->
+                                                </a></li>
                                                 <li><a href="#"><i class="ion-social-facebook"></i></a></li>
                                                 <li><a href="#"><i class="ion-social-instagram-outline"></i></a></li>
                                                 <li><a href="#"><i class="ion-social-youtube"></i></a></li>
@@ -73,18 +83,13 @@
                                             </ul>
 
                                         </div>
-                                        <!-- SITE LOGO -->
-                                        <div class="site-branding">
-                                            <a href="index.html">
 
-                                            </a>
-                                        </div>
                                     </div>
                                     <!-- PRIMARY MENU -->
                                     <div id="Hedone" class="hedone-menu-container">
                                         <div class="navbar-right">
                                             <ul class="hedone-menu">
-                                                <li class="menu-item">
+                                                <li class="menu-item current-page-ancestor current-menu-ancestor current-menu-parent current-page-parent current_page_parent current_page_ancestor">
                                                     <a href="index.html">Home</a>
                                                 </li>
 
@@ -92,18 +97,21 @@
                                                     <a href="./about.html">About</a>
                                                 </li>
 
-                                                <li class="menu-item current-page-ancestor current-menu-ancestor current-menu-parent current-page-parent current_page_parent current_page_ancestor">
-                                                    <a href="#">Fashion & Style</a>
+                                                <li class="menu-item">
+                                                    <a href="./fashion-style.html">Fashion & Style</a>
                                                 </li>
                                                 <li class="menu-item">
                                                     <a href="./travel.html">Travel</a>
                                                 </li>
+                                                <!-- <li class="menu-item">
+                                                    <a href="./travel-blog.html">Travel Blog Demo</a>
+                                                </li> -->
                                                 <li class="menu-item">
                                                     <a href="./health-wellness.html">Health & Wellness</a>
                                                 </li>
 
                                                 <li class="menu-item">
-                                                    <a href="#">contact</a>
+                                                    <a href="./contact.html">contact</a>
                                                 </li>
 
                                             </ul>
@@ -117,180 +125,461 @@
             </div>
         </header>
 
+        <!-- HERO SECTION SLIDER-->
+         <div class="hero-slider">
+            <div class="owl-hero-slider-slide owl-carousel owl-theme">
 
-        <!--Masonry Grid -->
-                <!-- Favorite Blog Posts -->
-                <section class="padding-top-bottom-120px white-background animation-overflow">
-                    <div class="container">
-                        <div class="row">
-                            <div class="section-header">
-
-
-                                <p class="head-subtitle"><span class="header-underline-large"></span>Fashion & Style</p>
-                                <h3 class="head-h3">Favorites
-                                    <br><span class="sub-header-underline-small"></span>
-                                </h3>
+                <!-- 1st Slide -->
+                <div class="first-feature item">
+                    <div class="hero-image one" style="background-image: url(assets/img/fashion-1.jpg);"></div>
+                    <div class="hero-slider-content">
+                        <div class="container">
+                            <div class="row">
+                                <div class="animatedParent animateOnce main-text">
+                                    <div class="slider-text-mid animated fadeInShake delay-750 theresa-title">Blog</div>
+                                    <div class="clipped_bg">
+                                        <h1>Fashion <br> & Style</h1>
+                                    </div>
+                                    <div class="slider-line animated fadeInUp delay-750"></div>
+                                    <div class="slider-text-bottom animated fadeInUp delay-1250">This week's best</div>
+                                </div>
                             </div>
                         </div>
-                        <!-- FILTERS -->
-                        <div class="row">
-                            <div class="col-xs-12 padding-top-bottom-20px">
-                                <ul class="portfolio-filter">
-                                    <li><a href="#" data-filter="*" class="current">all</a></li>
-                                    <li><a href="#" data-filter=".design">design</a></li>
-                                    <li><a href="#" data-filter=".web">fashion</a></li>
-                                    <li><a href="#" data-filter=".photo">photo</a></li>
-                                    <li><a href="#" data-filter=".art">art</a></li>
-                                    <li><a href="#" data-filter=".food">food</a></li>
-                                    <li><a href="#" data-filter=".branding">travel</a></li>
+                    </div>
+                </div>
+
+                <!-- 2nd Slide -->
+                <div class=" last-feature item">
+                    <div class="hero-image last" style="background-image: url(assets/img/fashion-2.jpg);"></div>
+                    <div class="hero-slider-content">
+                        <div class="container">
+                            <div class="row">
+                                <div class="upSection animated slideOutUp">
+                                    <div class="text-top">Shop</div>
+                                    <div class="clipped_bg">
+                                        <h1>These <br> Trends</h1>
+                                    </div>
+                                    <div class="slider-line"></div>
+                                </div>
+                                <div class="downSection animated slideOutDown">
+                                    <div class="slider-text-bottom">Promotions Below</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 3rd Slide -->
+                <div class="last-feature item">
+
+                    <div class="hero-overlay-bg">
+                        <div class="hero-image last" style="background-image: url(assets/img/fashion-2.jpg);"></div>
+                    </div>
+                    <div class="hero-slider-content">
+                        <div class="container">
+                            <div class="row">
+                                <div class="upSection animated slideOutUp">
+                                    <div class="text-top">Check out</div>
+                                    <div class="clipped_bg">
+                                        <h1>Sample <br> Sale Savings</h1>
+                                    </div>
+                                    <div class="slider-line"></div>
+                                </div>
+                                <div class="downSection animated slideOutDown">
+                                    <div class="slider-text-bottom">My 6 tips</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- SECTION 2 - PORTFOLIO -->
+        <section class="portfolio space no-space-bottom">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="section-headline">
+                            <h3>latest Lookbook</h3>
+                            <p>Some of my favorite features from this last month. Check out the links for oportunities to shop these pieces.</p>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-6">
+                        <div class="section-buttons text-right">
+                            <a href="#" class="btn btn-default btn-dark">Look Book</a>
+                            <a href="#" class="btn btn-bordered btn-dark">Purchase</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-lg-4 no-space">
+                        <div class="item reverse">
+                            <div class="caption">
+                                <h4><small>Magazines - Media</small>Sabrina Smith</h4>
+                                <p>Ut cursus massa at urnaaculis estie. Sed aliquamellus vitae ultrs condmentum leo.</p>
+                                <ul class="list">
+                                    <li><a href="#"><i class="icon-basic-share"></i>Share</a></li>
+                                    <li><a href="#"><i class="icon-basic-heart"></i>560</a></li>
+                                    <li><a href="#"><i class="icon-basic-message"></i>470</a></li>
+                                </ul>
+                            </div>
+                            <div class="img">
+                                <img src="assets/img/blog-post-1.jpeg" alt="About the image">
+
+                                <a href="http://placehold.it/470x630" class="popup">
+                                    <img src="fashion/img/zoom.png" alt="Zoom Icon">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 no-space">
+                        <div class="item reverse">
+                            <div class="img">
+                                <img src="assets/img/blog-post-2.jpg" alt="About the image">
+
+                                <a href="http://placehold.it/470x630" class="popup">
+                                    <img src="fashion/img/zoom.png" alt="Zoom Icon">
+                                </a>
+                            </div>
+                            <div class="caption">
+                                <h4><small>Magazines - Media</small>Sabrina Smith</h4>
+                                <p>Ut cursus massa at urnaaculis estie. Sed aliquamellus vitae ultrs condmentum leo.</p>
+                                <ul class="list">
+                                    <li><a href="#"><i class="fa fa-share-alt"></i>Share</a></li>
+                                    <li><a href="#"><i class="fa fa-heart-o"></i>560</a></li>
+                                    <li><a href="#"><i class="fa fa-comments-o"></i>470</a></li>
                                 </ul>
                             </div>
                         </div>
-                        <div class="clearfix"></div>
                     </div>
 
-                    <!-- PROJECTS -->
-                    <div class="container-fluid max-width-1600px">
-                        <div class="row">
-                            <div class="portfolio-container">
-                                <!-- 2 col grid @ xs, 3 col grid @ sm, 4 col grid @ md -->
-                                <div class="grid-sizer col-xs-12 col-sm-6 col-md-4"></div>
+                    <div class="col-lg-4 no-space">
+                        <div class="item reverse">
+                            <div class="img">
+                                <img src="assets/img/blog-post-3.jpg" alt="About the image">
 
-                                <!-- 1 col @ xs, 2 col @ sm, 2 col @ md -->
-                                <div class="grid-item col-xs-12 col-sm-6 col-md-4 design">
-                                    <div class="grid-item-content">
-                                        <a href="project.html" class="masonry-portfolio-box-link">
-                                            <div class="masonry-portfolio-box-mask">
-                                                <div class="portfolio-mask-title">project title<br>
-                                                    <span class="portfolio-mask-subtitle" style="">subtitle</span>
-                                                </div>
-                                            </div>
-                                            <img src="assets/img/sabrina-1.jpg" alt="project" class="img-responsive"/>
-                                        </a>
-                                    </div>
-                                </div>
-
-                                <!-- 1 col @ xs, 2 col @ sm, 2 col @ md -->
-                                <div class="grid-item col-xs-12 col-sm-6 col-md-4 photo">
-                                    <div class="grid-item-content">
-                                        <a href="project.html" class="masonry-portfolio-box-link">
-                                            <div class="masonry-portfolio-box-mask">
-                                                <div class="portfolio-mask-title">project title<br>
-                                                    <span class="portfolio-mask-subtitle" style="">subtitle</span>
-                                                </div>
-                                            </div>
-                                            <img src="assets/img/sabrina-2.jpg" alt="project" class="img-responsive"/>
-                                        </a>
-                                    </div>
-                                </div>
-
-                                <!-- 1 col @ xs, 2 col @ sm, 2 col @ md -->
-                                <div class="grid-item col-xs-12 col-sm-6 col-md-4 art web">
-                                    <div class="grid-item-content">
-                                        <a href="project.html" class="masonry-portfolio-box-link">
-                                            <div class="masonry-portfolio-box-mask">
-                                                <div class="portfolio-mask-title">project title<br>
-                                                    <span class="portfolio-mask-subtitle" style="">subtitle</span>
-                                                </div>
-                                            </div>
-                                            <img src="assets/img/sabrina-3.jpg" alt="project" class="img-responsive"/>
-                                        </a>
-                                    </div>
-                                </div>
-
-                                <!-- 1 col @ xs, 2 col @ sm, 2 col @ md -->
-                                <div class="grid-item col-xs-12 col-sm-6 col-md-4 food">
-                                    <div class="grid-item-content">
-                                        <a href="project.html" class="masonry-portfolio-box-link">
-                                            <div class="masonry-portfolio-box-mask">
-                                                <div class="portfolio-mask-title">project title<br>
-                                                    <span class="portfolio-mask-subtitle" style="">subtitle</span>
-                                                </div>
-                                            </div>
-                                            <img src="assets/img/sabrina-hero.jpg" alt="project" class="img-responsive"/>
-                                        </a>
-                                    </div>
-                                </div>
-
-                                <!-- 1 col @ xs, 2 col @ sm, 2 col @ md -->
-                                <div class="grid-item col-xs-12 col-sm-6 col-md-4 design branding">
-                                    <div class="grid-item-content">
-                                        <a href="project.html" class="masonry-portfolio-box-link">
-                                            <div class="masonry-portfolio-box-mask">
-                                                <div class="portfolio-mask-title">project title<br>
-                                                    <span class="portfolio-mask-subtitle" style="">subtitle</span>
-                                                </div>
-                                            </div>
-                                            <img src="assets/img/sabrina.png" alt="project" class="img-responsive"/>
-                                        </a>
-                                    </div>
-                                </div>
-
-                                <!-- 1 col @ xs, 2 col @ sm, 2 col @ md -->
-                                <div class="grid-item col-xs-12 col-sm-6 col-md-4 photo">
-                                    <div class="grid-item-content">
-                                        <a href="project.html" class="masonry-portfolio-box-link">
-                                            <div class="masonry-portfolio-box-mask">
-                                                <div class="portfolio-mask-title">project title<br>
-                                                    <span class="portfolio-mask-subtitle" style="">subtitle</span>
-                                                </div>
-                                            </div>
-                                            <img src="assets/img/sabrina_profile.jpg" alt="project" class="img-responsive"/>
-                                        </a>
-                                    </div>
-                                </div>
-
-                                <!-- 1 col @ xs, 2 col @ sm, 2 col @ md -->
-                                <div class="grid-item col-xs-12 col-sm-6 col-md-4 food">
-                                    <div class="grid-item-content">
-                                        <a href="project.html" class="masonry-portfolio-box-link">
-                                            <div class="masonry-portfolio-box-mask">
-                                                <div class="portfolio-mask-title">project title<br>
-                                                    <span class="portfolio-mask-subtitle" style="">subtitle</span>
-                                                </div>
-                                            </div>
-                                            <img src="assets/img/sabrina-hero.jpg" alt="project" class="img-responsive"/>
-                                        </a>
-                                    </div>
-                                </div>
-
-                                <!-- 1 col @ xs, 2 col @ sm, 2 col @ md -->
-                                <div class="grid-item col-xs-12 col-sm-6 col-md-4 design branding">
-                                    <div class="grid-item-content">
-                                        <a href="project.html" class="masonry-portfolio-box-link">
-                                            <div class="masonry-portfolio-box-mask">
-                                                <div class="portfolio-mask-title">project title<br>
-                                                    <span class="portfolio-mask-subtitle" style="">subtitle</span>
-                                                </div>
-                                            </div>
-                                            <img src="assets/img/sabrina.png" alt="project" class="img-responsive"/>
-                                        </a>
-                                    </div>
-                                </div>
-
+                                <a href="http://placehold.it/470x630" class="popup">
+                                    <img src="fashion/img/zoom.png" alt="Zoom Icon">
+                                </a>
+                            </div>
+                            <div class="caption">
+                                <h4><small>Magazines - Media</small>Sabrina Smith</h4>
+                                <p>Ut cursus massa at urnaaculis estie. Sed aliquamellus vitae ultrs condmentum leo.</p>
+                                <ul class="list">
+                                    <li><a href="#"><i class="fa fa-share-alt"></i>Share</a></li>
+                                    <li><a href="#"><i class="fa fa-heart-o"></i>560</a></li>
+                                    <li><a href="#"><i class="fa fa-comments-o"></i>470</a></li>
+                                </ul>
                             </div>
                         </div>
-                        <div class="clearfix"></div>
                     </div>
-                </section>
+                </div>
+
+                <div class="row">
+                    <div class="col-lg-4 no-space">
+                        <div class="item">
+                            <div class="caption">
+                                <h4><small>Magazines - Media</small>Sabrina Smith</h4>
+                                <p>Ut cursus massa at urnaaculis estie. Sed aliquamellus vitae ultrs condmentum leo.</p>
+                                <ul class="list">
+                                    <li><a href="#"><i class="fa fa-share-alt"></i>Share</a></li>
+                                    <li><a href="#"><i class="fa fa-heart-o"></i>560</a></li>
+                                    <li><a href="#"><i class="fa fa-comments-o"></i>470</a></li>
+                                </ul>
+                            </div>
+                            <div class="img">
+                                <img src="assets/img/blog-post-3.jpg" alt="About the image">
+
+                                <a href="http://placehold.it/470x630" class="popup">
+                                    <img src="fashion/img/zoom.png" alt="Zoom Icon">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 no-space">
+                        <div class="item">
+                            <div class="img">
+                                <img src="assets/img/blog-post-2.jpg" alt="About the image">
+
+                                <a href="http://placehold.it/470x630" class="popup">
+                                    <img src="fashion/img/zoom.png" alt="Zoom Icon">
+                                </a>
+                            </div>
+                            <div class="caption">
+                                <h4><small>Magazines - Media</small>Sabrina Smith</h4>
+                                <p>Ut cursus massa at urnaaculis estie. Sed aliquamellus vitae ultrs condmentum leo.</p>
+                                <ul class="list">
+                                    <li><a href="#"><i class="fa fa-share-alt"></i>Share</a></li>
+                                    <li><a href="#"><i class="fa fa-heart-o"></i>560</a></li>
+                                    <li><a href="#"><i class="fa fa-comments-o"></i>470</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 no-space">
+                        <div class="item">
+                            <div class="img">
+                                <img src="assets/img/blog-post-1.jpeg" alt="About the image">
+
+                                <a href="http://placehold.it/470x630" class="popup">
+                                    <img src="fashion/img/zoom.png" alt="Zoom Icon">
+                                </a>
+                            </div>
+                            <div class="caption">
+                                <h4><small>Magazines - Media</small>Sabrina Smith</h4>
+                                <p>Ut cursus massa at urnaaculis estie. Sed aliquamellus vitae ultrs condmentum leo.</p>
+                                <ul class="list">
+                                    <li><a href="#"><i class="fa fa-share-alt"></i>Share</a></li>
+                                    <li><a href="#"><i class="fa fa-heart-o"></i>560</a></li>
+                                    <li><a href="#"><i class="fa fa-comments-o"></i>470</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- SECTION 4 - PROMO VIDEO -->
+        <section class="promo-video space">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="section-headline">
+                            <h3>latest media videos</h3>
+                            <p>We provide talented and beautiful models for businesses and media. Chekout our brand new agency models and new photography portfolios.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="section-buttons text-right">
+                            <a href="#" class="btn btn-default btn-dark">All Videos</a>
+                            <a href="#" class="btn btn-bordered btn-dark">Purchase</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="imgbox style3">
+
+                            <!-- THUMBNAIL IMAGE FOR THE VIDEO -->
+                            <div class="img">
+                                <a href="http://www.youtube.com/watch?v=G2W6C2qnzSU" class="popup-video">
+
+                                    <!-- PLAY BUTTON -->
+                                    <span class="play">
+                                        <i class="fa fa-play"></i>
+                                    </span>
+                                    <img src="http://placehold.it/1895x1000" alt="About the image">
+                                </a>
+                            </div>
+
+                            <div class="align">
+                                <h3>Top New Comers</h3>
+                                <p>
+                                    Etiam pharetra ut ante eget efficitur. Nullam quis felis at nunc vehicula sollicitudin ut a ex.
+                                    Maecenas eget volutpat turpis. Etiam condimentum velit et egestas tincidunt.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6">
+                        <div class="imgbox style3">
+
+                            <!-- THUMBNAIL IMAGE FOR THE VIDEO -->
+                            <div class="img">
+                                <a href="http://www.youtube.com/watch?v=G2W6C2qnzSU" class="popup-video">
+
+                                    <!-- PLAY BUTTON -->
+                                    <span class="play">
+                                        <i class="fa fa-play"></i>
+                                    </span>
+                                    <img src="http://placehold.it/1895x1000" alt="About the image">
+                                </a>
+                            </div>
+
+                            <div class="align">
+                                <h3>Fashion Week 2016</h3>
+                                <p>
+                                    Etiam pharetra ut ante eget efficitur. Nullam quis felis at nunc vehicula sollicitudin ut a ex.
+                                    Maecenas eget volutpat turpis. Etiam condimentum velit et egestas tincidunt.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- // SECTION 4 -->
 
 
 
-    <!-- That sweet sweet JS -->
-    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <script src="assets/js/jquery.js"></script>
+        <!-- SECTION 6 - UPDATES -->
+        <section class="updates space space-dark">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="section-headline">
+                            <h3>Latest updates</h3>
+                            <p>Some of my favorite features from this last month. Check out the links for oportunities to shop these pieces.</p>
+                        </div>
+                    </div>
 
-    <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <script src="assets/js/bootstrap.min.js"></script>
+                    <div class="col-md-6">
+                        <div class="section-buttons text-right">
+                            <a href="#" class="btn btn-default btn-dark">All Updates</a>
+                            <a href="#" class="btn btn-bordered btn-dark">Purchase</a>
+                        </div>
+                    </div>
+                </div>
 
-    <!-- PLUGINS -->
-        <!-- Masonry etc -->
-    <script src="assets/js/plugins.js" type="text/javascript"></script>
+                <div class="row">
+                    <div class="col-sm-6 col-md-3">
+                        <figure class="item">
+                            <div class="item-img">
+                                <img src="assets/img/blog-post-1.jpeg" alt="About the image">
+                            </div>
+
+                            <figcaption>
+                                <h3><a href="updates-detail.html">From the runway</a></h3>
+                                <p class="date">March 14, 2015</p>
+                                <p class="author">By Sabrina Smith</p>
+                            </figcaption>
+                        </figure>
+                    </div>
+
+                    <div class="col-sm-6 col-md-3">
+                        <figure class="item">
+                            <div class="item-img">
+                                <img src="assets/img/sabrina-3.jpg" alt="About the image">
+                            </div>
+                            <figcaption>
+                                <h3><a href="updates-detail.html">Top female feb</a></h3>
+                                <p class="date">March 14, 2015</p>
+                                <p class="author">By Sabrina Smith</p>
+                            </figcaption>
+                        </figure>
+                    </div>
+
+                    <div class="col-sm-6 col-md-3">
+                        <figure class="item">
+                            <div class="item-img">
+                                <img src="assets/img/blog-post-2.jpg" alt="About the image">
+                            </div>
+                            <figcaption>
+                                <h3><a href="updates-detail.html">Navada premium</a></h3>
+                                <p class="date">March 14, 2015</p>
+                                <p class="author">By Sabrina Smith</p>
+                            </figcaption>
+                        </figure>
+                    </div>
+
+                    <div class="col-sm-6 col-md-3">
+                        <figure class="item">
+                            <div class="item-img">
+                                <img src="assets/img/blog-post-3.jpg" alt="About the image">
+                            </div>
+                            <figcaption>
+                                <h3><a href="updates-detail.html">Exclusive interview</a></h3>
+                                <p class="date">March 14, 2015</p>
+                                <p class="author">By Sabrina Smith</p>
+                            </figcaption>
+                        </figure>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- // SECTION 6 -->
+
+        <!-- FOOTER -->
+        <footer class="footer">
+            <div class="container">
+                <div class="widget-row row">
+
+                    <!-- 1st Column -->
+                    <div class="col-sm-4">
+                        <h5>Are You A Tall <span class="red">Fashionista</span> Or <span class="red">Fashion Fanatic?</span></h5>
+                        <p>Join the mailing list and be the first to know about product picks, style inspiration, and money saving tips. </p>
+                        <form id="subscribe-form" name="subscribe-form" method="post">
+                            <input id="subscribe-email" type="text" placeholder="subscribe" name="email" required="required" class="subscribe-style">
+                            <button type="button" data-value="subscribe" data-wait="Please wait..." class="w-button subscribe-button">subscribe</button>
+                        </form>
+                        <div class="alert alert-success contact-form-done no-border-radius">
+                            <p>Thank you! Your submission has been received!</p>
+                        </div>
+                    </div>
+
+                    <!-- 2nd Column ** Filler -->
+                    <div class="col-sm-4"></div>
+
+                    <!-- 3rd Column -->
+                    <div class="col-sm-4">
+                        <h5><span class="red">~</span> Follow me on Social <span class="red">~</span></h5>
+
+                        <!-- LightWidget WIDGET -->
+                        <script src="http://lightwidget.com/widgets/lightwidget.js"></script>
+                        <iframe src="http://lightwidget.com/widgets/7e43d5c4ce945e80a7295ff939bae29d.html" scrolling="no" allowtransparency="true" class="lightwidget-widget" style="width: 100%; border: 0; overflow: hidden;"></iframe>
+
+                    </div>
+
+                </div>
+                <div class="row">
+                    <!-- <div class="footer-logo">
+                        <img src="assets/img/logo-white.png" alt="footer logo"/>
+                    </div> -->
+                    <div class="footer-social-block">
+                        <a href="#" class="w-inline-block social-wrap"><i class="ion-social-pinterest"></i></a>
+                        <a href="#" class="w-inline-block social-wrap"><i class="ion-social-instagram"></i></a>
+                        <a href="#" class="w-inline-block social-wrap"><i class="ion-social-facebook"></i></a>
+                        <a href="#" class="w-inline-block social-wrap"><i class="ion-social-youtube"></i></a>
+                    </div>
+                    <div class="footer-text">
+                        <span class="footer-text-span">Theresa on the Town</span>
+                    </div>
+                    <div id="loveCraft">
+                        <span class="loveCraft"><span class="blue">Love</span><span class="red">Craft</span><span class="white">.io</span></span>
+                    </div>
+
+                </div>
+            </div>
+        </footer>
 
 
 
-    <!-- MAIN JS -->
-    <script src="assets/js/main.js" type="text/javascript"></script>
+        <!-- jQuery -->
+        <script src="assets/js/jquery.js"></script>
+
+        <!-- Include all compiled plugins (below), or include individual files as needed -->
+        <script src="assets/js/bootstrap.min.js"></script>
+
+        <!-- PLUGINS -->
+        <script src="assets/js/plugins.js" type="text/javascript"></script>
+
+        <!-- Stem Prereqs -->
+        <script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.2/ScrollMagic.min.js"></script>
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.1/TweenMax.min.js"></script>
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.3/plugins/animation.gsap.js"></script>
+
+
+
+
+
+        <script src="assets/js/stem.js" type="text/javascript"></script>
+
+        <!-- MAIN JS -->
+        <script src="assets/js/main.js" type="text/javascript"></script>
+
+
 
     </body>
 </html>

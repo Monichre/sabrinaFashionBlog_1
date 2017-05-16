@@ -1,0 +1,129 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>Deliver Fashion | Documentation</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <!-- FAVICONS -->
+        <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+        <link rel="apple-touch-icon" href="img/apple-touch-icon.png">
+
+        <!-- FONTS -->
+        <link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+        <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,600,400italic,600italic' rel='stylesheet' type='text/css'>
+
+        <!-- FONT AWESOME -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+
+        <!-- MAIN STYLESHEET -->
+        <link rel="stylesheet" href="../css/main.css">
+    </head>
+    <body>
+        <!--[if lt IE 8]>
+            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+        <header class="header">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6">
+                        <h1>Documentation</h1>
+                        <p>An overview of Deliver Fashion, including how to use, modify and upload it, some basic examples and more.</p>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <section class="space">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-3">
+                        <aside class="sidebar">
+                            <ul class="list">
+                                <li><a href="../intro.html">Introduction</a></li>
+                                <li><a href="overview.html">Overview</a></li>
+                                <li><a href="uploading.html">Uploading</a></li>
+                                <li><a href="header.html">Header</a></li>
+                                <li><a href="hero-title.html">Hero Title</a></li>
+                                <li><a href="footer.html">Footer</a></li>
+                                <li><a href="sections.html">Sections</a></li>
+                                <li><a href="homepage.html">Homepage</a></li>
+                                <li><a href="updates.html">Updates</a></li>
+                                <li class="active"><a href="contact.html">Contact</a></li>
+                                <li class="divider"></li>
+                                <li><a href="last-word.html">Last Word</a></li>
+                            </ul>
+                        </aside>
+                    </div>
+                    <div class="col-md-9">
+                        <div class="main">
+                            <h2 class="title">Contact</h2>
+                            <p>Contact pages help your visitors reach you easily be sending you direct emails. Deliver provide you with active contact forms and google maps to make the best use of your contact page.</p>
+
+                            <h3>Conact Form</h3>
+                            <p>A simple contact form with beautifully designed inputs that will hep your visitor reach you. Any contact form consists of email, name and textarea inputs. Take a look at its simple mark up. After the visitor write his message and hit submit button, he will be redirected to a conifrm page that tell him that he sent the message successfully.</p>
+
+                            <img src="../img/contact.png" alt="Screenshot of Contact Form">
+                            <h4>Example</h4>
+                            <div class="code">
+                                <pre><code class="language-markup">
+&lt;form action="contactform/contact-form-handler.php" method="post" name="contactform">
+    &lt;div class="col-md-6 left-side">
+        &lt;input type="text" name="name" id="name" class="form-control fix" placeholder="Full Name">
+        &lt;input type="tel" class="form-control fix" placeholder="Phone">
+    &lt;/div>
+    &lt;div class="col-md-6 right-side">
+        &lt;input type="email" name="email" id="email" class="form-control fix-bottom" placeholder="Email Address">
+        &lt;input type="text" class="form-control fix-bottom" placeholder="Website">
+    &lt;/div>
+    &lt;div class="col-xs-12">
+        &lt;textarea rows="10" class="form-control" name="message" id="message" placeholder="Message Here">&lt;/textarea>
+        &lt;div class="text-center">
+            &lt;button type="submit" name="submit" class="btn btn-default btn-fullwidth btn-dark">Send Message&lt;/button>
+        &lt;/div>
+    &lt;/div>
+&lt;/form></code></pre>
+                            </div>
+
+                            <p>To recieve the messages to your email, you should change it to yours from the contact form the email handler page and here is how:
+                            <ul class="list">
+                                <li>1. Open the HTML folder.</li>
+                                <li>2. Open the contact form folder.</li>
+                                <li>3. Open the 'contact-form-handler.php' file.</li>
+                                <li>4. Go to line 8 and change the email to yours.</li>
+                            </ul></p>
+
+                            <h4>Email Handler</h4>
+                            <div class="code">
+                                <pre><code class="language-javascript">
+/////////////////////////////////////////////////////////////////////
+/////////////////////////////////////////////////////////////////////
+
+$myemail = 'zawiaemail@gmail.com';// <===== Put Your email address here.
+
+////////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////
+                                </code></pre>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <footer class="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-12">
+                        <p>© Zawia | Deliver Fashion Docs 1.0</p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <!-- CODE HIGHLIGHTING -->
+        <script src="../js/prism.js"></script>
+    </body>
+</html>
