@@ -980,22 +980,20 @@ blockquote {
 }
 
 
-#home-page-blog, #contact {
+#home-page-blog, #contact, #fashion-blog, #health-wellness-blog, #travel-blog {
     background-image: url(../img/nyc-bw.png);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-
     border-bottom: 10px solid #fff;
 
 }
-#home-page-blog .overlay-bg, #contact .overlay-bg {
+.blog-header .overlay-bg {
     position: absolute;
     top: 0;
     left: 0;
     height: 100%;
     width: 100%;
-    /*background-color: rgba(255, 255, 255, 0.7);*/
     background-image: linear-gradient(rgba(255, 255, 255, 1), rgba(255, 255, 255, 0.5));
 }
 /*
@@ -1792,6 +1790,7 @@ div[class^="grid-sizer"]{
     transform: scaleX(0.6) scaleY(0.6) scaleZ(1);
     display: block;
     transition: opacity 500ms, transform 500ms;
+    box-shadow: 2px 2px 2px gray;
 }
 .grid-item:hover .masonry-portfolio-box-mask{
     opacity: 1;
@@ -1801,7 +1800,7 @@ div[class^="grid-sizer"]{
 .portfolio-mask-title {
     position: absolute;
     left: 0px;
-    top: 50%;
+    /*top: 50%;*/
     right: 0px;
     width: 100%;
     margin-top: -20px;
@@ -4275,8 +4274,18 @@ a:hover.pricing-button{
                     /*Fashion & Style*/
 /*-----------------------------------------------------------------*/
 
-
-
+.section-headline {
+    margin-bottom: 30px;
+}
+.fashion-date-header {
+    margin: 15px;
+}
+.fashion-date-header.right {
+    text-align: right;
+}
+.fashion-preview {
+    margin-top: 10px;
+}
 .fashion .portfolio .item {
   position: relative;
   background-color: #1a1a1a;
