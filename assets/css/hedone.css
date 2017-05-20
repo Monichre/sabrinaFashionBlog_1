@@ -893,6 +893,12 @@ blockquote {
     letter-spacing: -4px;
     cursor: default;
     color: #333;
+    position: relative;
+    z-index: 1000;
+    transition: all .5s;
+}
+.first-feature .clipped_bg h1:hover {
+    color: #ba2424;
 }
 
 .hero-slider-content .text-top, .theresa-title {
@@ -935,7 +941,7 @@ blockquote {
 }
 
 .first-feature .clipped_bg h1, .last-feature .clipped_bg h1, .first-feature .slider-text-bottom, .last-feature .slider-text-bottom {
-    color: #fff!important;
+    color: #fff;
 }
 
 .slider-line {
@@ -1252,9 +1258,9 @@ blockquote {
  }
  .header-underline-large {
      position: absolute;
-    left: 0;
+    left: 100px;
     bottom: -30px;
-     width: 35%;
+     width: 30%;
      height: 4px;
      background-color: #333;
      display: block;
@@ -1576,6 +1582,9 @@ font-family: 'Rubik', sans-serif;*/
 /*
  * 7.VIDEO SECTION
  */
+ video {
+     width: 100%;
+ }
 .video-section{
     background-image: url(../img/video-home-image.jpg);
     background-position: 50% 50%;
@@ -1793,10 +1802,12 @@ div[class^="grid-sizer"]{
     width: 100%;
     margin-top: -20px;
     margin-bottom: 0px;
-    font-family: "Montserrat", sans-serif;
+    font-family: "Fjalla One", sans-serif;
     color: #303030;
-    font-size: 14px;
+    font-size: 34px;
     font-weight: 700;
+    padding: 10px;
+    line-height: normal;
     text-align: center;
     letter-spacing: 2px;
     text-transform: capitalize;
@@ -1807,19 +1818,19 @@ div[class^="grid-sizer"]{
     left: 50%;
     top: 50%;
     right: auto;
-    display: block;
+    /*display: block;*/
+    display: none;
     width: 110px;
     margin: 21px 0px 0px -55px;
     padding-top: 5px;
     padding-bottom: 5px;
     border-radius: 3px;
-    background-color: rgba(174,198,207, .2);
 
-    font-family: "Lato", sans-serif;
+
+    font-family: "Arsenal", sans-serif;
     color: #212121;
     font-size: 13px;
     line-height: 18px;
-    font-style: italic;
     text-transform: uppercase;
     font-weight: 600;
     text-align: center;
@@ -4086,7 +4097,7 @@ ul.portfolio-filter li a:hover {
     color: #ba2424;
 }
 .portfolio-mask-subtitle {
-    background-color: rgba(174,198,207, .9);
+
 }
 .blog-page-post-head-h2 a:hover{
     color: #fcc900;

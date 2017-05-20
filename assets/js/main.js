@@ -110,7 +110,7 @@
 					resizesContainer: false,
 					masonry: {
 						columnWidth: '.grid-sizer', //'.work-portfolio',
-						gutterWidth: 10
+						gutterWidth: 20
 					}
 				});
 			});
