@@ -1746,9 +1746,13 @@ div[class^="grid-sizer"]{
     height: 0;
     min-height: 0;
 }
+.grid-item {
+    margin-bottom: 10px;
+    padding: 0 5px;
+}
 .grid-item-content{
-    margin-left: -15px;
-    margin-right: -15px;
+    /*margin-left: -15px;*/
+    /*margin-right: -15px;*/
 }
 
 /**** Isotope filtering ****/

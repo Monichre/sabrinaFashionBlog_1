@@ -109,8 +109,8 @@
 					percentPosition: true,
 					resizesContainer: false,
 					masonry: {
-						columnWidth: '.grid-sizer', //'.work-portfolio',
-						gutterWidth: 20
+						columnWidth: '.grid-sizer' //'.work-portfolio',
+						// gutterWidth: '20px'
 					}
 				});
 			});
