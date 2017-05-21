@@ -1,17 +1,6 @@
-
-html, body, .container, .header {
-	height: 100%;
-	color: #333;
-}
-
-/* Header */
-.header {
+#container {
 	position: relative;
-	margin: 0 auto;
-	min-height: 560px;
-	width: 100%;
 }
-
 .bg-img {
 	position: absolute;
 	overflow: hidden;

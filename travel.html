@@ -18,12 +18,18 @@
     <!-- Icons -->
     <link rel="stylesheet" href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
 
+    <!-- Default Map Styles -->
+    <link rel="stylesheet" href="https://www.amcharts.com/lib/3/plugins/export/export.css" type="text/css" media="all" />
+
+    <!-- Travel Menu Page Specific Styles -->
+    <link href="sass/travel.scss" rel="stylesheet" type="text/css" />
+
     <!-- Site Wide CSS -->
-    <link href="assets/css/hedone.css" rel="stylesheet" type="text/css"/>
+    <link href="assets/css/hedone.css" rel="stylesheet" type="text/css" />
 
 </head>
 
-<body>
+<body id="travel">
 
     <!-- HEADER -->
     <header>
@@ -39,9 +45,11 @@
                                     </div>
                                     <div class="navbar-left social-nav">
                                         <ul class="list-inline">
-                                            <li><a href="index.html">
-                                                <!-- <img id="logo" src="assets/img/theresa-logo.png" alt=""> -->
-                                            </a></li>
+                                            <li>
+                                                <a href="index.html">
+                                                    <!-- <img id="logo" src="assets/img/theresa-logo.png" alt=""> -->
+                                                </a>
+                                            </li>
                                             <li><a href="#"><i class="ion-social-facebook"></i></a></li>
                                             <li><a href="#"><i class="ion-social-instagram-outline"></i></a></li>
                                             <li><a href="#"><i class="ion-social-youtube"></i></a></li>
@@ -80,8 +88,6 @@
                                                 <a href="./contact.html">contact</a>
                                             </li>
 
-
-
                                         </ul>
                                     </div>
                                 </div>
@@ -94,26 +100,478 @@
     </header>
 
 
+    <!-- Hero -->
+    <section class="et-hero-tabs">
 
-    <section class="padding-top-bottom-120px white-background animation-overflow">
+
         <!-- Section Header -->
-        <div id="travel-blog" class="section-header travel-header blog-header">
-            <div class="overlay-bg"></div>
+        <div id="travel-blog" class="section-header">
             <p class="head-subtitle">Travel</p>
             <h3 class="head-h3">Highlights</h3>
         </div>
 
+        <!-- Interactive Map -->
+        <div id="chartdiv">
+
+        </div>
+
+
+        <!-- Menu Slider -->
+        <div class="et-hero-tabs-container">
+            <a class="et-hero-tab" href="#tab-es6">Spain</a>
+            <a class="et-hero-tab" href="#tab-flexbox">Jamaica</a>
+            <a class="et-hero-tab" href="#tab-react">Lisbon</a>
+            <a class="et-hero-tab" href="#tab-angular">Bermuda</a>
+            <a class="et-hero-tab" href="#tab-other">Los Angeles</a>
+            <span class="et-hero-tab-slider"></span>
+        </div>
+
+    </section>
+
+    <!-- Main -->
+    <section class="et-main">
+        <div class="et-slide" id="tab-es6">
+            <!-- UPDATES -->
+            <section class="updates space space-dark ">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="section-headline">
+                                <h3>Latest updates</h3>
+                                <p>Some of my favorite features from this last month. Check out the links for oportunities to shop these pieces.</p>
+                            </div>
+                        </div>
+
+                        <div class="col-md-6">
+                            <div class="section-buttons text-right">
+                                <a href="#" class="btn btn-default btn-dark">All Updates</a>
+                                <a href="#" class="btn btn-bordered btn-dark">Purchase</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-sm-6 col-md-3">
+                            <figure class="item">
+                                <div class="item-img">
+                                    <img src="assets/img/blog-post-1.jpeg" alt="About the image">
+                                </div>
+
+                                <figcaption>
+                                    <h3><a href="updates-detail.html">From the runway</a></h3>
+                                    <p class="date">March 14, 2015</p>
+                                    <p class="author">By Sabrina Smith</p>
+                                </figcaption>
+                            </figure>
+                        </div>
+
+                        <div class="col-sm-6 col-md-3">
+                            <figure class="item">
+                                <div class="item-img">
+                                    <img src="assets/img/sabrina-3.jpg" alt="About the image">
+                                </div>
+                                <figcaption>
+                                    <h3><a href="updates-detail.html">Top female feb</a></h3>
+                                    <p class="date">March 14, 2015</p>
+                                    <p class="author">By Sabrina Smith</p>
+                                </figcaption>
+                            </figure>
+                        </div>
+
+                        <div class="col-sm-6 col-md-3">
+                            <figure class="item">
+                                <div class="item-img">
+                                    <img src="assets/img/blog-post-2.jpg" alt="About the image">
+                                </div>
+                                <figcaption>
+                                    <h3><a href="updates-detail.html">Navada premium</a></h3>
+                                    <p class="date">March 14, 2015</p>
+                                    <p class="author">By Sabrina Smith</p>
+                                </figcaption>
+                            </figure>
+                        </div>
+
+                        <div class="col-sm-6 col-md-3">
+                            <figure class="item">
+                                <div class="item-img">
+                                    <img src="assets/img/blog-post-3.jpg" alt="About the image">
+                                </div>
+                                <figcaption>
+                                    <h3><a href="updates-detail.html">Exclusive interview</a></h3>
+                                    <p class="date">March 14, 2015</p>
+                                    <p class="author">By Sabrina Smith</p>
+                                </figcaption>
+                            </figure>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <div class="et-slide" id="tab-flexbox">
+
+            <!-- UPDATES -->
+            <section class="updates space space-dark ">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="section-headline">
+                                <h3>Latest updates</h3>
+                                <p>Some of my favorite features from this last month. Check out the links for oportunities to shop these pieces.</p>
+                            </div>
+                        </div>
+
+                        <div class="col-md-6">
+                            <div class="section-buttons text-right">
+                                <a href="#" class="btn btn-default btn-dark">All Updates</a>
+                                <a href="#" class="btn btn-bordered btn-dark">Purchase</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-sm-6 col-md-3">
+                            <figure class="item">
+                                <div class="item-img">
+                                    <img src="assets/img/blog-post-1.jpeg" alt="About the image">
+                                </div>
+
+                                <figcaption>
+                                    <h3><a href="updates-detail.html">From the runway</a></h3>
+                                    <p class="date">March 14, 2015</p>
+                                    <p class="author">By Sabrina Smith</p>
+                                </figcaption>
+                            </figure>
+                        </div>
+
+                        <div class="col-sm-6 col-md-3">
+                            <figure class="item">
+                                <div class="item-img">
+                                    <img src="assets/img/sabrina-3.jpg" alt="About the image">
+                                </div>
+                                <figcaption>
+                                    <h3><a href="updates-detail.html">Top female feb</a></h3>
+                                    <p class="date">March 14, 2015</p>
+                                    <p class="author">By Sabrina Smith</p>
+                                </figcaption>
+                            </figure>
+                        </div>
+
+                        <div class="col-sm-6 col-md-3">
+                            <figure class="item">
+                                <div class="item-img">
+                                    <img src="assets/img/blog-post-2.jpg" alt="About the image">
+                                </div>
+                                <figcaption>
+                                    <h3><a href="updates-detail.html">Navada premium</a></h3>
+                                    <p class="date">March 14, 2015</p>
+                                    <p class="author">By Sabrina Smith</p>
+                                </figcaption>
+                            </figure>
+                        </div>
+
+                        <div class="col-sm-6 col-md-3">
+                            <figure class="item">
+                                <div class="item-img">
+                                    <img src="assets/img/blog-post-3.jpg" alt="About the image">
+                                </div>
+                                <figcaption>
+                                    <h3><a href="updates-detail.html">Exclusive interview</a></h3>
+                                    <p class="date">March 14, 2015</p>
+                                    <p class="author">By Sabrina Smith</p>
+                                </figcaption>
+                            </figure>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+        </div>
+
+        <div class="et-slide" id="tab-react">
+            <!-- UPDATES -->
+            <section class="updates space space-dark ">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="section-headline">
+                                <h3>Latest updates</h3>
+                                <p>Some of my favorite features from this last month. Check out the links for oportunities to shop these pieces.</p>
+                            </div>
+                        </div>
+
+                        <div class="col-md-6">
+                            <div class="section-buttons text-right">
+                                <a href="#" class="btn btn-default btn-dark">All Updates</a>
+                                <a href="#" class="btn btn-bordered btn-dark">Purchase</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-sm-6 col-md-3">
+                            <figure class="item">
+                                <div class="item-img">
+                                    <img src="assets/img/blog-post-1.jpeg" alt="About the image">
+                                </div>
+
+                                <figcaption>
+                                    <h3><a href="updates-detail.html">From the runway</a></h3>
+                                    <p class="date">March 14, 2015</p>
+                                    <p class="author">By Sabrina Smith</p>
+                                </figcaption>
+                            </figure>
+                        </div>
+
+                        <div class="col-sm-6 col-md-3">
+                            <figure class="item">
+                                <div class="item-img">
+                                    <img src="assets/img/sabrina-3.jpg" alt="About the image">
+                                </div>
+                                <figcaption>
+                                    <h3><a href="updates-detail.html">Top female feb</a></h3>
+                                    <p class="date">March 14, 2015</p>
+                                    <p class="author">By Sabrina Smith</p>
+                                </figcaption>
+                            </figure>
+                        </div>
+
+                        <div class="col-sm-6 col-md-3">
+                            <figure class="item">
+                                <div class="item-img">
+                                    <img src="assets/img/blog-post-2.jpg" alt="About the image">
+                                </div>
+                                <figcaption>
+                                    <h3><a href="updates-detail.html">Navada premium</a></h3>
+                                    <p class="date">March 14, 2015</p>
+                                    <p class="author">By Sabrina Smith</p>
+                                </figcaption>
+                            </figure>
+                        </div>
+
+                        <div class="col-sm-6 col-md-3">
+                            <figure class="item">
+                                <div class="item-img">
+                                    <img src="assets/img/blog-post-3.jpg" alt="About the image">
+                                </div>
+                                <figcaption>
+                                    <h3><a href="updates-detail.html">Exclusive interview</a></h3>
+                                    <p class="date">March 14, 2015</p>
+                                    <p class="author">By Sabrina Smith</p>
+                                </figcaption>
+                            </figure>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+        </div>
+        <div class="et-slide" id="tab-angular">
+            <!-- UPDATES -->
+            <section class="updates space space-dark ">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="section-headline">
+                                <h3>Latest updates</h3>
+                                <p>Some of my favorite features from this last month. Check out the links for oportunities to shop these pieces.</p>
+                            </div>
+                        </div>
+
+                        <div class="col-md-6">
+                            <div class="section-buttons text-right">
+                                <a href="#" class="btn btn-default btn-dark">All Updates</a>
+                                <a href="#" class="btn btn-bordered btn-dark">Purchase</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-sm-6 col-md-3">
+                            <figure class="item">
+                                <div class="item-img">
+                                    <img src="assets/img/blog-post-1.jpeg" alt="About the image">
+                                </div>
+
+                                <figcaption>
+                                    <h3><a href="updates-detail.html">From the runway</a></h3>
+                                    <p class="date">March 14, 2015</p>
+                                    <p class="author">By Sabrina Smith</p>
+                                </figcaption>
+                            </figure>
+                        </div>
+
+                        <div class="col-sm-6 col-md-3">
+                            <figure class="item">
+                                <div class="item-img">
+                                    <img src="assets/img/sabrina-3.jpg" alt="About the image">
+                                </div>
+                                <figcaption>
+                                    <h3><a href="updates-detail.html">Top female feb</a></h3>
+                                    <p class="date">March 14, 2015</p>
+                                    <p class="author">By Sabrina Smith</p>
+                                </figcaption>
+                            </figure>
+                        </div>
+
+                        <div class="col-sm-6 col-md-3">
+                            <figure class="item">
+                                <div class="item-img">
+                                    <img src="assets/img/blog-post-2.jpg" alt="About the image">
+                                </div>
+                                <figcaption>
+                                    <h3><a href="updates-detail.html">Navada premium</a></h3>
+                                    <p class="date">March 14, 2015</p>
+                                    <p class="author">By Sabrina Smith</p>
+                                </figcaption>
+                            </figure>
+                        </div>
+
+                        <div class="col-sm-6 col-md-3">
+                            <figure class="item">
+                                <div class="item-img">
+                                    <img src="assets/img/blog-post-3.jpg" alt="About the image">
+                                </div>
+                                <figcaption>
+                                    <h3><a href="updates-detail.html">Exclusive interview</a></h3>
+                                    <p class="date">March 14, 2015</p>
+                                    <p class="author">By Sabrina Smith</p>
+                                </figcaption>
+                            </figure>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <div class="et-slide" id="tab-other">
+            <!-- UPDATES -->
+            <section class="updates space space-dark ">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="section-headline">
+                                <h3>Latest updates</h3>
+                                <p>Some of my favorite features from this last month. Check out the links for oportunities to shop these pieces.</p>
+                            </div>
+                        </div>
+
+                        <div class="col-md-6">
+                            <div class="section-buttons text-right">
+                                <a href="#" class="btn btn-default btn-dark">All Updates</a>
+                                <a href="#" class="btn btn-bordered btn-dark">Purchase</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-sm-6 col-md-3">
+                            <figure class="item">
+                                <div class="item-img">
+                                    <img src="assets/img/blog-post-1.jpeg" alt="About the image">
+                                </div>
+
+                                <figcaption>
+                                    <h3><a href="updates-detail.html">From the runway</a></h3>
+                                    <p class="date">March 14, 2015</p>
+                                    <p class="author">By Sabrina Smith</p>
+                                </figcaption>
+                            </figure>
+                        </div>
+
+                        <div class="col-sm-6 col-md-3">
+                            <figure class="item">
+                                <div class="item-img">
+                                    <img src="assets/img/sabrina-3.jpg" alt="About the image">
+                                </div>
+                                <figcaption>
+                                    <h3><a href="updates-detail.html">Top female feb</a></h3>
+                                    <p class="date">March 14, 2015</p>
+                                    <p class="author">By Sabrina Smith</p>
+                                </figcaption>
+                            </figure>
+                        </div>
+
+                        <div class="col-sm-6 col-md-3">
+                            <figure class="item">
+                                <div class="item-img">
+                                    <img src="assets/img/blog-post-2.jpg" alt="About the image">
+                                </div>
+                                <figcaption>
+                                    <h3><a href="updates-detail.html">Navada premium</a></h3>
+                                    <p class="date">March 14, 2015</p>
+                                    <p class="author">By Sabrina Smith</p>
+                                </figcaption>
+                            </figure>
+                        </div>
+
+                        <div class="col-sm-6 col-md-3">
+                            <figure class="item">
+                                <div class="item-img">
+                                    <img src="assets/img/blog-post-3.jpg" alt="About the image">
+                                </div>
+                                <figcaption>
+                                    <h3><a href="updates-detail.html">Exclusive interview</a></h3>
+                                    <p class="date">March 14, 2015</p>
+                                    <p class="author">By Sabrina Smith</p>
+                                </figcaption>
+                            </figure>
+                        </div>
+                    </div>
+                </div>
+            </section>
     </section>
 
 
-    <div class="map-wrapper">
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="container">
+            <div class="widget-row row">
 
+                <!-- 1st Column -->
+                <div class="col-sm-4">
+                    <h5>Are You A Tall <span class="red">Fashionista</span> Or <span class="red">Fashion Fanatic?</span></h5>
+                    <p>Join the mailing list and be the first to know about product picks, style inspiration, and money saving tips. </p>
+                    <form id="subscribe-form" name="subscribe-form" method="post">
+                        <input id="subscribe-email" type="text" placeholder="subscribe" name="email" required="required" class="subscribe-style">
+                        <button type="button" data-value="subscribe" data-wait="Please wait..." class="w-button subscribe-button">subscribe</button>
+                    </form>
+                    <div class="alert alert-success contact-form-done no-border-radius">
+                        <p>Thank you! Your submission has been received!</p>
+                    </div>
+                </div>
 
+                <!-- 2nd Column ** Filler -->
+                <div class="col-sm-4"></div>
 
+                <!-- 3rd Column -->
+                <div class="col-sm-4">
+                    <h5><span class="red">~</span> Follow me on Social <span class="red">~</span></h5>
 
-    </div>
+                    <!-- LightWidget WIDGET -->
+                    <script src="http://lightwidget.com/widgets/lightwidget.js"></script>
+                    <iframe src="http://lightwidget.com/widgets/7e43d5c4ce945e80a7295ff939bae29d.html" scrolling="no" allowtransparency="true" class="lightwidget-widget" style="width: 100%; border: 0; overflow: hidden;"></iframe>
 
+                </div>
 
+            </div>
+            <div class="row">
+
+                <div class="footer-social-block">
+                    <a href="#" class="w-inline-block social-wrap"><i class="ion-social-pinterest"></i></a>
+                    <a href="#" class="w-inline-block social-wrap"><i class="ion-social-instagram"></i></a>
+                    <a href="#" class="w-inline-block social-wrap"><i class="ion-social-facebook"></i></a>
+                    <a href="#" class="w-inline-block social-wrap"><i class="ion-social-youtube"></i></a>
+                </div>
+                <div class="footer-text">
+                    <span class="footer-text-span">Theresa on the Town</span>
+                </div>
+                <div id="loveCraft">
+                    <span class="loveCraft"><span class="blue">Love</span><span class="red">Craft</span><span class="white">.io</span></span>
+                </div>
+
+            </div>
+        </div>
+    </footer>
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="assets/js/jquery.js"></script>
@@ -121,17 +579,17 @@
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="assets/js/bootstrap.min.js"></script>
 
+    <!-- Map Scripts -->
+    <script src="https://www.amcharts.com/lib/3/ammap.js"></script>
+    <script src="https://www.amcharts.com/lib/3/maps/js/worldLow.js"></script>
+    <script src="https://www.amcharts.com/lib/3/themes/light.js"></script>
+    <script src="https://www.amcharts.com/lib/3/plugins/export/export.min.js"></script>
+
+
     <!-- PLUGINS -->
     <script src="assets/js/plugins.js" type="text/javascript"></script>
 
-
-    <!-- TweenMax -->
-    <script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.2/ScrollMagic.min.js"></script>
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.1/TweenMax.min.js"></script>
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.3/plugins/animation.gsap.js"></script>
-
     <!-- Map Js -->
-    <script src="assets/js/polymaps.min.js"></script>
     <script src="assets/js/map.js" type="text/javascript"></script>
 
     <!-- Site Js -->
