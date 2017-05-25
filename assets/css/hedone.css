@@ -1304,7 +1304,7 @@ blockquote {
 .about-details .section-header .head-subtitle {
     font-size: 86px;
 }
- 
+
 .img-container {
     height: 400px;
     position: relative;
@@ -1340,7 +1340,7 @@ blockquote {
     z-index: 10;
     /*font-family: 'Playfair Display', serif;*/
     text-shadow: 1px 1px 1px solid #fff;
-    font-family: 'Playfair Display SC', serif;
+    font-family: "Arsenal", sans-serif;
 }
 .img-container .block {
 
@@ -2184,9 +2184,12 @@ input.subscribe-style.fullscreen-form:-webkit-autofill {
 }
 a.social-wrap{
     color: #fff;
+    text-align: center;
 }
 a.social-wrap i{
-    line-height: 32px;
+    line-height: 35px;
+    display: block;
+    margin: auto;
 }
 .footer-text {
     font-family: "Fjalla One";
@@ -2246,49 +2249,7 @@ a.social-wrap i{
     -o-transform: translate(-50%,-50%);
     transform: translate(-50%,-50%);
 }
-/**
- * Fade in videos
- * Note the .js class - so non js users still
- * see the video
- */
-.js .jquery-background-video {
-    opacity: 1;
-}
-.js .jquery-background-video.is-visible {
-    opacity: 1;
-}
 
-/**
- * Pause/play button
- */
-.jquery-background-video-pauseplay {
-    position: absolute;
-    background: transparent !important;
-    border: none !important;
-    box-shadow: none !important;
-    width: 20px;
-    height: 20px;
-    top: 15px;
-    right: 15px;
-    padding: 0 !important;
-    cursor: pointer;
-    outline: none !important;
-}
-.jquery-background-video-pauseplay span {
-    display: none;
-}
-.jquery-background-video-pauseplay:after,
-.jquery-background-video-pauseplay:before {
-    content: "";
-    position: absolute;
-    left: 0;
-    top: 0;
-    -webkit-transition: all .3s ease;
-    transition: all .3s ease;
-}
-.jquery-background-video-pauseplay.pause:after {
-    left: 10px;
-}
 
 /*
  * 16.NAV PILLS
@@ -3825,16 +3786,10 @@ ul.hedone-menu > li > ul.sub-menu li a:hover{
 
 .section .section-inner {
     margin: 0px auto;
-    width: 1024px;
+    width: 986px;
 
 }
 
-@media only screen {
-    .section .section-inner {
-        width: auto;
-        max-width: 1024px;
-    }
-}
 
 .svg-container {
     position: absolute;
@@ -3918,6 +3873,11 @@ ul.hedone-menu > li > ul.sub-menu li a:hover{
     width: 60px;
 }
 
+.post-block:hover > .post-wrapper .post .post-content .post-title {
+    color: #ba2424;
+}
+
+
 .post-img {
     max-width: 432px;
     height: 400px;
@@ -3941,6 +3901,7 @@ ul.hedone-menu > li > ul.sub-menu li a:hover{
     position: relative;
     width: 432px;
     padding: 0px 0px 60px 0px;
+    z-index: 10;
     clear: both;
     opacity: 1;
     -webkit-perspective: 1000px;
@@ -3948,6 +3909,9 @@ ul.hedone-menu > li > ul.sub-menu li a:hover{
     perspective: 1000px;
 }
 
+.post-content .entry-content {
+    font-family: "Arsenal", sans-serif;
+}
 .left .post-content .entry-content {
     padding-left: 10px;
     border-left: 2px solid #333;
@@ -3958,14 +3922,46 @@ ul.hedone-menu > li > ul.sub-menu li a:hover{
     border-right: 2px solid #333;
     position: relative;
 }
+.post-content .entry-content .date, .fashion-date-header .date  {
+    position: relative;
+    padding: 10px;
+    margin: 15px;
+}
 .left .post-content .entry-content .date {
     float: left;
-    padding: 10px;
+
 }
 .left .post-content .entry-content p {
     float: left;
 
 }
+
+span.blog-head {
+    font-family: "Fjalla One";
+    font-size: 66px;
+    line-height: 80px;
+    font-weight: 700;
+    position: absolute;
+    top: 0;
+
+    text-align: center;
+    padding: 0px;
+    border-bottom: 2px solid #333;
+    color: rgba(0, 0, 0, .15);
+}
+
+.month {
+    font-size: 25px;
+    line-height: 56px;
+    font-weight: 700;
+    letter-spacing: 0;
+}
+
+.entry-content .date span.blog-head  {
+    left: 0;
+
+}
+
 
 /*----------------
     Float right Styles
@@ -3973,9 +3969,10 @@ ul.hedone-menu > li > ul.sub-menu li a:hover{
 
 .right .post-content .entry-content .date {
     float: right;
-    padding: 10px;
+
 }
 .right .post-content .entry-content p {
+    text-align: right;
     clear: both;
     float: right;
 
@@ -3995,8 +3992,6 @@ ul.hedone-menu > li > ul.sub-menu li a:hover{
 .black-border-top {
     top: 0;
 }
-
-
 
 .right .post {
     float: right;
@@ -4052,6 +4047,12 @@ ul.hedone-menu > li > ul.sub-menu li a:hover{
     font-size: 32px;
     line-height: 42px;
     margin: 0px 0px 15px 0px;
+    transition: all .5s;
+    position: relative;
+}
+
+.post-wrapper .post .post-content .post-title:hover {
+    color: #ba2424;
 }
 
 
@@ -4127,32 +4128,6 @@ ul.hedone-menu > li > ul.sub-menu li a:hover{
 }
 
 
-/*Blog Header SAmple CSS*/
-span.blog-head {
-    font-family: "Fjalla One";
-    font-size: 38px;
-    line-height: 56px;
-    font-weight: 700;
-    position: relative;
-    left: 0;
-    height: 60px;
-    text-align: left;
-    padding: 0px;
-    border-bottom: 2px solid #333;
-}
-span.blog-head.dash {
-    line-height: normal;
-    color: #ba2424;
-    font-size: 20px;
-    padding: 0 10px;
-}
-
-.month {
-    font-size: 35px;
-    line-height: 56px;
-    font-weight: 700;
-    letter-spacing: 0;
-}
 
 
 /*--- Colors ---*/
@@ -4368,6 +4343,10 @@ a:hover.pricing-button{
 }
 .fashion-date-header.right {
     text-align: right;
+}
+.fashion-date-header.right .date .blog-head {
+
+    right: 0!important;
 }
 .fashion-preview {
     margin-top: 10px;
