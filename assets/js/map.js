@@ -168,7 +168,7 @@ var map = AmCharts.makeChart( "chartdiv", {
   },
 
   "areasSettings": {
-    "unlistedAreasColor": "#1a1a1a"
+    "unlistedAreasColor": "#C0C0C0"
     // "unlistedAreasAlpha": 0.9
   },
 

@@ -980,7 +980,7 @@ blockquote {
 }
 
 
-#home-page-blog, #contact, #fashion-blog, #health-wellness-blog {
+#home-page-blog, .blog-header, #fashion-blog, #health-wellness-blog {
     background-image: url(../img/nyc-bw.png);
     background-position: center;
     background-size: cover;
@@ -988,7 +988,7 @@ blockquote {
     border-bottom: 10px solid #fff;
 
 }
-.blog-header .overlay-bg {
+ .overlay-bg {
     position: absolute;
     top: 0;
     left: 0;
@@ -1262,6 +1262,11 @@ blockquote {
      margin: auto;
      transition: all .8s;
  }
+
+ #health .section-header .header-underline-large {
+     width: 20%;
+     left: 22%;
+ }
  .sub-header-underline-small {
      position: relative;
     left: 70px;
@@ -1305,14 +1310,21 @@ blockquote {
     font-size: 86px;
 }
 
-.img-container {
+#about .img-container, #contact .img-container  {
     height: 400px;
     position: relative;
     background-attachment: fixed;
 
 }
+#contact .img-container  {
 
-.img-container .img-inner {
+/*background-position: center;*/
+background-size: contain;
+/*background-repeat: no-repeat;*/
+
+}
+
+#about .img-container .img-inner, #contact .img-container .img-inner {
     position: absolute;
     height: 100%;
     width: 100%;
@@ -1321,14 +1333,20 @@ blockquote {
 }
 
 
-.img-container .blocks {
+#about .img-container .blocks {
     position: absolute;
     top: 30%;
     right: -50px;
 
 
 }
-.img-container .blocks #sabrinaBlockTitle {
+#contact .img-container .blocks {
+    position: absolute;
+    top: 30%;
+    left: -50px;
+
+}
+#about .img-container .blocks #sabrinaBlockTitle, #contact .img-container .blocks #sabrinaBlockTitle {
     top: 0;
     left: 0;
     right: 0;
@@ -1342,7 +1360,7 @@ blockquote {
     text-shadow: 1px 1px 1px solid #fff;
     font-family: "Arsenal", sans-serif;
 }
-.img-container .block {
+#about .img-container .block, #contact .img-container .block {
 
     position: relative;
     transition: all .5s;
@@ -1353,30 +1371,43 @@ blockquote {
     box-shadow: 1px 1px 1px 1px rgba(0,0,0,.6);
 
 }
-.img-container .top-block {
+
+#about .img-container .top-block {
     left: 201px;
     bottom: 1px;
     transition: all .5s;
 }
-.img-container .middle-block {
+#about .img-container .middle-block {
     left: 50px;
 
 }
-.img-container .bottom-block {
+#about .img-container .bottom-block {
     top: 1px;
     left: 25px;
 }
 
+#contact .img-container .block.top-block {
+    right: 201px;
+    bottom: 1px;
+    transition: all .5s;
+}
+#contact .img-container .block.middle-block {
+    right: 50px;
+}
+#contact .img-container .block.bottom-block {
+    right: 25px;
+    top: 1px;
+}
 
 /*Profile Hover Image*/
-.img-container .blocks:hover .top-block {
+#about .img-container .blocks:hover .top-block {
     left: 150px;
 }
-.img-container .blocks:hover .middle-block {
+#about .img-container .blocks:hover .middle-block {
     left: 100px;
 
 }
-.img-container .blocks:hover .bottom-block {
+#about .img-container .blocks:hover .bottom-block {
     left: 50px;
 }
 
@@ -1815,12 +1846,12 @@ ul.portfolio-filter li {
 ul.portfolio-filter li a {
     font-family: "Lato", sans-serif;
     font-size: 16px;
-    text-transform: lowercase;
+    text-transform: capitalize;
     color: #212121;
 	font-weight:600;
     text-decoration: none;
     padding: 2px 10px;
-	font-style:italic;
+	/*font-style:italic;*/
     -webkit-transition: color 0.3s;
     -moz-transition: color 0.3s;
     transition: color 0.3s;
@@ -3167,161 +3198,6 @@ a.lightbox-map{
 }
 
 /*
- * 24. YouTubePopUp
-    Description: jQuery plugin to display YouTube or Vimeo video in PopUp, responsive and retina, easy to use.
-    Version: 1.0.1
-    Plugin URL: http://wp-time.com/youtube-popup-jquery-plugin/
-    Written By: Qassim Hassan
-    Twitter: @QQQHZ
-    Websites: wp-time.com | qass.im | wp-plugins.in
-    Dual licensed under the MIT and GPL licenses:
-        http://www.opensource.org/licenses/mit-license.php
-        http://www.gnu.org/licenses/gpl.html
-    Copyright (c) 2016 - Qassim Hassan
-*/
-
-.YouTubePopUp-Wrap{
-    position:fixed;
-    width:100%;
-    height:100%;
-    background-color:#000;
-    background-color:rgba(0,0,0,0.8);
-    top:0;
-    left:0;
-    z-index:9999999999999;
-}
-
-.YouTubePopUp-animation{
-    opacity: 0;
-    -webkit-animation-duration: 0.5s;
-    animation-duration: 0.5s;
-    -webkit-animation-fill-mode: both;
-    animation-fill-mode: both;
-    -webkit-animation-name: YouTubePopUp;
-    animation-name: YouTubePopUp;
-}
-
-@-webkit-keyframes YouTubePopUp {
-    0% {
-        opacity: 0;
-    }
-
-    100% {
-        opacity: 1;
-    }
-}
-
-@keyframes YouTubePopUp {
-    0% {
-        opacity: 0;
-    }
-
-    100% {
-        opacity: 1;
-    }
-}
-
-body.logged-in .YouTubePopUp-Wrap{ /* For WordPress */
-    top:32px;
-    z-index:99998;
-}
-
-.YouTubePopUp-Content{
-    max-width:680px;
-    display:block;
-    margin:0 auto;
-    height:100%;
-    position:relative;
-}
-
-.YouTubePopUp-Content iframe{
-    max-width:100% !important;
-    width:100% !important;
-    display:block !important;
-    height:480px !important;
-    border:none !important;
-    position:absolute;
-    top: 0;
-    bottom: 0;
-    margin: auto 0;
-}
-
-.YouTubePopUp-Hide{
-    -webkit-animation-duration: 0.5s;
-    animation-duration: 0.5s;
-    -webkit-animation-fill-mode: both;
-    animation-fill-mode: both;
-    -webkit-animation-name: YouTubePopUpHide;
-    animation-name: YouTubePopUpHide;
-}
-
-@-webkit-keyframes YouTubePopUpHide {
-    0% {
-        opacity: 1;
-    }
-
-    100% {
-        opacity: 0;
-    }
-}
-
-@keyframes YouTubePopUpHide {
-    0% {
-        opacity: 1;
-    }
-
-    100% {
-        opacity: 0;
-    }
-}
-
-.YouTubePopUp-Close{
-    position:absolute;
-    top:0;
-    cursor:pointer;
-    bottom:528px;
-    right:0px;
-    margin:auto 0;
-    width:24px;
-    height:24px;
-    background:url(../img/close.png) no-repeat;
-    background-size:24px 24px;
-    -webkit-background-size:24px 24px;
-    -moz-background-size:24px 24px;
-    -o-background-size:24px 24px;
-}
-
-.YouTubePopUp-Close:hover{
-    opacity:0.5;
-}
-
-@media all and (max-width: 768px) and (min-width: 10px){
-    .YouTubePopUp-Content{
-        max-width:90%;
-    }
-}
-
-@media all and (max-width: 600px) and (min-width: 10px){
-    .YouTubePopUp-Content iframe{
-        height:320px !important;
-    }
-
-    .YouTubePopUp-Close{
-        bottom:362px;
-    }
-}
-
-@media all and (max-width: 480px) and (min-width: 10px){
-    .YouTubePopUp-Content iframe{
-        height:220px !important;
-    }
-
-    .YouTubePopUp-Close{
-        bottom:262px;
-    }
-}
-
-/*
  * 25. MAIN NAVIGATION
  */
 /* first mobile */
@@ -3423,6 +3299,10 @@ body.logged-in .YouTubePopUp-Wrap{ /* For WordPress */
     display: block;
     text-decoration: none;
     color: #333333;
+}
+
+.sign-up {
+    font-family: "Fjalla One", sans-serif;
 }
 
 
@@ -4055,6 +3935,66 @@ span.blog-head {
     color: #ba2424;
 }
 
+.post-content .home-page-affiliates {
+    padding: 10px;
+}
+
+.post-content .home-page-affiliates .affiliate-images {
+
+    /*border-top: 2px solid #eee;*/
+}
+.post-content .home-page-affiliates .affiliate-images h2 {
+    width: max-content;
+    display: block;
+    margin: auto;
+    font-family: 'Fjalla One', sans-serif;
+    font-size: 18px;
+    padding-bottom: 5px;
+    margin-bottom: 5px;
+    border-bottom: 2px solid #eee;
+    font-style: italic;
+
+}
+.post-content .home-page-affiliates .affiliate-images ul {
+    text-align: center;
+}
+
+.post-content .home-page-affiliates .affiliate-images ul li {
+    /*max-height: 160px;*/
+
+}
+.post-content .home-page-affiliates .affiliate-images ul li img, .affiliate-images-hover ul li img {
+    height: 120px;
+    width: 67px;
+}
+.right .affiliate-images-hover {
+    position: absolute;
+    top: 0;
+    right: -70px;
+    /*left: -120px;*/
+    transition: all .5s;
+    height: 0;
+}
+.left .affiliate-images-hover {
+    position: absolute;
+    top: 0;
+    /*right: -70px;*/
+    left: -120px;
+    transition: all .5s;
+    height: 0;
+}
+.affiliate-images-hover ul {
+    list-style-type: none;
+    opacity: 0;
+    transition: all .5s;
+}
+.post-img:hover .affiliate-images-hover ul {
+    opacity: 1;
+}
+.post-img:hover .affiliate-images-hover {
+    height: 100%;
+}
+
 
 /*==========  Media queries  ==========*/
 
@@ -4523,22 +4463,98 @@ a:hover.pricing-button{
   .fashion .features .item.lighter {
     background-color: #363636; }
 
+/*Affiliates*/
+/*.fashion .portfolio .item */
+.featured-affiliates {
+    /*padding: 25px 25px 20px 25px;*/
+    display: flex;
+}
+.featured-affiliates .featured-affiliates-text, .featured-affiliates .featured-affiliates-images {
+    width: 50%;
+    display: block;
+    margin: 0 auto!important;
+    padding: 25px 25px 20px 25px;
+    float: none!important;
+}
+.featured-affiliates .featured-affiliates-text {
+    background: #1a1a1a;
+
+    color: #fff!important;
+
+}
+.featured-affiliates .featured-affiliates-text h1 {
+    color: #fff!important;
+}
+.featured-affiliates .featured-affiliates-text h1:after {
+  content: ' ';
+  display: block;
+  width: 15px;
+  height: 1px;
+  background-color: #ba2424;
+  margin: 15px 0; }
+
+.featured-affiliates .featured-affiliates-images {
+    overflow: hidden;
+    position: relative;
+ }
+.featured-affiliates .featured-affiliates-images h4, .featured-affiliates .featured-affiliates-images p {
+/*
+    position: relative!important;
+    z-index: 10!important;*/
+ }
+
+.featured-affiliates .featured-affiliates-images ul {
+    padding: 0;
+    margin:auto;
+    text-align: center;
+    background: #f4f2e3;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+}
+.featured-affiliates .featured-affiliates-images ul li {
+    /*display: inline-block;*/
+    position: relative;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.featured-affiliates .featured-affiliates-images ul li img {
+    display: block;
+    /*height: 120px;*/
+    /*width: 67px;*/
+    height: auto;
+    width: auto;
+}
+.featured-affiliates .featured-affiliates-images .btn {
+    margin: 20px auto!important;
+    display: block;
+}
+
+
 /*--------------------------------------------*/
   /*Map and Travel Page*/
 
 /*--------------------------------------------*/
 #travel .hedone-menu-container, #travel .nav-back {
-    background-color: #1a1a1a;
-    color: #fff;
+    /*background-color: #1a1a1a;*/
+    /*color: #fff;*/
 }
 #travel ul.hedone-menu li a  {
-    color: #fff;
+    /*color: #fff;*/
 }
 #travel .social-nav li a {
-    color: #fff;
+    /*color: #fff;*/
 }
 #travel .head-h3 {
 
+}
+.amcharts-chart-div {
+    background: beige;
 }
 #travel main {
     /*height: 100vh;*/
