@@ -1,4 +1,4 @@
-/* 
+/*
 // Table of content
 // -----------------------------------------------------------------------------
 // - 1. Base
@@ -6,7 +6,7 @@
 // - 3. Helpers
 */
 /* -----------------------------------------------------------------------------
-// 1. Base 
+// 1. Base
 // ----------------------------------------------------------------------------- */
 img {
   max-width: 100%; }
@@ -48,19 +48,8 @@ img {
 /* -----------------------------------------------------------------------------
 // 2. Typography
 // ----------------------------------------------------------------------------- */
-body {
-  color: #9c9c9c;
-  font-family: "Droid Serif", Helvetica, Arial, sans-serif; }
 
-p {
-  font-size: 14px;
-  line-height: 24px;
-  letter-spacing: .5px; }
-  p a {
-    color: #d16651;
-    letter-spacing: .5px; }
-    p a:hover, p a:focus {
-      color: #181818; }
+
 
 i,
 .italic {
@@ -71,29 +60,6 @@ b {
   color: #181818;
   font-weight: 600; }
 
-h1, h2, h3, h4, h5, h6,
-.h1, .h2, .h3, .h4, .h5, .h6 {
-  font-family: "Josefin Sans", Helvetica, Arial, sans-serif;
-  color: #181818;
-  font-weight: 300; }
-
-h1, .h1 {
-  font-size: 36px; }
-
-h2, .h2 {
-  font-size: 30px; }
-
-h3, .h3 {
-  font-size: 24px; }
-
-h4, .h4 {
-  font-size: 18px; }
-
-h5, .h5 {
-  font-size: 14px; }
-
-h6, .h6 {
-  font-size: 12px; }
 
 ::selection {
   background-color: #d16651;
@@ -244,7 +210,7 @@ ol.list {
     color: #fff; }
 
 /* -----------------------------------------------------------------------------
-// 3. Helpers 
+// 3. Helpers
 // ----------------------------------------------------------------------------- */
 .space {
   padding: 100px 0; }

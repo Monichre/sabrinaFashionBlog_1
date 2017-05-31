@@ -13,9 +13,10 @@
         <!-- Bootstrap -->
         <link href="assets/css/bootstrap.min.css" rel="stylesheet">
 
-        <!-- Fashion Stylesheets for Video -->
-        <link rel="stylesheet" href="fashion/css/vendor.css">
-        <link rel="stylesheet" href="fashion/css/base.css">
+        <!-- Stylesheets from the Pallas Template -->
+        <link rel="stylesheet" href="health/css/layout.css" />
+        <link rel="stylesheet" href="health/css/retina.css" />
+
 
         <!-- Icons -->
         <link rel="stylesheet" href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
@@ -38,6 +39,7 @@
         <link href="assets/css/font-awesome.min.css" rel="stylesheet" type="text/css"/>
         <link href="assets/css/owl.carousel.custom.css" rel="stylesheet" type="text/css"/>
 
+
         <!-- Template Styles -->
         <link href="assets/css/hedone.css" rel="stylesheet" type="text/css"/>
 
@@ -51,59 +53,33 @@
 		<!-- PRELOADER -->
 		<div id="royal_preloader"></div>
 
-        <!-- AJAX LOADER -->
-        <div id="ajax-loader" class="loader loader-default" data-half="" data-text="Loading..."></div>
-
         <!-- IS MOBILE HACK -->
         <div id="isMobile"></div>
 
         <!-- HEADER -->
-        <header>
-            <div class="animatedParent animateOnce">
-                <div class="nav-back animated fadeInDown">
-                    <nav class="navbar">
-                        <div class="container-fluid">
-                            <div class="container">
-                                <div class="row">
-                                    <div class="hedone-menu-header">
-                                        <div class="nav-button">
-                                            <i class="fa fa-bars"></i>
-                                        </div>
-                                        <div class="navbar-left social-nav">
-                                            <ul class="list-inline">
-                                                <li><a href="index.html"><!-- <img id="logo" src="assets/img/logo-2.jpg" alt=""> --></a></li>
-                                                <li><a href="#"><i class="ion-social-instagram-outline"></i></a></li>
-                                                <li><a href="#"><i class="ion-social-facebook"></i></a></li>
-                                                <li><a href="#"><i class="ion-social-youtube"></i></a></li>
-                                                <li><a href="#"><i class="ion-social-pinterest"></i></a></li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                    <!-- PRIMARY MENU -->
-                                    <div id="Hedone" class="hedone-menu-container">
-                                        <div class="navbar-right">
-                                            <ul class="hedone-menu">
-                                                <li class="menu-item current-page-ancestor current-menu-ancestor current-menu-parent current-page-parent current_page_parent current_page_ancestor"><a href="index.html">Home</a></li>
-                                                <li class="menu-item"><a href="./about.html">About</a></li>
-                                                <li class="menu-item"><a href="./fashion-style.html">Fashion & Style</a></li>
-                                                <li class="menu-item"><a href="./travel.html">Travel</a></li>
-                                                <li class="menu-item"><a href="./health-wellness.html">Health & Wellness</a></li>
-                                                <li class="menu-item"><a href="./contact.html">contact</a></li>
-                                                <li class="sign-up"><a href="#">Sign Up</a></li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </nav>
+        <div id="menu-wrap" class="menu-back cbp-af-header">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-sm-4">
+                        <!-- <div class="logo">Theresa On the Town</div> -->
+                    </div>
+                    <div class="col-sm-8">
+                        <ul class="slimmenu">
+                            <li><a class="active-menu" href="./index.html">Home</a></li>
+                            <li><a href="about.html" class="animsition-link">about</a></li>
+                            <li><a href="./fashion-style.html">Fashion & Style</a></li>
+                            <li><a href="blog.html" class="animsition-link">travel</a></li>
+                            <li><a href="health-wellness.html">Health & Wellness</a></li>
+                            <li><a href="contact.html" class="animsition-link">Contact</a></li>
+                        </ul>
+                    </div>
                 </div>
             </div>
-        </header>
+        </div>
 
         <!-- HERO SECTION SLIDER-->
-         <div class="hero-slider">
-            <div class="owl-hero-slider-slide owl-carousel owl-theme">
+         <div class="hero-slider cd-section">
+            <div class="cd-block owl-hero-slider-slide owl-carousel owl-theme">
 
                 <!-- 1st Slide -->
                 <div class="first-feature item">
@@ -130,15 +106,13 @@
                     <div class="hero-slider-content">
                         <div class="container">
                             <div class="row">
-                                <div class="upSection animated slideOutUp">
-                                    <div class="text-top">Check out</div>
+                                <div class="animatedParent animateOnce main-text">
+                                    <div class="slider-text-mid animated fadeInShake delay-750 theresa-title">Check Out</div>
                                     <div class="clipped_bg">
                                         <h1>Sample <br> Sale Savings</h1>
                                     </div>
-                                    <div class="slider-line"></div>
-                                </div>
-                                <div class="downSection animated slideOutDown">
-                                    <div class="slider-text-bottom">My 6 tips</div>
+                                    <div class="slider-line animated fadeInUp delay-750"></div>
+                                    <div class="slider-text-bottom animated fadeInUp delay-1250">My 6 Tips</div>
                                 </div>
                             </div>
                         </div>
@@ -154,15 +128,13 @@
                     <div class="hero-slider-content">
                         <div class="container">
                             <div class="row">
-                                <div class="upSection animated slideOutUp">
-                                    <div class="text-top">Check out</div>
+                                <div class="animatedParent animateOnce main-text">
+                                    <div class="slider-text-mid animated fadeInShake delay-750 theresa-title">Check Out</div>
                                     <div class="clipped_bg">
                                         <h1>Sample <br> Sale Savings</h1>
                                     </div>
-                                    <div class="slider-line"></div>
-                                </div>
-                                <div class="downSection animated slideOutDown">
-                                    <div class="slider-text-bottom">My 6 tips</div>
+                                    <div class="slider-line animated fadeInUp delay-750"></div>
+                                    <div class="slider-text-bottom animated fadeInUp delay-1250">My 6 Tips</div>
                                 </div>
                             </div>
                         </div>
@@ -172,7 +144,7 @@
             </div>
         </div>
 
-        <section id="stem-section" class="padding-top-120px white-background animation-overflow">
+        <section id="stem-section" class="padding-top-120px">
 
             <!-- Section Header -->
             <div id="home-page-blog" class="animatedParent animateOnce stem-header blog-header section-header">
@@ -185,40 +157,51 @@
             <div id="scroll-body" class="section main-content">
                 <div class="section-inner">
                     <div class="post-wrapper">
+
+                        <!--- ================================
+                                1st Post
+
+                                ** Notes: Entry content text in the p tag will need to be limited by character count so it does not
+                                overflow onto the post-block-bg div. You could also accomplish this via CSS but you should probably clip the text blurbs as it is
+
+                        ====================================== -->
+
+
                         <section id="post-1" class="post-block clearfix left">
+                            <div class="post-block-bg">
+                                <h3 class="affiliate-subheader">- Fashion & Style -</h3>
+                                <h2>Featured</h2>
+                                <div class="affiliate-images">
+                                    <ul class="list-inline">
+                                        <li><img class=""src="assets/img/affiliate-2.jpeg" height="160px" width="110px" alt=""></li>
+                                        <li><img class=""src="assets/img/affiliate-1.jpeg" height="160px" width="110px" alt=""></li>
+                                        <li><img class=""src="assets/img/affiliate-3.jpeg" height="160px" width="110px" alt=""></li>
+                                    </ul>
+                                </div>
+                            </div>
                             <article class="post">
                                 <div class="post-content">
                                     <h2 class="post-title">THESE ARE MY BEST SAMPLE SALE FINDS</h2>
                                     <div class="entry-content clearfix">
-                                        <p><div class="date"><span class="blog-head">20</span>  <span class="month">May</span></div>Depending on the selection and pricing, sample sales can be hit or miss. I’ve gone to a couple that I was completely disappointed in. However, I’ve walked away from others with bags of goodies, blown away by the great merchandise and discounts.</p>
-                                    </div>
-                                    <div class="home-page-affiliates">
-                                        <div class="affiliate-images">
-                                            <h2>Featured Items</h2>
-                                            <ul class="list-inline">
-                                                <li><img class="img-thumbnail"src="assets/img/affiliate-2.jpeg" height="160px" width="110px" alt=""></li>
-                                                <li><img class="img-thumbnail"src="assets/img/affiliate-1.jpeg" height="160px" width="110px" alt=""></li>
-                                                <li><img class="img-thumbnail"src="assets/img/affiliate-3.jpeg" height="160px" width="110px" alt=""></li>
-                                            </ul>
+                                        <div class="clearfix"><div class="date"><span class="blog-head">20</span>  <span class="month">May</span></div>
+                                            <p>Depending on the selection and pricing, sample sales can be hit or miss. I’ve gone to a couple that I was completely disappointed in. However, I’ve walked away from   others with bags of goodies, blown away by the great merchandise and discounts.</p>
                                         </div>
+                                    </div>
+                                    <div class="share-social">
+                                        <ul>
+                                            <li><div class=""></div><a href="#"><i class="icon-basic-share"></i></a></li>
+                                            <li><div class=""></div><a href="#"><i class="icon-basic-heart"></i></a></li>
+                                            <li><div class=""></div><a href="#"><i class="icon-basic-message"></i></a></li>
+                                        </ul>
                                     </div>
                                 </div>
                             </article>
-                            <div class="hover-div"><span class="hover-indicator"></span></div>
                             <div class="post-img">
                                 <div class="hover-for-team-social">
                                     <ul>
                                         <li><a href="#"><i class="ion-social-facebook"></i></a></li>
                                         <li><a href="#"><i class="ion-social-instagram-outline"></i></a></li>
                                         <li><a href="#"><i class="ion-social-pinterest"></i></a></li>
-                                    </ul>
-                                </div>
-                                <div class="affiliate-images-hover">
-                                    <!-- <h2>Featured Items</h2> -->
-                                    <ul class="">
-                                        <li><img class="img-thumbnail"src="assets/img/affiliate-2.jpeg" height="160px" width="110px" alt=""></li>
-                                        <li><img class="img-thumbnail"src="assets/img/affiliate-1.jpeg" height="160px" width="110px" alt=""></li>
-                                        <li><img class="img-thumbnail"src="assets/img/affiliate-3.jpeg" height="160px" width="110px" alt=""></li>
                                     </ul>
                                 </div>
                                 <img class="img-responsive img-thumbnail image-post" src="assets/img/blog-post-1.jpeg" alt="">
@@ -227,29 +210,42 @@
                                 <div class="team-expert">Photographer</div>
                             </div>
                         </section>
+
+
                         <!--- ================================
+                                Second Post
                         ====================================== -->
-                        <!-- Second Post -->
+
+
                         <section id="post-2"  class="post-block clearfix right">
+                            <div class="post-block-bg">
+                                <h3 class="affiliate-subheader">- Fashion & Style -</h3>
+                                <h2>Featured</h2>
+                                <div class="affiliate-images">
+                                    <ul class="list-inline">
+                                        <li><img class=""src="assets/img/affiliate-2.jpeg" height="160px" width="110px" alt=""></li>
+                                        <li><img class=""src="assets/img/affiliate-1.jpeg" height="160px" width="110px" alt=""></li>
+                                        <li><img class=""src="assets/img/affiliate-3.jpeg" height="160px" width="110px" alt=""></li>
+                                    </ul>
+                                </div>
+                            </div>
                             <article class="post">
                                 <div class="post-content">
                                     <h2 class="post-title">BEST WEBSITES TO LOCATE SAMPLE SALES</h2>
-                                    <div class="entry-content">
-                                        <p><div class="date"><span class="blog-head">20</span>  <span class="month">May</span></div>Sample sales happen frequently, especially in NYC. Here are the best sites that list upcoming sale information that helps alot to plan for them in advance.</p>
-                                    </div>
-                                    <div class="home-page-affiliates">
-                                        <div class="affiliate-images">
-                                            <h2>Featured Items</h2>
-                                            <ul class="list-inline">
-                                                <li><img class="img-thumbnail"src="assets/img/affiliate-2.jpeg" height="160px" width="110px" alt=""></li>
-                                                <li><img class="img-thumbnail"src="assets/img/affiliate-1.jpeg" height="160px" width="110px" alt=""></li>
-                                                <li><img class="img-thumbnail"src="assets/img/affiliate-3.jpeg" height="160px" width="110px" alt=""></li>
-                                            </ul>
+                                    <div class="entry-content clearfix">
+                                        <div class="clearfix"><div class="date"><span class="blog-head">20</span>  <span class="month">May</span></div>
+                                            <p>Depending on the selection and pricing, sample sales can be hit or miss. I’ve gone to a couple that I was completely disappointed in. However, I’ve walked away from   others with bags of goodies, blown away by the great merchandise and discounts.</p>
                                         </div>
+                                    </div>
+                                    <div class="share-social">
+                                        <ul>
+                                            <li><div class=""></div><a href="#"><i class="icon-basic-share"></i></a></li>
+                                            <li><div class=""></div><a href="#"><i class="icon-basic-heart"></i></a></li>
+                                            <li><div class=""></div><a href="#"><i class="icon-basic-message"></i></a></li>
+                                        </ul>
                                     </div>
                                 </div>
                             </article>
-                            <div class="hover-div"><span class="hover-indicator"></span></div>
                             <div class="post-img">
                                 <div class="hover-for-team-social">
                                     <ul>
@@ -258,41 +254,45 @@
                                         <li><a href="#"><i class="ion-social-pinterest"></i></a></li>
                                     </ul>
                                 </div>
-                                <div class="affiliate-images-hover">
-                                    <!-- <h2>Featured Items</h2> -->
-                                    <ul class="">
-                                        <li><img class="img-thumbnail"src="assets/img/affiliate-2.jpeg" height="160px" width="110px" alt=""></li>
-                                        <li><img class="img-thumbnail"src="assets/img/affiliate-1.jpeg" height="160px" width="110px" alt=""></li>
-                                        <li><img class="img-thumbnail"src="assets/img/affiliate-3.jpeg" height="160px" width="110px" alt=""></li>
-                                    </ul>
-                                </div>
                                 <img class="img-responsive img-thumbnail image-post" src="assets/img/blog-post-2.jpg" alt="Blog Post">
                                 <div class="team-names">Brandon Maxwell</div>
                                 <div class="team-expert">Photographer</div>
                             </div>
                         </section>
 
-                        <!-- Third Post -->
+                        <!--- ================================
+                                Third Post
+                        ====================================== -->
+
                         <section id="post-3" class="post-block clearfix left">
+                            <div class="post-block-bg">
+                                <h3 class="affiliate-subheader">- Fashion & Style -</h3>
+                                <h2>Featured</h2>
+                                <div class="affiliate-images">
+                                    <ul class="list-inline">
+                                        <li><img class=""src="assets/img/affiliate-2.jpeg" height="160px" width="110px" alt=""></li>
+                                        <li><img class=""src="assets/img/affiliate-1.jpeg" height="160px" width="110px" alt=""></li>
+                                        <li><img class=""src="assets/img/affiliate-3.jpeg" height="160px" width="110px" alt=""></li>
+                                    </ul>
+                                </div>
+                            </div>
                             <article class="post">
                                 <div class="post-content">
                                     <h2 class="post-title">THESE ARE MY BEST SAMPLE SALE FINDS</h2>
-                                    <div class="entry-content">
-                                        <p><div class="date"><span class="blog-head">20</span>  <span class="month">May</span></div>Depending on the selection and pricing, sample sales can be hit or miss. I’ve gone to a couple that I was completely disappointed in. However, I’ve walked away from others with bags of goodies, blown away by the great merchandise and discounts.</p>
-                                    </div>
-                                    <div class="home-page-affiliates">
-                                        <div class="affiliate-images">
-                                            <h2>Featured Items</h2>
-                                            <ul class="list-inline">
-                                                <li><img class="img-thumbnail"src="assets/img/affiliate-2.jpeg" height="160px" width="110px" alt=""></li>
-                                                <li><img class="img-thumbnail"src="assets/img/affiliate-1.jpeg" height="160px" width="110px" alt=""></li>
-                                                <li><img class="img-thumbnail"src="assets/img/affiliate-3.jpeg" height="160px" width="110px" alt=""></li>
-                                            </ul>
+                                    <div class="entry-content clearfix">
+                                        <div class="clearfix"><div class="date"><span class="blog-head">20</span>  <span class="month">May</span></div>
+                                            <p>Depending on the selection and pricing, sample sales can be hit or miss. I’ve gone to a couple that I was completely disappointed in. However, I’ve walked away from   others with bags of goodies, blown away by the great merchandise and discounts.</p>
                                         </div>
+                                    </div>
+                                    <div class="share-social">
+                                        <ul>
+                                            <li><div class=""></div><a href="#"><i class="icon-basic-share"></i></a></li>
+                                            <li><div class=""></div><a href="#"><i class="icon-basic-heart"></i></a></li>
+                                            <li><div class=""></div><a href="#"><i class="icon-basic-message"></i></a></li>
+                                        </ul>
                                     </div>
                                 </div>
                             </article>
-                            <div class="hover-div"><span class="hover-indicator"></span></div>
                             <div class="post-img">
                                 <div class="hover-for-team-social">
                                     <ul>
@@ -307,26 +307,39 @@
                             </div>
                         </section>
 
+                        <!--- ================================
+                                4th Post
+                        ====================================== -->
+
                         <section id="post-4" class="post-block clearfix right">
-                            <article  class="post twitter-icon">
+                            <div class="post-block-bg">
+                                <h3 class="affiliate-subheader">- Fashion & Style -</h3>
+                                <h2>Featured</h2>
+                                <div class="affiliate-images">
+                                    <ul class="list-inline">
+                                        <li><img class=""src="assets/img/affiliate-2.jpeg" height="160px" width="110px" alt=""></li>
+                                        <li><img class=""src="assets/img/affiliate-1.jpeg" height="160px" width="110px" alt=""></li>
+                                        <li><img class=""src="assets/img/affiliate-3.jpeg" height="160px" width="110px" alt=""></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <article  class="post">
                                 <div class="post-content">
                                     <h2 class="post-title">BEST WEBSITES TO LOCATE SAMPLE SALES</h2>
-                                    <div class="entry-content">
-                                        <p><div class="date"><span class="blog-head">20</span>  <span class="month">May</span></div>Sample sales happen frequently, especially in NYC. Here are the best sites that list upcoming sale information that helps alot to plan for them in advance.</p>
-                                    </div>
-                                    <div class="home-page-affiliates">
-                                        <div class="affiliate-images">
-                                            <h2>Featured Items</h2>
-                                            <ul class="list-inline">
-                                                <li><img class="img-thumbnail"src="assets/img/affiliate-2.jpeg" height="160px" width="110px" alt=""></li>
-                                                <li><img class="img-thumbnail"src="assets/img/affiliate-1.jpeg" height="160px" width="110px" alt=""></li>
-                                                <li><img class="img-thumbnail"src="assets/img/affiliate-3.jpeg" height="160px" width="110px" alt=""></li>
-                                            </ul>
+                                    <div class="entry-content clearfix">
+                                        <div class="clearfix"><div class="date"><span class="blog-head">20</span>  <span class="month">May</span></div>
+                                            <p>Depending on the selection and pricing, sample sales can be hit or miss. I’ve gone to a couple that I was completely disappointed in. However, I’ve walked away from   others with bags of goodies, blown away by the great merchandise and discounts.</p>
                                         </div>
+                                    </div>
+                                    <div class="share-social">
+                                        <ul>
+                                            <li><div class=""></div><a href="#"><i class="icon-basic-share"></i></a></li>
+                                            <li><div class=""></div><a href="#"><i class="icon-basic-heart"></i></a></li>
+                                            <li><div class=""></div><a href="#"><i class="icon-basic-message"></i></a></li>
+                                        </ul>
                                     </div>
                                 </div>
                             </article>
-                            <div class="hover-div"><span class="hover-indicator"></span></div>
                             <div class="post-img">
                                 <div class="hover-for-team-social">
                                     <ul>
@@ -341,26 +354,39 @@
                             </div>
                         </section>
 
+                        <!--- ================================
+                                5th Post
+                        ====================================== -->
+
                         <section id="post-5" class="post-block clearfix left">
+                            <div class="post-block-bg">
+                                <h3 class="affiliate-subheader">- Fashion & Style -</h3>
+                                <h2>Featured</h2>
+                                <div class="affiliate-images">
+                                    <ul class="list-inline">
+                                        <li><img class=""src="assets/img/affiliate-2.jpeg" height="160px" width="110px" alt=""></li>
+                                        <li><img class=""src="assets/img/affiliate-1.jpeg" height="160px" width="110px" alt=""></li>
+                                        <li><img class=""src="assets/img/affiliate-3.jpeg" height="160px" width="110px" alt=""></li>
+                                    </ul>
+                                </div>
+                            </div>
                             <article class="post">
                                 <div class="post-content">
                                     <h2 class="post-title">This is my post title</h2>
-                                    <div class="entry-content">
-                                        <p><div class="date"><span class="blog-head">20</span>  <span class="month">May</span></div>Your bones don't break, mine do. That's clear. Your cells react to bacteria and viruses differently than mine. You don't get sick, I do. That's also clear. But for some reason, you and I react the exact same way to water. We swallow it too fast, we choke. We get some in our lungs, we drown. However unreal it may seem, we are connected, you and I. We're on the same curve, just on opposite ends.</p>
-                                    </div>
-                                    <div class="home-page-affiliates">
-                                        <div class="affiliate-images">
-                                            <h2>Featured Items</h2>
-                                            <ul class="list-inline">
-                                                <li><img class="img-thumbnail"src="assets/img/affiliate-2.jpeg" height="160px" width="110px" alt=""></li>
-                                                <li><img class="img-thumbnail"src="assets/img/affiliate-1.jpeg" height="160px" width="110px" alt=""></li>
-                                                <li><img class="img-thumbnail"src="assets/img/affiliate-3.jpeg" height="160px" width="110px" alt=""></li>
-                                            </ul>
+                                    <div class="entry-content clearfix">
+                                        <div class="clearfix"><div class="date"><span class="blog-head">20</span>  <span class="month">May</span></div>
+                                            <p>Depending on the selection and pricing, sample sales can be hit or miss. I’ve gone to a couple that I was completely disappointed in. However, I’ve walked away from   others with bags of goodies, blown away by the great merchandise and discounts.</p>
                                         </div>
+                                    </div>
+                                    <div class="share-social">
+                                        <ul>
+                                            <li><div class=""></div><a href="#"><i class="icon-basic-share"></i></a></li>
+                                            <li><div class=""></div><a href="#"><i class="icon-basic-heart"></i></a></li>
+                                            <li><div class=""></div><a href="#"><i class="icon-basic-message"></i></a></li>
+                                        </ul>
                                     </div>
                                 </div>
                             </article>
-                            <div class="hover-div"><span class="hover-indicator"></span></div>
                             <div class="post-img">
                                 <div class="hover-for-team-social">
                                     <ul>
@@ -453,27 +479,21 @@
 
         <!-- FOOTER -->
         <footer class="footer">
-            <div class="container">
+            <div class="container-fluid">
                 <div class="widget-row row">
                     <div class="col-xs-12">
-                        <h5><span class="red">~</span> Follow me on Social <span class="red">~</span></h5>
-                        <!-- LightWidget WIDGET -->
-                        <script src="http://lightwidget.com/widgets/lightwidget.js"></script>
-                        <iframe src="http://lightwidget.com/widgets/df4f859f2c4d5081bcfe9d084b37430c.html" scrolling="no" allowtransparency="true" class="lightwidget-widget" style="width: 100%; border: 0; overflow: hidden;"></iframe>
-
-                    </div>
-                    <!-- <div class="col-sm-4">
-                        <h5>Are You A Tall <span class="red">Fashionista</span> Or <span class="red">Fashion Fanatic?</span></h5>
-                        <p>Join the mailing list and be the first to know about product picks, style inspiration, and money saving tips. </p>
-                        <form id="subscribe-form" name="subscribe-form" method="post">
-                            <input id="subscribe-email" type="text" placeholder="subscribe" name="email" required="required" class="subscribe-style">
-                            <button type="button" data-value="subscribe" data-wait="Please wait..." class="w-button subscribe-button">subscribe</button>
-                        </form>
-                        <div class="alert alert-success contact-form-done no-border-radius">
-                            <p>Thank you! Your submission has been received!</p>
+                        <header class="instagram-header">
+                            <h4>Instagram</h4>
+                            <hr>
+                        </header>
+                        <div class="widget">
+                            <script src="http://lightwidget.com/widgets/lightwidget.js"></script>
+                            <iframe src="http://lightwidget.com/widgets/52a12044a9aa5f2f84d7cd0c15214cb1.html" scrolling="no" allowtransparency="true" class="lightwidget-widget" style="width: 100%; border: 0; overflow: hidden;"></iframe>
                         </div>
-                    </div> -->
+                    </div>
                 </div>
+            </div>
+            <div class="container-fluid footer-bottom">
                 <div class="row">
                     <div class="footer-social-block">
                         <a href="#" class="w-inline-block social-wrap"><i class="ion-social-instagram"></i></a>
@@ -502,13 +522,19 @@
 
         <!-- MAIN JS -->
         <script src="assets/js/main.js" type="text/javascript"></script>
-        <!-- <script type="text/javascript">
-            $('.image-post').hover(function(){
-                console.log("WTF");
-                $('.affiliate-images-hover ul').addClass('fadeInLeft').show();
-            }, function(){
-                console.log("hover out");
-            });
-        </script> -->
+
+        <script type="text/javascript" src="health/js/modernizr.custom.js"></script>
+        <script type="text/javascript" src="health/js/jquery.animsition.min.js"></script>
+
+        <script type="text/javascript" src="health/js/jquery.easing.js"></script>
+        <script type="text/javascript" src="health/js/retina-1.1.0.min.js"></script>
+        <script type="text/javascript" src="health/js/classie.js"></script>
+        <script type="text/javascript" src="health/js/cbpAnimatedHeader.min.js"></script>
+        <script type="text/javascript" src="health/js/menu.js"></script>
+        <script type="text/javascript" src="health/js/scroll.js"></script>
+        <script type="text/javascript" src="health/js/animated-headline.js"></script>
+        <script type="text/javascript" src="health/js/jquery.fs.tipper.min.js"></script>
+        <script type="text/javascript" src="health/js/custom-home1.js"></script>
+
     </body>
 </html>

@@ -534,67 +534,7 @@
 		//end primary menu
 		//</editor-fold>
 
-		//initialize pills
-		$(
-			".nav-pills li a, .nav-pills li.active a"
-		).on('click', function(e) {
-			e.preventDefault();
-			$(this).tab('show');
-		});
-		//initialize popover
-		$('[data-toggle="popover"]').popover({
-			placement: 'top',
-			html: true,
-			trigger: 'hover'
-		});
-		$('.html-false').popover({
-			placement: 'top',
-			html: false,
-			trigger: 'hover'
-		});
 
-		//<editor-fold defaultstate="collapsed" desc="CONTACT & SUBSCRIBE FORM">
-		//contact form
-		$('#submit-contact-form').on(
-			'click',
-			function() {
-				$(
-					'.contact-form-fail, .contact-form-done, .contact-form-required'
-				).hide();
-				var contact = {
-					firstName: $('#contact-name')
-						.val(),
-					lastName: $(
-						'#contact-last-name').val(),
-					email: $('#contact-email').val(),
-					message: $('#contact-message')
-						.val(),
-					notBot: $('#contact-bot').is(
-						":checked")
-				};
-				$.ajax({
-					url: 'ajax/contact-form.php',
-					type: 'POST',
-					data: {
-						contact: contact
-					},
-					success: function() {
-						$('#contact-form').hide();
-						$('.contact-form-done').show();
-					},
-					error: function(xhr) {
-						if (xhr.status === '404') {
-							console.log(xhr.responseText);
-							$('.contact-form-fail').show();
-						} else {
-							console.log(xhr.responseText);
-							$(
-								'.contact-form-required'
-							).show();
-						}
-					}
-				});
-			});
 
 		//subscribe button
 		$('button.subscribe-button').on(
@@ -629,25 +569,6 @@
 			});
 		//</editor-fold>
 
-		var mapOverlay = $('.map-overlay');
-		$('#lightbox-map').on('click',
-			function(e) {
-				e.preventDefault();
-				mapOverlay.show();
-			});
-		$('.map-overlay-bg').on('click',
-			function() {
-				mapOverlay.hide();
-			});
-
-		//show/hide code
-		$('i.corner-top-right').on('click',
-			function() {
-				$(this).parent().find(
-					'.code-html').toggle();
-				$(this).parent().find(
-					'.code-example').toggle();
-			});
 
 
 	});
