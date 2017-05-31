@@ -19,11 +19,13 @@ a:hover {
     font-size: 2rem;
     margin: 0;
     letter-spacing: 1rem; }
-  .et-hero-tabs h3,
-  .et-slide h3 {
+  .et-hero-tabs h3 {
     font-size: 1rem;
     letter-spacing: 0.3rem;
     opacity: 0.6; }
+.et-slide .section-headline {
+    text-align: left;
+}
 
 .et-hero-tabs-container {
   display: flex;
@@ -67,8 +69,7 @@ a:hover {
   .et-hero-tabs h1,
   .et-slide h1 {
     font-size: 3rem; }
-  .et-hero-tabs h3,
-  .et-slide h3 {
+  .et-hero-tabs h3 {
     font-size: 1rem; }
 
   .et-hero-tab {
