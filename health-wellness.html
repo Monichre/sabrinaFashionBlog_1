@@ -1,262 +1,644 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+<!--[if IE 8 ]><html class="no-js oldie ie8" lang="en"> <![endif]-->
+<!--[if IE 9 ]><html class="no-js oldie ie9" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!-->
+<html class="no-js" lang="en">
+<!--<![endif]-->
 
-        <title>Theresa on the Town</title>
+<head>
 
-        <link rel="shortcut icon" type="image/x-icon" href="assets/img/sabrina-logo.png">
+    <!--- basic page needs
+   ================================================== -->
+    <meta charset="utf-8">
+    <title>Theresa on the Town</title>
+    <meta name="description" content="">
+    <meta name="author" content="">
 
-        <!-- Bootstrap -->
-        <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+    <!-- mobile specific metas
+   ================================================== -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
-        <!-- Icons -->
-        <link rel="stylesheet" href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+    <!-- Bootstrp -->
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
 
+    <!-- Icons -->
+    <link rel="stylesheet" href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
 
-        <!-- Google Fonts -->
-        <link href="https://fonts.googleapis.com/css?family=Arsenal|Fjalla+One" rel="stylesheet">
+    <!-- CSS
+   ================================================== -->
+    <link rel="stylesheet" href="health/css/base.css">
+    <link rel="stylesheet" href="health/css/vendor.css">
+    <link rel="stylesheet" href="health/css/main.css">
 
-        <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-        <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-        <!--[if lt IE 9]>
-          <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
-          <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-        <![endif]-->
+    <!-- Template Styles
+   ================================================== -->
 
-        <link href="assets/css/animations.css" rel="stylesheet" type="text/css"/>
-        <link href="assets/css/font-awesome.min.css" rel="stylesheet" type="text/css"/>
-        <link href="assets/css/owl.carousel.custom.css" rel="stylesheet" type="text/css"/>
-
-        <!-- Site Wide Template Styles -->
-
-        <!-- <link href="assets/css/colors.css" rel="stylesheet" type="text/css"/> -->
-
-
-
-                <!-- Page Specific CSS from Pallas Template
-        ================================================== -->
-        <link rel="stylesheet" href="health/css/base.css"/>
-        <link rel="stylesheet" href="health/css/skeleton.css"/>
-        <link rel="stylesheet" href="health/css/layout.css"/>
-        <link rel="stylesheet" href="health/css/font-awesome.css" />
-        <link rel="stylesheet" href="health/css/retina.css"/>
-        <link rel="stylesheet" href="health/css/animsition.min.css"/>
+    <link rel="stylesheet" href="extra/css/layout.css" />
+    <link rel="stylesheet" href="extra/css/retina.css" />
+    <link href="assets/css/hedone.css" rel="stylesheet" type="text/css"/>
 
 
-        <link href="assets/css/hedone.css" rel="stylesheet" type="text/css"/>
-
-        <!--[if lte IE 9]>
-        <link href="assets/css/animations-ie-fix.css" rel="stylesheet" type="text/css"/>
-        <![endif]-->
-    </head>
-
-    <body id="health">
-        <!-- PRELOADER -->
+    <!-- script
+   ================================================== -->
+    <script src="health/js/modernizr.js"></script>
+    <script src="health/js/pace.min.js"></script>
 
 
-        <!-- AJAX LOADER -->
-        <div id="ajax-loader" class="loader loader-default" data-half="" data-text="Loading..."></div>
 
-        <!-- IS MOBILE HACK -->
-        <div id="isMobile"></div>
+</head>
+<body id="top" class="health">
 
-        <!-- HEADER -->
-        <div id="menu-wrap" class="menu-back cbp-af-header">
-            <div class="container-fluid">
-                <div class="row">
-                    <div class="col-sm-4">
-                        <div class="logo">
-                            <img src="assets/img/logo.png" alt="">
-                            <h2 class="site-title">Th<span class="red">e</span>r<span class="red">e</span>sa on the Town</h2>
-                        </div>
+    <!-- header
+   ================================================== -->
+    <div id="menu-wrap" class="menu-back cbp-af-header">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-sm-4">
+                    <ul class="slimmenu text-center social-nav">
+                        <li><a href="#" class=""><i class="ion-social-instagram"></i></a></li>
+                        <li><a href="#" class=""><i class="ion-social-youtube"></i></a></li>
+                        <li><a href="#" class=""><i class="ion-social-facebook"></i></a></li>
+                        <li><a href="#" class=""><i class="ion-social-pinterest"></i></a></li>
+                    </ul>
+                </div>
+                <div class="col-sm-4">
+                    <div class="logo">
+                        <!-- <img src="assets/img/logo.png" alt=""> -->
+                        <h2 class="site-title">Theresa on the Town</h2>
                     </div>
-                    <div class="col-sm-8">
-                        <ul class="slimmenu">
-                            <li><a class="active-menu" href="./index.html">Home</a></li>
-                            <li><a href="./about.html" class="animsition-link">about</a></li>
-                            <li><a href="./fashion-style.html">Fashion & Style</a></li>
-                            <li><a href="./travel.html" class="animsition-link">travel</a></li>
-                            <li><a href="./health2.html">Health Version 2</a></li>
-                            <li><a href="./contact.html" class="animsition-link">Contact</a></li>
-                        </ul>
-                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <ul class="slimmenu signup-menu">
+                        <li class="dropdown">
+                           <a href="#" class="dropdown-toggle" data-toggle="dropdown">Sign up <b class="caret"></b></a>
+                           <ul class="dropdown-menu" style="">
+                              <li>
+                                 <div class="row">
+                                     <h4 class="">Join the newsletter!</h4>
+                                    <form id="subscribe-form" name="subscribe-form" method="post" class="">
+                                        <input id="subscribe-email" type="text" placeholder="Email" name="email" required="required" class="subscribe-style">
+                                        <button type="button" data-value="subscribe" data-wait="Please wait..." class="w-button subscribe-button">subscribe</button>
+                                    </form>
+                                 </div>
+                              </li>
+                           </ul>
+                        </li>
+                        <li><a class="search-trigger" href="#"><i class="fa fa-search"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-8 col-sm-offset-2">
+                    <ul class="slimmenu">
+                        <li><a class="active-menu" href="./index.html">Home</a></li>
+                        <li><a href="./about.html" class="animsition-link">about</a></li>
+                        <li><a href="./fashion-style.html">Fashion & Style</a></li>
+                        <li><a href="./travel.html" class="animsition-link">travel</a></li>
+                        <li><a href="./health-wellness.html">Health & Wellness</a></li>
+                        <li><a href="./contact.html" class="animsition-link">Contact</a></li>
+                    </ul>
                 </div>
             </div>
         </div>
+        <div class="search-wrap">
+            <form role="search" method="get" class="search-form" action="#">
+                <label>
+                    <span class="hide-content">Search for:</span>
+                    <input type="search" class="search-field" placeholder="Type Your Keywords" value="" name="s" title="Search for:" autocomplete="off">
+                </label>
+                <input type="submit" class="search-submit" value="Search">
+            </form>
+            <a href="#" id="close-search" class="close-btn">Close</a>
+        </div>
+    </div>
 
-        <section class="cd-section">
-    		<div class="cd-block">
-    			<div class="home-top">
 
-                        <!-- Section Header -->
-                        <!-- <div class="section-header"> -->
-                            <div class="cd-intro">
-                                <h1 class="head-subtitle">Health & Wellness</p>
-                                <h3 class="head-h3">Latest</h3>
+    <!-- masonry
+   ================================================== -->
+    <section id="bricks">
+
+        <div id="filter-row" class="row">
+            <div class="col-sm-6 col-sm-offset-3">
+                <h1 class="head-subtitle">Health & Wellness</p>
+                <ul class="list-inline slimmenu filter-menu">
+                    <li data-filter="*" class="filter current"><a href="#" title="">All</a></li>
+                    <li data-filter=".diet" class="filter has-children"><a href="#" title="">Diet</a></li>
+                    <li data-filter=".workout" class="filter has-children"><a href="#" title="">Workout</a></li>
+                    <li data-filter=".gear" class="filter"><a href="#" title="">Gear</a></li>
+                    <li data-filter=".recipe" class="filter"><a href="#" title="">Recipe</a></li>
+                </ul>
+            </div>
+        </div>
+
+
+        <div class="row masonry">
+
+            <!-- brick-wrapper -->
+            <div class="bricks-wrapper">
+
+                <div class="grid-sizer"></div>
+                <div class="brick entry featured-grid animate-this diet">
+                    <div class="entry-content">
+                        <div id="featured-post-slider" class="flexslider">
+                            <ul class="slides">
+                                <li>
+                                    <div class="featured-post-slide">
+                                        <div class="post-background" style="background-image:url('health/img/coconut.jpg');">
+                                            <div class="overlay"></div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="featured-post-slide">
+                                        <div class="post-background" style="background-image:url('health/img/coconut.jpg');">
+                                        <div class="overlay"></div>
+                                        <div class="post-content">
+
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="featured-post-slide">
+                                        <div class="post-background" style="background-image:url('health/img/coconut.jpg');">
+                                        <div class="overlay"></div>
+                                        <div class="post-content">
+
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                            <!-- end slides -->
+                        </div>
+                        <!-- end featured-post-slider -->
+                    </div>
+                    <!-- end entry content -->
+                </div>
+
+                <article class="brick entry format-standard animate-this diet">
+
+                    <div class="entry-thumb">
+                        <a href="single-standard.html" class="thumb-link">
+                            <img src="health/img/popcorn.jpg">
+                        </a>
+                    </div>
+
+                    <div class="entry-text">
+                        <div class="entry-header">
+
+                            <div class="entry-meta">
+                                <span class="cat-links">
+               				<a href="#">Diet</a>
+               				<a href="#">Gear</a>
+               			</span>
                             </div>
 
-                        <!-- </div> -->
+                            <h1 class="entry-title"><a href="single-standard.html">Just a Standard Format Post.</a></h1>
 
-
-    				<div class="small-text">- Gear, Diets, Tips and Workouts -</div>
-
-    				<div class="social-top">
-    					<ul class="list-social">
-    						<li class="icon-soc tipped" data-title="twitter"  data-tipper-options='{"direction":"top","follow":"true"}'><a href="#">&#xf099;</a></li>
-    						<li class="icon-soc tipped" data-title="facebook"  data-tipper-options='{"direction":"top","follow":"true"}'><a href="#">&#xf09a;</a></li>
-    						<li class="icon-soc tipped" data-title="github"  data-tipper-options='{"direction":"top","follow":"true"}'><a href="#">&#xf09b;</a></li>
-    						<li class="icon-soc tipped" data-title="google +"  data-tipper-options='{"direction":"top","follow":"true"}'><a href="#">&#xf0d5;</a></li>
-    					</ul>
-    				</div>
-
-
-
-    			</div>
-    		</div>
-    	</section> <!-- .cd-section -->
-
-    	<section class="cd-section" id="scroll-link">
-    		<div class="cd-block">
-    			<div class="cd-half-block" style="background-image: url(assets/img/health/coconut.jpg)"></div>
-
-    			<div class="cd-half-block">
-    				<div class="block-text">
-    					<h2>Tips<span>.</span></h2>
-    					<p>5 INEXPENSIVE HEALTH AND BEAUTY USES FOR COCONUT OIL</p>
-    					<a href="about.html" class="btn animsition-link">Read More</a>
-    				</div>
-    			</div>
-    		</div>
-    	</section> <!-- .cd-section -->
-
-    	<section class="cd-section">
-    		<div class="cd-block">
-    			<div class="cd-half-block" style="background-image: url(assets/img/health/sabrina-health.jpg)"></div>
-
-    			<div class="cd-half-block">
-    				<div class="block-text">
-    					<h2>Beauty<span>.</span></h2>
-    					<p>GO SEE MONA AT MUZE SALON IN NYC TO ENHANCE YOUR CURLS</p>
-    					<a href="work.html" class="btn animsition-link">discover</a>
-    				</div>
-    			</div>
-    		</div>
-    	</section> <!-- .cd-section -->
-
-    	<section class="cd-section">
-    		<div class="cd-block">
-    			<div class="cd-half-block" style="background-image: url(assets/img/health/sabrina-jamaica.jpg)"></div>
-
-    			<div class="cd-half-block">
-    				<div class="block-text">
-    					<h2>Diet<span>.</span></h2>
-    					<p>5 TIPS ABOUT HEALTHY EATING I LEARNED IN JAMAICA</p>
-    					<a href="blog.html" class="btn animsition-link">read more</a>
-    				</div>
-    			</div>
-    		</div>
-    	</section> <!-- .cd-section -->
-
-    	<section class="cd-section">
-    		<div class="cd-block">
-    			<div class="cd-half-block" style="background-image: url(assets/img/health/popcorn.jpg)"></div>
-
-    			<div class="cd-half-block">
-    				<div class="block-text">
-    					<h2>Diet<span>.</span></h2>
-    					<p>HOW TO MAKE DELICIOUS HOMEMADE POPCORN IN 15 MINUTES</p>
-    					<a href="contact.html" class="btn animsition-link">Read</a>
-    				</div>
-    			</div>
-    		</div>
-    	</section> <!-- .cd-section -->
-
-
-        <!-- FOOTER -->
-        <footer class="footer">
-            <div class="container-fluid">
-                <div class="widget-row row">
-                    <div class="col-xs-12">
-                        <header class="instagram-header">
-                            <h4>Instagram</h4>
-                            <hr>
-                        </header>
-                        <div class="widget">
-                            <script src="http://lightwidget.com/widgets/lightwidget.js"></script>
-                            <iframe src="http://lightwidget.com/widgets/52a12044a9aa5f2f84d7cd0c15214cb1.html" scrolling="no" allowtransparency="true" class="lightwidget-widget" style="width: 100%; border: 0; overflow: hidden;"></iframe>
+                        </div>
+                        <div class="entry-excerpt">
+                            Lorem ipsum Sed eiusmod esse aliqua sed incididunt aliqua incididunt mollit id et sit proident dolor nulla sed commodo est ad minim elit reprehenderit nisi officia aute incididunt velit sint in aliqua cillum in consequat consequat in culpa in anim.
                         </div>
                     </div>
-                </div>
+
+                </article>
+                <!-- end article -->
+
+                <article class="brick entry format-standard animate-this diet">
+
+                    <div class="entry-thumb">
+                        <a href="single-standard.html" class="thumb-link">
+                            <img src="health/img/popcorn.jpg">
+                        </a>
+                    </div>
+
+                    <div class="entry-text">
+                        <div class="entry-header">
+
+                            <div class="entry-meta">
+                                <span class="cat-links">
+               				<a href="#">Diet</a>
+               				<a href="#">Workout</a>
+               			</span>
+                            </div>
+
+                            <h1 class="entry-title"><a href="single-standard.html">This Is Another Standard Format Post.</a></h1>
+
+                        </div>
+                        <div class="entry-excerpt">
+                            Lorem ipsum Sed eiusmod esse aliqua sed incididunt aliqua incididunt mollit id et sit proident dolor nulla sed commodo est ad minim elit reprehenderit nisi officia aute incididunt velit sint in aliqua cillum in consequat consequat in culpa in anim.
+                        </div>
+                    </div>
+
+                </article>
+                <!-- end article -->
+
+                <!-- format audio here -->
+                <article class="brick entry format-audio animate-this recipe">
+
+                    <div class="entry-thumb">
+                        <a href="single-audio.html" class="thumb-link">
+                            <img src="health/img/popcorn.jpg">
+                        </a>
+
+                        <div class="audio-wrap">
+                            <audio id="player" src="health/media/AirReview-Landmarks-02-ChasingCorporate.mp3" width="100%" height="42" controls="controls"></audio>
+                        </div>
+                    </div>
+
+                    <div class="entry-text">
+                        <div class="entry-header">
+
+                            <div class="entry-meta">
+                                <span class="cat-links">
+               				<a href="#">Diet</a>
+               				<a href="#">Music</a>
+               			</span>
+                            </div>
+
+                            <h1 class="entry-title"><a href="single-audio.html">This Is a Audio Format Post.</a></h1>
+
+                        </div>
+                        <div class="entry-excerpt">
+                            Lorem ipsum Sed eiusmod esse aliqua sed incididunt aliqua incididunt mollit id et sit proident dolor nulla sed commodo est ad minim elit reprehenderit nisi officia aute incididunt velit sint in aliqua cillum in consequat consequat in culpa in anim.
+                        </div>
+                    </div>
+
+                </article>
+                <!-- /article -->
+
+                <article class="brick entry format-quote animate-this recipe">
+
+                    <div class="entry-thumb">
+                        <blockquote>
+                            <p>Good Diet is making something intelligible and memorable. Great Diet is making something memorable and meaningful.</p>
+
+                            <cite>Dieter Rams</cite>
+                        </blockquote>
+                    </div>
+
+                </article>
+                <!-- end article -->
+
+                <article class="brick entry animate-this gear">
+
+                    <div class="entry-thumb">
+                        <a href="single-standard.html" class="thumb-link">
+                            <img src="health/img/popcorn.jpg">
+                        </a>
+                    </div>
+
+
+                    <div class="entry-text">
+                        <div class="entry-header">
+
+                            <div class="entry-meta">
+                                <span class="cat-links">
+               				<a href="#">Gear</a>
+               				<a href="#">html</a>
+               			</span>
+                            </div>
+
+                            <h1 class="entry-title"><a href="single-standard.html">Gear Skills Can Improve Your Graphic Diet.</a></h1>
+
+                        </div>
+                        <div class="entry-excerpt">
+                            Lorem ipsum Sed eiusmod esse aliqua sed incididunt aliqua incididunt mollit id et sit proident dolor nulla sed commodo est ad minim elit reprehenderit nisi officia aute incididunt velit sint in aliqua cillum in consequat consequat in culpa in anim.
+                        </div>
+                    </div>
+
+                </article>
+                <!-- end article -->
+
+                <article class="brick entry animate-this gear">
+
+                    <div class="entry-thumb">
+                        <a href="single-standard.html" class="thumb-link">
+                            <img src="health/img/sabrina-health.jpg">
+                        </a>
+                    </div>
+
+                    <div class="entry-text">
+                        <div class="entry-header">
+
+                            <div class="entry-meta">
+                                <span class="cat-links">
+               				<a href="#">Branding</a>
+               				<a href="#">Mockup</a>
+               			</span>
+                            </div>
+
+                            <h1 class="entry-title"><a href="single-standard.html">The 10 Golden Rules of Clean Simple Diet.</a></h1>
+
+                        </div>
+                        <div class="entry-excerpt">
+                            Lorem ipsum Sed eiusmod esse aliqua sed incididunt aliqua incididunt mollit id et sit proident dolor nulla sed commodo est ad minim elit reprehenderit nisi officia aute incididunt velit sint in aliqua cillum in consequat consequat in culpa in anim.
+                        </div>
+                    </div>
+
+                </article>
+                <!-- end article -->
+
+                <article class="brick entry format-gallery group animate-this gear">
+
+                    <div class="entry-thumb">
+
+                        <div class="post-slider flexslider">
+                            <ul class="slides">
+                                <li>
+                                    <img src="health/img/sabrina-health.jpg">
+                                </li>
+                                <li>
+                                    <img src="health/img/sabrina-health.jpg">
+                                </li>
+                                <li>
+                                    <img src="health/img/sabrina-health.jpg">
+                                </li>
+                            </ul>
+                        </div>
+
+                    </div>
+
+                    <div class="entry-text">
+                        <div class="entry-header">
+
+                            <div class="entry-meta">
+                                <span class="cat-links">
+               				<a href="#">Branding</a>
+               				<a href="#">Wordpress</a>
+               			</span>
+                            </div>
+
+                            <h1 class="entry-title"><a href="single-gallery.html">Workspace Diet Trends and Ideas.</a></h1>
+
+                        </div>
+                        <div class="entry-excerpt">
+                            Lorem ipsum Sed eiusmod esse aliqua sed incididunt aliqua incididunt mollit id et sit proident dolor nulla sed commodo est ad minim elit reprehenderit nisi officia aute incididunt velit sint in aliqua cillum in consequat consequat in culpa in anim.
+                        </div>
+                    </div>
+
+                </article>
+                <!-- end article -->
+
+                <article class="brick entry format-link animate-this gear">
+
+                    <div class="entry-thumb">
+                        <div class="link-wrap">
+                            <p>Looking for affordable &amp; reliable web hosting? We recommend Dreamhost.</p>
+                            <cite>
+	                 		<a target="_blank" href="http://www.dreamhost.com/r.cgi?287326">http://www.dreamhost.com</a>
+	                 	</cite>
+                        </div>
+                    </div>
+
+                </article>
+                <!-- end article -->
+
+
+                <article class="brick entry animate-this workout">
+
+                    <div class="entry-thumb">
+                        <a href="single-standard.html" class="thumb-link">
+                            <img src="health/img/sabrina-jamaica.jpg">
+                        </a>
+                    </div>
+
+                    <div class="entry-text">
+                        <div class="entry-header">
+
+                            <div class="entry-meta">
+                                <span class="cat-links">
+               				<a href="#">Diet</a>
+               				<a href="#">Workout</a>
+               			</span>
+                            </div>
+
+                            <h1 class="entry-title"><a href="single-standard.html">You Can See Patterns Everywhere.</a></h1>
+
+                        </div>
+                        <div class="entry-excerpt">
+                            Lorem ipsum Sed eiusmod esse aliqua sed incididunt aliqua incididunt mollit id et sit proident dolor nulla sed commodo est ad minim elit reprehenderit nisi officia aute incididunt velit sint in aliqua cillum in consequat consequat in culpa in anim.
+                        </div>
+                    </div>
+
+                </article>
+                <!-- end article -->
+
+                <article class="brick entry format-video animate-this workout">
+
+                    <div class="entry-thumb video-image">
+                        <a href="http://player.vimeo.com/video/14592941?title=0&amp;byline=0&amp;portrait=0&amp;color=F64B39" data-lity>
+                            <img src="health/img/sabrina-jamaica.jpg">
+                        </a>
+                    </div>
+
+                    <div class="entry-text">
+                        <div class="entry-header">
+
+                            <div class="entry-meta">
+                                <span class="cat-links">
+                   				<a href="#">Diet</a>
+                   				<a href="#">Branding</a>
+                   			</span>
+                            </div>
+
+                            <h1 class="entry-title"><a href="single-video.html">This Is a Video Post Format.</a></h1>
+
+                        </div>
+                        <div class="entry-excerpt">
+                            Lorem ipsum Sed eiusmod esse aliqua sed incididunt aliqua incididunt mollit id et sit proident dolor nulla sed commodo est ad minim elit reprehenderit nisi officia aute incididunt velit sint in aliqua cillum in consequat consequat in culpa in anim.
+                        </div>
+                    </div>
+
+                </article>
+                <article class="brick entry animate-this workout">
+
+                    <div class="entry-thumb">
+                        <a href="single-standard.html" class="thumb-link">
+                            <img src="health/img/sabrina-jamaica.jpg">
+                        </a>
+                    </div>
+
+                    <div class="entry-text">
+                        <div class="entry-header">
+
+                            <div class="entry-meta">
+                                <span class="cat-links">
+               				<a href="#">Gear</a>
+               				<a href="#">Diet</a>
+               			</span>
+                            </div>
+
+                            <h1 class="entry-title"><a href="single-standard.html">Breathtaking Photos of Lighthouses.</a></h1>
+
+                        </div>
+                        <div class="entry-excerpt">
+                            Lorem ipsum Sed eiusmod esse aliqua sed incididunt aliqua incididunt mollit id et sit proident dolor nulla sed commodo est ad minim elit reprehenderit nisi officia aute incididunt velit sint in aliqua cillum in consequat consequat in culpa in anim.
+                        </div>
+                    </div>
+
+                </article>
+                <!-- end article -->
+
+                <article class="brick entry animate-this workout">
+
+                    <div class="entry-thumb">
+                        <a href="single-standard.html" class="thumb-link">
+                            <img src="health/img/sabrina-jamaica.jpg">
+                        </a>
+                    </div>
+
+                    <div class="entry-text">
+                        <div class="entry-header">
+
+                            <div class="entry-meta">
+                                <span class="cat-links">
+               				<a href="#">Diet</a>
+               				<a href="#">WorkOut</a>
+               			</span>
+                            </div>
+
+                            <h1 class="entry-title"><a href="single-standard.html">Dieting With Sabrina.</a></h1>
+
+                        </div>
+                        <div class="entry-excerpt">
+                            Lorem ipsum Sed eiusmod esse aliqua sed incididunt aliqua incididunt mollit id et sit proident dolor nulla sed commodo est ad minim elit reprehenderit nisi officia aute incididunt velit sint in aliqua cillum in consequat consequat in culpa in anim.
+                        </div>
+                    </div>
+
+                </article>
+                <!-- end article -->
+
             </div>
-            <div class="container-fluid footer-bottom">
-                <div class="row">
-                    <div class="footer-social-block">
-                        <a href="#" class="w-inline-block social-wrap"><i class="ion-social-instagram"></i></a>
-                        <a href="#" class="w-inline-block social-wrap"><i class="ion-social-youtube"></i></a>
-                        <a href="#" class="w-inline-block social-wrap"><i class="ion-social-facebook"></i></a>
-                        <a href="#" class="w-inline-block social-wrap"><i class="ion-social-pinterest"></i></a>
+            <!-- end brick-wrapper -->
+
+        </div>
+        <!-- end row -->
+
+    </section>
+    <!-- end bricks -->
+
+
+    <!-- footer
+   ================================================== -->
+    <footer>
+
+        <div class="footer-main">
+
+            <div class="row">
+
+                <div class="col-four tab-full mob-full footer-info">
+
+                    <h4>About Our Site</h4>
+
+                    <p>
+                        Lorem ipsum Ut velit dolor Ut labore id fugiat in ut fugiat nostrud qWorkout in dolore commodo eu magna DWorkouts cillum dolor officia esse mollit proident Excepteur exercitation nulla. Lorem ipsum In reprehenderit commodo aliqua irure labore.
+                    </p>
+
+                </div>
+                <!-- end footer-info -->
+
+                <div class="col-two tab-1-3 mob-1-2 site-links">
+
+                    <h4>Site Links</h4>
+
+                    <ul>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">Terms</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                    </ul>
+
+                </div>
+                <!-- end site-links -->
+
+                <div class="col-two tab-1-3 mob-1-2 social-links">
+
+                    <h4>Social</h4>
+
+                    <ul>
+                        <li><a href="#">Twitter</a></li>
+                        <li><a href="#">Facebook</a></li>
+                        <li><a href="#">Dribbble</a></li>
+                        <li><a href="#">Google+</a></li>
+                        <li><a href="#">Instagram</a></li>
+                    </ul>
+
+                </div>
+                <!-- end social links -->
+
+                <div class="col-four tab-1-3 mob-full footer-subscribe">
+
+                    <h4>Subscribe</h4>
+
+                    <p>Keep yourself updated. Subscribe to our newsletter.</p>
+
+                    <div class="subscribe-form">
+
+                        <form id="mc-form" class="group" novalidate="true">
+
+                            <input type="email" value="" name="dEmail" class="email" id="mc-email" placeholder="Type &amp; press enter" reqWorkoutred="">
+
+                            <input type="submit" name="subscribe">
+
+                            <label for="mc-email" class="subscribe-message"></label>
+
+                        </form>
+
                     </div>
-                    <div class="footer-text">
-                        <span class="footer-text-span">Theresa on the Town</span>
+
+                </div>
+                <!-- end subscribe -->
+
+            </div>
+            <!-- end row -->
+
+        </div>
+        <!-- end footer-main -->
+
+        <div class="footer-bottom">
+            <div class="row">
+
+                <div class="col-twelve">
+                    <div class="copyright">
+                        <span>© Copyright Abstract 2016</span>
+                        <span>Diet by <a href="http://www.styleshout.com/">styleshout</a></span>
                     </div>
-                    <div id="loveCraft">
-                        <span class="loveCraft"><span class="blue">Love</span><span class="red">Craft</span><span class="white">.io</span></span>
+
+                    <div id="go-top">
+                        <a class="smoothscroll" title="Back to Top" href="#top"><i class="icon icon-arrow-up"></i></a>
                     </div>
                 </div>
+
             </div>
-        </footer>
+        </div>
+        <!-- end footer-bottom -->
 
+    </footer>
 
+    <div id="preloader">
+        <div id="loader"></div>
+    </div>
 
-        <!-- JAVASCRIPT
-        ================================================== -->
-    <script type="text/javascript" src="health/js/jquery.js"></script>
-    <script type="text/javascript" src="health/js/modernizr.custom.js"></script>
-    <script type="text/javascript" src="health/js/jquery.animsition.min.js"></script>
+    <!-- Java Script
+   ================================================== -->
+    <script src="health/js/jquery-2.1.3.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="health/js/plugins.js"></script>
+    <script src="health/js/jquery.appear.js"></script>
+    <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.js"></script>
     <script type="text/javascript">
-    (function($) { "use strict";
-    	$(document).ready(function() {
 
-    	  $(".animsition").animsition({
+        var $grid = $('.bricks-wrapper');
 
-    		inClass               :   'zoom-in-sm',
-    		outClass              :   'zoom-out-sm',
-    		inDuration            :    800,
-    		outDuration           :    800,
-    		linkElement           :   '.animsition-link',
-    		// e.g. linkElement   :   'a:not([target="_blank"]):not([href^=#])'
-    		loading               :    true,
-    		loadingParentElement  :   'body', //animsition wrapper element
-    		loadingClass          :   'animsition-loading',
-    		unSupportCss          : [ 'animation-duration',
-    								  '-webkit-animation-duration',
-    								  '-o-animation-duration'
-    								],
-    		//"unSupportCss" option allows you to disable the "animsition" in case the css property in the array is not supported by your browser.
-    		//The default setting is to disable the "animsition" in a browser that does not support "animation-duration".
+        $('.filter').on( 'click', function() {
+          var filterValue = $( this ).attr('data-filter');
+          $grid.isotope({ filter: filterValue });
+        });
 
-    		overlay               :   false,
-
-    		overlayClass          :   'animsition-overlay-slide',
-    		overlayParentElement  :   'body'
-    	  });
-    	});
-    })(jQuery);
     </script>
-    <script type="text/javascript" src="health/js/jquery.easing.js"></script>
-    <script type="text/javascript" src="health/js/retina-1.1.0.min.js"></script>
-    <script type="text/javascript" src="health/js/classie.js"></script>
-    <script type="text/javascript" src="health/js/cbpAnimatedHeader.min.js"></script>
-    <script type="text/javascript" src="health/js/menu.js"></script>
-    <script type="text/javascript" src="health/js/scroll.js"></script>
-    <script type="text/javascript" src="health/js/animated-headline.js"></script>
-    <script type="text/javascript" src="health/js/jquery.fs.tipper.min.js"></script>
-    <script type="text/javascript" src="health/js/custom-home1.js"></script>
-    <!-- End Document
-    ================================================== -->
-    </body>
+    <script src="health/js/main.js"></script>
+
+</body>
+
 </html>

@@ -104,9 +104,10 @@ ul.slimmenu li ul {
 
 
 .logo{
-
+	padding-top: 5px;
+    padding-right: 10px;
     margin-top: 23px;
-	font-size: 20px;
+    margin-bottom: 20px;
 	text-align: center;
 	-webkit-transition : all 0.3s ease-out;
 	-moz-transition : all 0.3s ease-out;
@@ -114,14 +115,15 @@ ul.slimmenu li ul {
 	transition : all 0.3s ease-out;
 }
 .logo .site-title {
-
-	/*display: inline;*/
+	padding-top: 25px;
+	display: inline;
 	font-family: "Fjalla One", sans-serif;
 	letter-spacing: 0;
-	font-size: 20px;
-	margin: 0!important;
+	font-size: 18px;
 }
-
+.logo .site-title .red {
+	color: #ba2424;
+}
 
 
 
@@ -184,7 +186,10 @@ ul.slimmenu li ul {
 
 ul.slimmenu {
 	padding-top:10px;
-	text-align:center;
+	padding-right:10px;
+	text-align:right;
+	/*margin-top:23px;*/
+	/*margin-bottom:20px;*/
 	-webkit-transition : all 0.3s ease-out;
 	-moz-transition : all 0.3s ease-out;
 	-o-transition :all 0.3s ease-out;
@@ -195,6 +200,7 @@ ul.slimmenu li {
     display: inline-block;
 	background:url('../images/line.png') 0 14px no-repeat;
 	background-size:15px 10px;
+	padding-left:20px;
 	-webkit-transition : all 0.3s ease-out;
 	-moz-transition : all 0.3s ease-out;
 	-o-transition :all 0.3s ease-out;
@@ -206,6 +212,7 @@ ul.slimmenu > li:last-child { margin-right: 0 }
 ul.slimmenu li a {
     display: block;
     color: #111111;
+    padding: 10px 0px;
 	cursor:pointer;
     margin: 0px 12px;
 	font-family: 'Lato', sans-serif;

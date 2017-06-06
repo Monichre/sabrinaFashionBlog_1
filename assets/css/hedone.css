@@ -1046,12 +1046,16 @@ blockquote {
     font-size: 2em;
 }
 
-
-/*font-family: 'Fjalla One', sans-serif;*/
-
-
-/*font-family: 'Arsenal', sans-serif;*/
-
+.section-divider {
+    width: 100%;
+    background: #DBDBDB url(../../health/img/escheresque_@2X.png) repeat;
+    background-size: 46px 29px;
+    height: 130px;
+    border-bottom: 1px solid #E5E5E5;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
 .clipped_bg h1 {
     font-family: 'Fjalla One', sans-serif;
     border-left: 3px solid #ba2424;
@@ -2220,8 +2224,14 @@ ul.portfolio-filter li a {
 /*-----------------------------------------------------------------------*/
         /*Health & Wellness Page*/
 /*-----------------------------------------------------------------------*/
+.health #filter-row{
+    margin: 40px auto 0;
+}
+.health #filter-row .head-subtitle {
+    font-size: 40px;
+}
 
-.health2 ul {
+.health ul {
     margin-bottom: 0!important;
 }
 
@@ -2230,12 +2240,12 @@ ul.portfolio-filter li a {
     padding-top: 0!important;
 }
 
-.health2 #bricks {
+.health #bricks {
     margin-top: 150px;
     padding-top: 0!important;
 }
 
-.health2 ul.social-nav {
+.health ul.social-nav {
 
     text-align: left;
 }
@@ -2758,7 +2768,7 @@ ul.hedone-menu>li>ul.sub-menu li a:hover {
     .hero-slider-content .text-mid {
         font-size: 50px;
     }
-    .subscribe-button {
+    /*.subscribe-button {
         position: absolute;
         top: 5px;
         right: 5px;
@@ -2777,7 +2787,7 @@ ul.hedone-menu>li>ul.sub-menu li a:hover {
         text-transform: uppercase;
         padding: 9px 15px;
         border: 0;
-    }
+    }*/
 }
 
 
@@ -3047,12 +3057,34 @@ ul.hedone-menu>li>ul.sub-menu li a:hover {
 }
 
 .post-wrapper .post .post-content .post-title {
+    background-color: #1a1a1a;
     font-family: 'Fjalla One', sans-serif;
     font-size: 32px;
+    text-indent: 50px;
     line-height: 42px;
+    font-weight: 700;
+    padding: 5px;
+    max-width: 432px;
+    width: max-content;
     margin: 0px 0px 15px 0px;
     transition: all .5s;
+    color: #fff;
     position: relative;
+}
+.category {
+
+}
+
+.featured-post-category {
+    font-family: Lato, sans-serif;
+    color: #ba2424;
+    font-size: 16px!important;
+    font-style: normal;
+    font-weight: 500;
+    text-align: center;
+    margin: 10px 10px 0 10px;
+    position: relative;
+    bottom: 5px;
 }
 
 .post-wrapper .post .post-content .post-title:hover {
@@ -3093,16 +3125,34 @@ ul.hedone-menu>li>ul.sub-menu li a:hover {
     right: 40%;
 }
 
+.post-block-bg {
+    position: absolute;
+    width: 90.5%;
+    bottom: 75px;
+    height: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background: #DBDBDB url(../../health/img/escheresque_@2X.png) repeat;
+    background-size: 46px 29px;
+    border-bottom: 1px solid #E5E5E5;
+}
+
 .post-block-bg h2 {
     writing-mode: vertical-rl;
     position: absolute;
-    top: 20px;
+    top: 0;
+    padding: 0;
+    text-align: center;
+    background-color: #1a1a1a;
     font-family: "Fjalla One", sans-serif;
     color: #fff;
     font-size: 36px;
     letter-spacing: 3px;
     text-transform: uppercase;
     font-weight: 700;
+    margin: 0;
+    height: 240px;
 }
 
 .left .post-block-bg h2 {
@@ -3111,17 +3161,6 @@ ul.hedone-menu>li>ul.sub-menu li a:hover {
 
 .right .post-block-bg h2 {
     right: 0;
-}
-
-.post-block-bg {
-    position: absolute;
-    width: 90.5%;
-    bottom: 100px;
-    background: #F3F2ED;
-    height: 40%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
 }
 
 .left .post-block-bg {
@@ -3288,8 +3327,8 @@ ul.portfolio-filter li a.current, ul.portfolio-filter li a:hover {
 }
 
 .subscribe-button:hover {
-    background-color: rgb(174, 198, 207);
-    color: #333;
+    /*background-color: #ba2424;*/
+    color: #ba2424;
 }
 
 .blog_post_category li i.fa, .blog_post_tags li i.fa, .blog-post-single-footer span.cat-links i.fa, .blog-post-single-footer span.tags-links i.fa {
@@ -3836,12 +3875,100 @@ a:hover.pricing-button {
     display: block;
 }
 
-
 /*--------------------------------------------*/
-
 
 /*Map and Travel Page*/
 
+/*--------------------------------------------*/
+
+.signup-menu > input[type="email"], input[type="number"], input[type="search"], input[type="text"], input[type="tel"], input[type="url"], input[type="password"], textarea, select {
+    height: auto!important;
+    width: 100%!important;
+}
+.signup-menu #subscribe-email {
+    padding: 0;
+    border-bottom: 1px solid #333;
+    background: transparent;
+
+}
+.signup-menu.slimmenu li > ul {
+    text-align: center;
+}
+
+ul.dropdown-menu {
+
+    padding: 40px;
+    margin: auto;
+    text-align: center;
+    min-width: 300px;
+
+}
+
+form{
+    position: relative;
+}
+.subscribe-style {
+    position: relative;
+    /*width: 200px;*/
+    /*height: 60px;*/
+    margin-bottom: 0px;
+    padding-right: 30px;
+    padding-left: 30px;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 1px solid #333;
+	color:#000;
+	font-weight:400;
+
+    -webkit-transition: border-color .4s ease;
+    transition: border-color .4s ease;
+    font-size: 10px;
+    line-height: 23px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    outline-style: none;
+}
+
+@-webkit-keyframes autofill {
+    to {
+        color: #fff;
+        background: #1a1a1a;
+    }
+}
+
+input#subscribe-email:-webkit-autofill {
+    -webkit-animation-name: autofill;
+    -webkit-animation-fill-mode: both;
+}
+#subscribe-email:hover {
+    border-bottom: 1px solid #ba2424;
+
+}
+.subscribe-button {
+    position: relative;
+
+    display: block;
+    margin: auto;
+    text-align: center;
+    width: 100%;
+    font-size: 11px;
+    color:rgb(255, 255, 255);
+    border-radius: 3px;
+    background-color: #1a1a1a;
+    -webkit-transition: background-color 300ms ease;
+    transition: background-color 300ms ease;
+    font-size: 11px;
+    font-weight: 400;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    padding: 9px 15px;
+    border: 0;
+}
+
+/*--------------------------------------------*/
+
+/*Map and Travel Page*/
 
 /*--------------------------------------------*/
 

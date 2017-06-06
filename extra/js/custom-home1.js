@@ -168,21 +168,21 @@ jQuery(document).ready(function($){
 
 	//Navigation
 
-	// $('ul.slimmenu').on('click',function(){
-	// var width = $(window).width();
-	// if ((width <= 1200)){
-	// 	$(this).slideToggle();
-	// }
-	// });
-	// $('ul.slimmenu').slimmenu(
-	// {
-	// 	resizeWidth: '1200',
-	// 	collapserTitle: '',
-	// 	easingEffect:'easeInOutQuint',
-	// 	animSpeed:'medium',
-	// 	indentChildren: true,
-	// 	childrenIndenter: '&raquo;'
-	// });
+	$('ul.slimmenu').on('click',function(){
+	var width = $(window).width();
+	if ((width <= 1200)){
+		$(this).slideToggle();
+	}
+	});
+	$('ul.slimmenu').slimmenu(
+	{
+		resizeWidth: '1200',
+		collapserTitle: '',
+		easingEffect:'easeInOutQuint',
+		animSpeed:'medium',
+		indentChildren: true,
+		childrenIndenter: '&raquo;'
+	});
 
 	$(document).ready(function(){"use strict";
 		$(".scroll").click(function(event){

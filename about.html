@@ -15,34 +15,78 @@
 
     <!-- OTHER -->
 
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Arsenal|Fjalla+One" rel="stylesheet">
+
+    <!-- Icons -->
     <link rel="stylesheet" href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
     <link rel="stylesheet" href="css/fonts/font-awesome/css/font-awesome.css">
     <link rel="stylesheet" type="text/css" href="assets/css/animate.css" />
 
     <!-- Stylesheets from the Pallas Template -->
+    <!-- CSS
+   ================================================== -->
+    <link rel="stylesheet" href="health/css/base.css">
+    <link rel="stylesheet" href="health/css/vendor.css">
+    <link rel="stylesheet" href="health/css/main.css">
+
+    <!-- Template Styles
+   ================================================== -->
+
     <link rel="stylesheet" href="health/css/layout.css" />
     <link rel="stylesheet" href="health/css/retina.css" />
 
     <!-- Theme Styles -->
     <link href="assets/css/hedone.css" rel="stylesheet" type="text/css" />
 
-    <link href="https://fonts.googleapis.com/css?family=Arsenal|Fjalla+One" rel="stylesheet">
+
 
 </head>
 
 <body id="about">
 
-    <!-- HEADER -->
+    <!-- header
+   ================================================== -->
     <div id="menu-wrap" class="menu-back cbp-af-header">
         <div class="container-fluid">
             <div class="row">
                 <div class="col-sm-4">
+                    <ul class="slimmenu text-center social-nav">
+                        <li><a href="#" class=""><i class="ion-social-instagram"></i></a></li>
+                        <li><a href="#" class=""><i class="ion-social-youtube"></i></a></li>
+                        <li><a href="#" class=""><i class="ion-social-facebook"></i></a></li>
+                        <li><a href="#" class=""><i class="ion-social-pinterest"></i></a></li>
+                    </ul>
+                </div>
+                <div class="col-sm-4">
                     <div class="logo">
-                        <img src="assets/img/logo.png" alt="">
-                        <h2 class="site-title">Th<span class="red">e</span>r<span class="red">e</span>sa on the Town</h2>
+                        <!-- <img src="assets/img/logo.png" alt=""> -->
+                        <h2 class="site-title">Theresa on the Town</h2>
                     </div>
                 </div>
-                <div class="col-sm-8">
+                <div class="col-sm-4">
+                    <ul class="slimmenu signup-menu">
+                        <li class="dropdown">
+                           <a href="#" class="dropdown-toggle" data-toggle="dropdown">Sign up <b class="caret"></b></a>
+                           <ul class="dropdown-menu" style="">
+                              <li>
+                                 <div class="row">
+                                     <h4 class="">Join the newsletter!</h4>
+                                    <form id="subscribe-form" name="subscribe-form" method="post" class="">
+                                        <input id="subscribe-email" type="text" placeholder="Email" name="email" required="required" class="subscribe-style">
+                                        <button type="button" data-value="subscribe" data-wait="Please wait..." class="w-button subscribe-button">subscribe</button>
+                                    </form>
+                                 </div>
+                              </li>
+                           </ul>
+                        </li>
+                        <li><a class="search-trigger" href="#"><i class="fa fa-search"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-8 col-sm-offset-2">
                     <ul class="slimmenu">
                         <li><a class="active-menu" href="./index.html">Home</a></li>
                         <li><a href="./about.html" class="animsition-link">about</a></li>
@@ -54,9 +98,40 @@
                 </div>
             </div>
         </div>
+        <div class="search-wrap">
+            <form role="search" method="get" class="search-form" action="#">
+                <label>
+                    <span class="hide-content">Search for:</span>
+                    <input type="search" class="search-field" placeholder="Type Your Keywords" value="" name="s" title="Search for:" autocomplete="off">
+                </label>
+                <input type="submit" class="search-submit" value="Search">
+            </form>
+            <a href="#" id="close-search" class="close-btn">Close</a>
+        </div>
     </div>
 
+
         <section class="padding-top-bottom-120px about-section">
+            <!-- Section Divider
+            =============================== -->
+            <div class="section-divider">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="section-headline">
+
+                                    <p class="head-subtitle"><span class="header-underline-large"></span>About </p>
+                                    <h4 class="head-h3">Me<br><span class="sub-header-underline-small"></span></h4>
+
+                                <!-- <h3>About Me</h3> -->
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+
+                        </div>
+                    </div>
+                </div>
+            </div>
             <div class="container-fluid">
                 <div class="row">
                     <div class="col-md-6">
