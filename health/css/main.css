@@ -1055,6 +1055,10 @@ input::-moz-focus-inner {
 
 /* masonry entries - (_common-styles.scss)
  * ------------------------------------------------------------------- */
+
+.flex-direction-nav  {
+	display: none;
+}
 .bricks-wrapper .entry {
 	margin-bottom: 40px;
 }
@@ -1284,53 +1288,7 @@ input::-moz-focus-inner {
 
 /* featured-post-slider direction nav
  * --------------------------------------------------------- */
-#featured-post-slider .flex-direction-nav li {
-	position: absolute;
-	top: 50%;
-	padding: 0;
-	margin-top: -30px;
-	height: 60px;
-	width: 60px;
-	z-index: 500;
-}
 
-#featured-post-slider .flex-direction-nav li a {
-	font: 0/0 a;
-	text-shadow: none;
-	color: transparent;
-	display: block;
-	height: 100%;
-	background-repeat: no-repeat;
-	background-position: center;
-	background-size: 20px 16px;
-	background-color: black;
-	opacity: .7;
-	-moz-transition: all 0.3s ease-in-out;
-	-o-transition: all 0.3s ease-in-out;
-	-webkit-transition: all 0.3s ease-in-out;
-	-ms-transition: all 0.3s ease-in-out;
-	transition: all 0.3s ease-in-out;
-}
-
-#featured-post-slider .flex-direction-nav li a.flex-prev {
-	background-image: url(../images/arrow-left.png);
-}
-
-#featured-post-slider .flex-direction-nav li a.flex-next {
-	background-image: url(../images/arrow-right.png);
-}
-
-#featured-post-slider .flex-direction-nav li a:hover {
-	opacity: 1;
-}
-
-#featured-post-slider .flex-direction-nav li.flex-nav-prev {
-	left: 0;
-}
-
-#featured-post-slider .flex-direction-nav li.flex-nav-next {
-	right: 0;
-}
 
 /* responsive:
 /* featured slider

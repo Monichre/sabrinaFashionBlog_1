@@ -7,168 +7,27 @@ var map = AmCharts.makeChart( "chartdiv", {
   "type": "map",
   "theme": "black",
 
+
+
   "dataProvider": {
     "map": "worldLow",
+    "getAreasFromMap":"true",
     "areas":[
 
-       { "id": "US", "color": "#333" },
+       { "id": "US", "color": "#d2f0f9" },
 
    ],
     "zoomLevel": 1.5,
     "zoomLongitude": -20.1341,
-    "zoomLatitude": 49.1712,
-
-    "lines": [ {
-      "latitudes": [ 40.43, 50.4422 ],
-      "longitudes": [ -74, 30.5367 ]
-    }, {
-      "latitudes": [ 40.43, 46.9480 ],
-      "longitudes": [ -74, 7.4481 ]
-    }, {
-      "latitudes": [ 40.43, 59.3328 ],
-      "longitudes": [ -74, 18.0645 ]
-    }, {
-      "latitudes": [ 40.43, 40.4167 ],
-      "longitudes": [ -74, -3.7033 ]
-    }, {
-      "latitudes": [ 40.43, 46.0514 ],
-      "longitudes": [ -74, 14.5060 ]
-    }, {
-      "latitudes": [ 40.43, 48.2116 ],
-      "longitudes": [ -74, 17.1547 ]
-    }, {
-      "latitudes": [ 40.43, 44.8048 ],
-      "longitudes": [ -74, 20.4781 ]
-    }, {
-      "latitudes": [ 40.43, 55.7558 ],
-      "longitudes": [ -74, 37.6176 ]
-    }, {
-      "latitudes": [ 40.43, 38.7072 ],
-      "longitudes": [ -74, -9.1355 ]
-    }, {
-      "latitudes": [ 40.43, 54.6896 ],
-      "longitudes": [ -74, 25.2799 ]
-    }, {
-      "latitudes": [ 40.43, 64.1353 ],
-      "longitudes": [ -74, -21.8952 ]
-    }, {
-      "latitudes": [ 40.43, 40.4300 ],
-      "longitudes": [ -74, -74.0000 ]
-    } ],
-    "images": [ {
-      "id": "london",
-      "svgPath": targetSVG,
-      "title": "London",
-      "latitude": 51.5002,
-      "longitude": -0.1262,
-      "scale": 0.5
-    }, {
-      "svgPath": targetSVG,
-      "title": "Brussels",
-      "latitude": 50.8371,
-      "longitude": 4.3676,
-      "scale": 0.5
-    }, {
-      "svgPath": targetSVG,
-      "title": "Prague",
-      "latitude": 50.0878,
-      "longitude": 14.4205,
-      "scale": 0.5
-    }, {
-      "svgPath": targetSVG,
-      "title": "Athens",
-      "latitude": 37.9792,
-      "longitude": 23.7166,
-      "scale": 0.5
-    }, {
-      "svgPath": targetSVG,
-      "title": "Reykjavik",
-      "latitude": 64.1353,
-      "longitude": -21.8952,
-      "scale": 0.5
-    }, {
-      "svgPath": targetSVG,
-      "title": "Dublin",
-      "latitude": 53.3441,
-      "longitude": -6.2675,
-      "scale": 0.5
-    }, {
-      "svgPath": targetSVG,
-      "title": "Oslo",
-      "latitude": 59.9138,
-      "longitude": 10.7387,
-      "scale": 0.5
-    }, {
-      "svgPath": targetSVG,
-      "title": "Lisbon",
-      "latitude": 38.7072,
-      "longitude": -9.1355,
-      "scale": 0.5
-    }, {
-      "svgPath": targetSVG,
-      "title": "Moscow",
-      "latitude": 55.7558,
-      "longitude": 37.6176,
-      "scale": 0.5
-    }, {
-      "svgPath": targetSVG,
-      "title": "Belgrade",
-      "latitude": 44.8048,
-      "longitude": 20.4781,
-      "scale": 0.5
-    }, {
-      "svgPath": targetSVG,
-      "title": "Bratislava",
-      "latitude": 48.2116,
-      "longitude": 17.1547,
-      "scale": 0.5
-    }, {
-      "svgPath": targetSVG,
-      "title": "Ljubljana",
-      "latitude": 46.0514,
-      "longitude": 14.5060,
-      "scale": 0.5
-    }, {
-      "svgPath": targetSVG,
-      "title": "Madrid",
-      "latitude": 40.4167,
-      "longitude": -3.7033,
-      "scale": 0.5
-    }, {
-      "svgPath": targetSVG,
-      "title": "Stockholm",
-      "latitude": 59.3328,
-      "longitude": 18.0645,
-      "scale": 0.5
-    }, {
-      "svgPath": targetSVG,
-      "title": "Bern",
-      "latitude": 46.9480,
-      "longitude": 7.4481,
-      "scale": 0.5
-    }, {
-      "svgPath": targetSVG,
-      "title": "Kiev",
-      "latitude": 50.4422,
-      "longitude": 30.5367,
-      "scale": 0.5
-    }, {
-      "svgPath": targetSVG,
-      "title": "Paris",
-      "latitude": 48.8567,
-      "longitude": 2.3510,
-      "scale": 0.5
-    }, {
-      "svgPath": targetSVG,
-      "title": "New York",
-      "latitude": 40.43,
-      "longitude": -74,
-      "scale": 1
-    } ]
+    "zoomLatitude": 49.1712
   },
 
   "areasSettings": {
-    "unlistedAreasColor": "#C0C0C0"
+      "color": "#fff",
+    "unlistedAreasColor": "#d2f0f9",
+        "autoZoom": "true",
+        "selectedColor": "#d2f0f9",
+        "outlineColor": "#BFDBE3"
     // "unlistedAreasAlpha": 0.9
   },
 

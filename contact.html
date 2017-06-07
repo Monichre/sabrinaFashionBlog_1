@@ -37,16 +37,16 @@
 
     <!-- Site Wide Template Styles -->
 
-    <!-- <link href="assets/css/colors.css" rel="stylesheet" type="text/css"/> -->
-
-
 
     <!-- Page Specific CSS from Pallas Template
     ================================================== -->
     <link rel="stylesheet" href="health/css/base.css" />
-    <link rel="stylesheet" href="health/css/skeleton.css" />
     <link rel="stylesheet" href="health/css/layout.css" />
-    <link rel="stylesheet" href="health/css/font-awesome.css" />
+    <link rel="stylesheet" href="health/css/vendor.css">
+    <link rel="stylesheet" href="health/css/main.css">
+
+
+    <!-- Retina & Animsition -->
     <link rel="stylesheet" href="health/css/retina.css" />
     <link rel="stylesheet" href="health/css/animsition.min.css" />
 
@@ -59,7 +59,7 @@
 
 <body id="contact">
 
-    <div class="animsition">
+
 
         <!-- header
        ================================================== -->
@@ -148,70 +148,48 @@
 
         <section class="section white-background padding-top-bottom shadow-sec" id="scroll-link">
             <div class="container">
-                <div class="sixteen columns">
-                    <div class="section-header-text">
-                        <h4>Get in touch<span>.</span></h4>
-                        <p>For all inquiries</p>
-                        <div class="line-header"></div>
+                <div class="row">
+                    <div class="col-sm-6 col-sm-offset-3">
+                        <div class="section-header-text">
+                            <h4>Get in touch<span>.</span></h4>
+                            <p>For all inquiries</p>
+                            <div class="line-header"></div>
+                        </div>
                     </div>
                 </div>
 
-                <div class="clear"></div>
+                <div class="row">
+                    <div class="col-sm-6 col-sm-offset-3">
+                        <form name="ajax-form" id="ajax-form" action="mail-it.php" method="post">
+                            <div class="col-sm-6" data-scroll-reveal="enter bottom move 100px over 0.6s after 0.2s">
+                                <label for="name">
+        							<span class="error" id="err-name">please enter name</span>
+        						</label>
+                                <input name="name" id="name" type="text" placeholder="Name: *" />
+                            </div>
+                            <div class="col-sm-6" data-scroll-reveal="enter bottom move 100px over 0.6s after 0.2s">
+                                <label for="email">
+        							<span class="error" id="err-email">please enter e-mail</span>
+        							<span class="error" id="err-emailvld">e-mail is not a valid format</span>
+        						</label>
+                                <input name="email" id="email" type="text" placeholder="E-Mail: *" />
+                            </div>
+                            <div class="col-sm-12" data-scroll-reveal="enter bottom move 100px over 0.6s after 0.2s">
+                                <label for="message"></label>
+                                <textarea name="message" id="message" placeholder="Message"></textarea>
+                            </div>
+                            <div class="col-sm-12" data-scroll-reveal="enter bottom move 100px over 0.6s after 0.2s">
+                                <div id="button-con"><button class="send_message" id="send"><span data-hover="submit">Send</span></button></div>
+                            </div>
 
-                <form name="ajax-form" id="ajax-form" action="mail-it.php" method="post">
-                    <div class="eight columns" data-scroll-reveal="enter bottom move 100px over 0.6s after 0.2s">
-                        <label for="name">
-							<span class="error" id="err-name">please enter name</span>
-						</label>
-                        <input name="name" id="name" type="text" placeholder="Your Name: *" />
+                            <div class="error text-align-center" id="err-form">There was a problem validating the form please check!</div>
+                            <div class="error text-align-center" id="err-timedout">The connection to the server timed out!</div>
+                            <div class="error" id="err-state"></div>
+                        </form>
                     </div>
-                    <div class="eight columns" data-scroll-reveal="enter bottom move 100px over 0.6s after 0.2s">
-                        <label for="email">
-							<span class="error" id="err-email">please enter e-mail</span>
-							<span class="error" id="err-emailvld">e-mail is not a valid format</span>
-						</label>
-                        <input name="email" id="email" type="text" placeholder="E-Mail: *" />
-                    </div>
-                    <div class="sixteen columns" data-scroll-reveal="enter bottom move 100px over 0.6s after 0.2s">
-                        <label for="message"></label>
-                        <textarea name="message" id="message" placeholder="Message"></textarea>
-                    </div>
-                    <div class="sixteen columns" data-scroll-reveal="enter bottom move 100px over 0.6s after 0.2s">
-                        <div id="button-con"><button class="send_message" id="send"><span data-hover="submit">Send</span></button></div>
-                    </div>
-                    <div class="clear"></div>
-                    <div class="error text-align-center" id="err-form">There was a problem validating the form please check!</div>
-                    <div class="error text-align-center" id="err-timedout">The connection to the server timed out!</div>
-                    <div class="error" id="err-state"></div>
-                </form>
+                </div>
 
-                <div class="clear"></div>
                 <div id="ajaxsuccess">Successfully sent!!</div>
-                <div class="clear"></div>
-
-            </div>
-        </section>
-
-        <section class="section white-background padding-bottom hidden-sec">
-            <div class="container">
-                <div class="one-third column">
-                    <div class="contact-details">
-                        <p><span>&#xf1d8;</span> Promotions:</p>
-
-                    </div>
-                </div>
-                <div class="one-third column">
-                    <div class="contact-details">
-                        <p><span>&#xf000;</span> Events:</p>
-
-                    </div>
-                </div>
-                <div class="one-third column">
-                    <div class="contact-details">
-                        <p><span>&#xf07a;</span> Affiliates:</p>
-
-                    </div>
-                </div>
             </div>
         </section>
 
@@ -233,12 +211,35 @@
             </div>
             <div class="container-fluid footer-bottom">
                 <div class="row">
-                    <div class="footer-social-block">
-                        <a href="#" class="w-inline-block social-wrap"><i class="ion-social-instagram"></i></a>
-                        <a href="#" class="w-inline-block social-wrap"><i class="ion-social-youtube"></i></a>
-                        <a href="#" class="w-inline-block social-wrap"><i class="ion-social-facebook"></i></a>
-                        <a href="#" class="w-inline-block social-wrap"><i class="ion-social-pinterest"></i></a>
+                    <div class="col-xs-12 col-sm-6 col-sm-offset-3">
+                        <div class="footer-form">
+                            <div class="section-headline">
+                                <h3>Are You A Tall <span class="red">Fashionista</span> Or <span class="red">Fashion Fanatic?</span></h3>
+                            </div>
+                            <p>Join the mailing list and be the first to know about product picks, style inspiration, and money saving tips. </p>
+
+                            <form id="" name="subscribe-form" method="post">
+
+                                    <input id="" type="text" placeholder="Email" name="email" required="required" class="subscribe-style">
+
+
+                                    <button type="button" data-value="subscribe" data-wait="Please wait..." class="w-button subscribe-button">subscribe</button>
+
+                            </form>
+                        </div>
                     </div>
+                </div>
+                <hr>
+                <div class="row">
+                    <div class="col-xs-12">
+                        <div class="footer-social-block">
+                            <a href="#" class="w-inline-block social-wrap"><i class="ion-social-instagram"></i></a>
+                            <a href="#" class="w-inline-block social-wrap"><i class="ion-social-youtube"></i></a>
+                            <a href="#" class="w-inline-block social-wrap"><i class="ion-social-facebook"></i></a>
+                            <a href="#" class="w-inline-block social-wrap"><i class="ion-social-pinterest"></i></a>
+                        </div>
+                    </div>
+
                     <div class="footer-text">
                         <span class="footer-text-span">Theresa on the Town</span>
                     </div>
@@ -249,7 +250,7 @@
             </div>
         </footer>
 
-    </div>
+
 
 
     <!-- JAVASCRIPT
@@ -297,6 +298,10 @@
     <script type="text/javascript" src="health/js/animated-headline.js"></script>
     <script type="text/javascript" src="health/js/jquery.fs.tipper.min.js"></script>
     <script type="text/javascript" src="health/js/custom-home1.js"></script>
+
+    <!-- Script for Search Function -->
+    <script src="health/js/plugins.js"></script>
+    <script src="health/js/main.js"></script>
     <!-- End Document
 ================================================== -->
 </body>
