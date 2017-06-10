@@ -2265,7 +2265,6 @@ ul.portfolio-filter li a {
     position: relative;
     width: 100%;
     padding-top: 90px;
-
 }
 .footer-form {
     color: #fff;
@@ -2278,7 +2277,12 @@ ul.portfolio-filter li a {
 }
 .footer-form p {
     text-align: center;
+}
 
+.footer hr {
+    width: 70%;
+    margin: 20px auto;
+    display: block;
 }
 
 .footer-form form input {
@@ -2347,7 +2351,7 @@ ul.portfolio-filter li a {
     border-top: 1px solid #333;
     width: 80%;
     display: block;
-    margin: -20px auto 0;
+    margin: -30px auto 0;
 }
 
 .social-wrap {
@@ -2452,8 +2456,9 @@ a.social-wrap i {
   padding: 100px 0; }
   .space-margin {
     margin: 100px 0; }
-  .space-dark {
-    background-color: #f9f9f9; }
+.updates.space {
+    padding: 50px 0;
+}
   .space-top {
     margin-top: 50px; }
     .space-top-sm {
@@ -3087,10 +3092,10 @@ ul.hedone-menu>li>ul.sub-menu li a:hover {
 }
 
 .post-wrapper .post .post-content .post-title {
-    background-color: #1a1a1a;
+
     font-family: 'Fjalla One', sans-serif;
     font-size: 32px;
-    text-indent: 50px;
+
     line-height: 42px;
     font-weight: 700;
     padding: 5px;
@@ -3098,7 +3103,7 @@ ul.hedone-menu>li>ul.sub-menu li a:hover {
     width: max-content;
     margin: 0px 0px 15px 0px;
     transition: all .5s;
-    color: #fff;
+    color: #333;
     position: relative;
 }
 .category {
@@ -3174,7 +3179,7 @@ ul.hedone-menu>li>ul.sub-menu li a:hover {
     top: 0;
     padding: 0;
     text-align: center;
-    background-color: #1a1a1a;
+
     font-family: "Fjalla One", sans-serif;
     color: #fff;
     font-size: 36px;
@@ -3220,8 +3225,8 @@ ul.hedone-menu>li>ul.sub-menu li a:hover {
 }
 
 .post-block-bg .affiliate-images ul li img {
-    height: 120px;
-    width: 67px;
+    height: 100%;
+    width: 100%;
     box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.2);
 }
 
@@ -3299,7 +3304,8 @@ ul.hedone-menu>li>ul.sub-menu li a:hover {
 .promo-video h3 {
     font-family: "Fjalla One", sans-serif;
 }
-
+.promo-video.space {
+  padding: 50px 0; }
 
 /*--- Colors ---*/
 
@@ -3356,8 +3362,10 @@ ul.portfolio-filter li a.current, ul.portfolio-filter li a:hover {
     border-color: #fcc900;
 }
 
+.subscribe-button {
+    line-height: inherit;
+}
 .subscribe-button:hover {
-    /*background-color: #ba2424;*/
     color: #ba2424;
 }
 
@@ -3539,6 +3547,7 @@ a:hover.pricing-button {
 
 /*-----------------------------------------------------------------*/
 
+
 .section-headline {
     margin-bottom: 30px;
 }
@@ -3613,7 +3622,8 @@ a:hover.pricing-button {
 }
 
 .caption-bg {
-    background-color: #1a1a1a;
+    background-color: #fff;
+    border: 10px solid #1a1a1a;
     position: absolute;
     bottom: -100px;
     left: 40%;
@@ -3624,13 +3634,13 @@ a:hover.pricing-button {
 
 .fashion-preview .caption-bg .caption {
     /*width: 50%;*/
-    padding: 50px 50px 25px 50px;
+    padding: 25px 50px 25px 25px;
+    color: #333;
     /*border:  5px double #ba2424;*/
 
 }
 
 .caption h4 {
-    color: #fff;
     font-size: 20px;
     text-transform: uppercase;
 }
@@ -3639,7 +3649,6 @@ a:hover.pricing-button {
     font-family: "Droid Serif", Helvetica, Arial, sans-serif;
     display: block;
     font-size: 12px;
-    color: #fff;
     margin-bottom: 10px;
     text-transform: none;
 }
@@ -3655,7 +3664,7 @@ a:hover.pricing-button {
 
 .caption p {
     margin-bottom: 40px;
-    color: #fff;
+
 }
 
 .caption .list {
@@ -3670,7 +3679,7 @@ a:hover.pricing-button {
 
 
 .caption .list a {
-    color: #fff;
+    color: #333;
     font-size: 12px;
     -webkit-transition: color 0.5s;
     -moz-transition: color 0.5s;
@@ -3680,7 +3689,7 @@ a:hover.pricing-button {
 }
 
 .caption .list a:hover {
-    color: #fff;
+    color: #ba2424;
     text-decoration: none;
 }
 
@@ -3794,6 +3803,10 @@ a:hover.pricing-button {
 .updates .item figcaption .author {
     font-style: italic;
     color: #fff;
+}
+
+#fashion .section-divider {
+    margin-top: 20px;
 }
 
 @media (max-width: 992px) {
@@ -4012,7 +4025,7 @@ input#subscribe-email:-webkit-autofill {
 #travel {
     /*background: url(../../health/img/10.jpg);*/
     /*background-size: cover;*/
-    background-color: #f5f5f5;
+    
 }
 #travel .hedone-menu-container, #travel .nav-back {
     /*background-color: #1a1a1a;*/

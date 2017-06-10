@@ -28,7 +28,7 @@
 ================================================== */
 
 #menu-wrap{
-    position: fixed;
+
 	padding-bottom:10px;
 	width:100%;
 	z-index:500;
@@ -105,7 +105,7 @@ ul.slimmenu li ul {
 
 .logo{
 
-    margin-top: 23px;
+    padding-top: 10px;
 	font-size: 20px;
 	text-align: center;
 	-webkit-transition : all 0.3s ease-out;
@@ -115,10 +115,9 @@ ul.slimmenu li ul {
 }
 .logo .site-title {
 
-	/*display: inline;*/
 	font-family: "Fjalla One", sans-serif;
 	letter-spacing: 0;
-	font-size: 20px;
+	font-size: 30px;
 	margin: 0!important;
 }
 

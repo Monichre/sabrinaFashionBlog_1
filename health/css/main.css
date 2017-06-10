@@ -704,9 +704,9 @@ button:focus,
 input[type="submit"]:focus,
 input[type="reset"]:focus,
 input[type="button"]:focus {
-	background: #bebebe;
-	color: #000000;
-	outline: 0;
+	/*background: #bebebe;*/
+	/*color: #000000;*/
+	/*outline: 0;*/
 }
 
 .button.button-primary,
