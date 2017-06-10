@@ -2930,7 +2930,7 @@ a.scroll-down.scroll-yt {
 .footer{
 	position: relative;
 	width:100%;
-	padding-top:50px;
+	
     box-shadow: 0 0 40px rgba(0, 0, 0, 0.2);
 	background: #fff;
 }

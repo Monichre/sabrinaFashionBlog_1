@@ -33,8 +33,8 @@
 
     <link rel="stylesheet" href="health/css/layout.css" />
     <link rel="stylesheet" href="health/css/retina.css" />
-    <link href="assets/css/hedone.css" rel="stylesheet" type="text/css"/>
-    <link rel="stylesheet" href="sass/sass/showcase.css">
+    <link href="assets/css/hedone.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="assets/css/showcase.css">
 
 
     <!-- script
@@ -68,18 +68,18 @@
                 <div class="col-sm-4">
                     <ul class="slimmenu signup-menu">
                         <li class="dropdown">
-                           <a href="#" class="dropdown-toggle" data-toggle="dropdown">Sign up <b class="caret"></b></a>
-                           <ul class="dropdown-menu" style="">
-                              <li>
-                                 <div class="row">
-                                     <h4 class="">Join the newsletter!</h4>
-                                    <form id="subscribe-form" name="subscribe-form" method="post" class="">
-                                        <input id="subscribe-email" type="text" placeholder="Email" name="email" required="required" class="subscribe-style">
-                                        <button type="button" data-value="subscribe" data-wait="Please wait..." class="w-button subscribe-button">subscribe</button>
-                                    </form>
-                                 </div>
-                              </li>
-                           </ul>
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Sign up <b class="caret"></b></a>
+                            <ul class="dropdown-menu" style="">
+                                <li>
+                                    <div class="row">
+                                        <h4 class="">Join the newsletter!</h4>
+                                        <form id="subscribe-form" name="subscribe-form" method="post" class="">
+                                            <input id="subscribe-email" type="text" placeholder="Email" name="email" required="required" class="subscribe-style">
+                                            <button type="button" data-value="subscribe" data-wait="Please wait..." class="w-button subscribe-button">subscribe</button>
+                                        </form>
+                                    </div>
+                                </li>
+                            </ul>
                         </li>
                         <li><a class="search-trigger" href="#"><i class="fa fa-search"></i></a></li>
                     </ul>
@@ -110,29 +110,122 @@
         </div>
     </div>
 
-
-    <!-- Hero -->
-    <section class="">
-
-        <!-- Section Header -->
-        <div id="travel-blog" class="section-header">
-            <p class="head-subtitle">Travel</p>
-            <h3 class="head-h3">Highlights</h3>
-        </div>
-
-        <!-- Interactive Map -->
-        <div id="chartdiv"></div>
-
-        <main id="showcase-stage">
+    <div class="row">
+        <div class="col-sm-6">
+            <div id="travel-blog" class="section-header">
+                <p class="head-subtitle">Travel</p>
+                <h3 class="head-h3">Highlights</h3>
+            </div>
             <figure id="showcase">
                 <section></section>
                 <section></section>
-                  <section></section>
-                 <section></section>
+                <section></section>
+                <section></section>
             </figure>
-        </main>
-    </section>
+        </div>
+        <div class="col-sm-6">
+            <article class="travel-post post clearfix">
+                <h2 class="post-title">WHAT I WORE IN: MALAGA, SPAIN </h2>
+                <span class="category featured-post-category">- Travel -</span>
+                <div class="travel-content row clearfix">
+                    <div class="col-xs-8 clearfix">
+                        <div class="travel-img">
+                            <img class="img-responsive img-thumbnail" src="assets/img/spain.jpg" alt="" align="">
+                        </div>
+                        <p>At first, I wasn’t too sure what to wear on my first trip to the south of Spain. I did research on the weather (of course) and looked at pictures of the area for inspo (Google Images to be exact…!) The forecast showed 80 degrees
+                            (yay!), dropping to 60’s in the evening. Given the rich culture and ancient architecture of Spain (picture: ruins, beautiful archways, fortified brick palaces, colorful mosaics), I wanted to incorporate texture. I also wanted
+                            to wear colors that were somewhat muted; too bright of colors would have felt more tropical (better suited for the Caribbean-esque).</p>
+                    </div>
+                </div>
+            </article>
+        </div>
+    </div>
+    <!-- Section Divider
+    =============================== -->
+    <div class="section-divider">
+        <div class="container">
+            <div class="row">
 
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-xs-12">
+            <div class="map-container">
+                <div id="map-header" class="section-header">
+                    <p class="head-subtitle">My Map</p>
+                    <h3 class="head-h3">Where I've been</h3>
+                </div>
+                <div id="chartdiv"></div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-xs-4 travel-posts-header">
+            <h1>All <span class="red">Travel</span> Posts</h1>
+        </div>
+    </div>
+
+
+
+    <div class="container">
+        <div class="card-column column-0">
+            <div class="card card-color-0">
+                <div class="border border-1"></div>
+                <img src="assets/img/fashion-2.jpg" alt="" class="img-responsive">
+                <h1>WHAT I WORE IN: ST. LUCIA</h1>
+            </div>
+            <div class="card card-color-2">
+                <div class="border border-2"></div>
+                <img src="assets/img/nyc-bw.png" alt="" class="img-responsive">
+                <h1>WHAT I WORE IN SPAIN</h1>
+            </div>
+        </div>
+        <div class="card-column column-1">
+            <div class="card card-color-1">
+                <div class="border border-1"></div>
+                <img src="assets/img/nyc-color.jpg" alt="" class="img-responsive">
+                <h1>WHAT I WORE IN Jamaica</h1>
+            </div>
+            <div class="card card-color-3">
+                <div class="border border-2"></div>
+                <img src="assets/img/fashion-1.jpg" alt="" class="img-responsive">
+                <h1>WHAT I WORE IN the Bahamas</h1>
+            </div>
+        </div>
+    </div>
+
+    <div id="cover" class="cover"></div>
+
+    <div id="open-content" class="open-content">
+        <a href="#" id="close-content" class="close-content"><span class="x-1"></span><span class="x-2"></span></a>
+        <img id="open-content-image" src="" />
+        <div class="text" id="open-content-text">
+        </div>
+    </div>
+
+
+
+
+    <!-- Potentially Really good stuff jsut not for this project -->
+    <!-- <div class="row">
+        <div class="col-sm-6">
+            <div class="row">
+                <div id="travel-nav">
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-6 changer-container">
+            <div class="changer">
+                <div class="sub"></div>
+                  <h1>Spain</h1>
+                  <h1>Jamaica</h1>
+                  <h1>Bahamas</h1>
+                  <div class="demos"><a rel="nofollow" rel="noreferrer"data-go="1">cloudsuit</a><a rel="nofollow" rel="noreferrer"data-go="2">urbansky</a><a rel="nofollow" rel="noreferrer"data-go="3">knowledge</a></div>
+            </div>
+            <div id="container"></div>
+        </div>
+    </div> -->
 
     <!-- FOOTER -->
     <footer class="footer">
@@ -140,6 +233,7 @@
             <div class="widget-row row">
                 <div class="col-xs-12">
                     <header class="instagram-header">
+                        <img class="travel-logo" src="assets/img/travel-logo.png" height="100px" width="100px" alt="" class="center-block">
                         <h4>Instagram</h4>
                         <hr>
                     </header>
@@ -216,7 +310,9 @@
     <script type="text/javascript" src="health/js/retina-1.1.0.min.js"></script>
     <script type="text/javascript" src="health/js/classie.js"></script>
     <script type="text/javascript" src="health/js/cbpAnimatedHeader.min.js"></script>
-     <script type="text/javascript" src="health/js/menu.js"></script>
+    <script type="text/javascript" src="health/js/menu.js"></script>
+
+    <script type="text/javascript" src="assets/js/showcase.js"></script>
 
 
 </body>
