@@ -36,12 +36,12 @@
     <link rel="stylesheet" href="health/css/layout.css" />
     <link rel="stylesheet" href="health/css/retina.css" />
     <link href="assets/css/hedone.css" rel="stylesheet" type="text/css"/>
+    <link rel="stylesheet" href="sass/button.css">
 
 
     <!-- script
    ================================================== -->
     <script src="health/js/modernizr.js"></script>
-    <script src="health/js/pace.min.js"></script>
 </head>
 <body id="top" class="health">
 
@@ -112,7 +112,10 @@
     <div class="row">
         <!-- Health Banner -->
         <div class="col-sm-6">
-            <h1 class="head-subtitle">Health & Wellness</p>
+            <div id="" class="section-header">
+                <p class="head-subtitle">Health and Wellness</p>
+                <!-- <h3 class="head-h3"></h3> -->
+            </div>
             <figure id="health-showcase">
                 <section></section>
                 <section></section>
@@ -121,404 +124,160 @@
             </figure>
         </div>
         <div class="col-sm-6">
-            <div id="filter-row" class="col-sm-10 col-sm-offset-1">
+            <article class="health-post post clearfix">
+                <h2 class="post-title">5 INEXPENSIVE HEALTH AND BEAUTY USES FOR COCONUT OIL </h2>
+                <span class="category featured-post-category">- Health & Wellness -</span>
+                <div class="travel-content row clearfix">
+                    <div class="col-xs-8 clearfix">
+                        <div class="travel-img">
+                            <img class="img-responsive img-thumbnail" src="assets/img/food-2.jpg" alt="" align="">
+                        </div>
+                        <p>I’m obsessed with coconuts because they have SO MANY uses. Besides drinking coconut water (this pic is from a recent trip to Jamaica where coconuts are plentiful), I rely on coconuts because of their numerous health and cosmetic benefits.  Keep reading for my top 5 non-cooking uses for coconut oil.</p>
+                    </div>
+                    <div class="travel-button-bg clearfix col-xs-2">
+                        <div class="col-xs-12">
+                            <div class="travel-button-menu">
+                                <div class="button-container-1">
+                                    <span class="mas">Like</span>
+                                    <button id='work' type="button" name="Hover">Like</button>
+                                </div>
+
+                                <div class="button-container-2">
+                                    <span class="mas">Share</span>
+                                    <button type="button" name="Hover">Share</button>
+                                </div>
+
+                                <div class="button-container-3">
+                                    <span class="mas">Tweet</span>
+                                    <button type="button" name="Hover">Tweet</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </article>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-xs-4 travel-posts-header">
+            <h1>All <span class="red">Health</span> Posts</h1>
+        </div>
+        <div class="col-xs-4 col-xs-offset-4 travel-posts-header">
+            <h1>Search By:</h1>
+
                 <ul class="list-inline slimmenu filter-menu">
-                    <li data-filter="*" class="filter current"><a href="#" title="">All</a></li>
-                    <li data-filter=".diet" class="filter has-children"><a href="#" title="">Diet</a></li>
-                    <li data-filter=".workout" class="filter has-children"><a href="#" title="">Workout</a></li>
-                    <li data-filter=".gear" class="filter"><a href="#" title="">Gear</a></li>
-                    <li data-filter=".recipe" class="filter"><a href="#" title="">Recipe</a></li>
+                    <li data-filter="*" class="filter current">All</li>
+                    <li data-filter=".diet" class="filter has-children">Diet</li>
+                    <li data-filter=".workout" class="filter has-children">Workout</li>
+                    <li data-filter=".gear" class="filter">Gear</li>
+                    <li data-filter=".recipe" class="filter">Recipe</li>
                 </ul>
-            </div>
+
         </div>
     </div>
 
 
     <!-- masonry
    ================================================== -->
-    <section id="bricks">
+
 
         <div class="row masonry">
-            <div class="bricks-wrapper">
-                <div class="grid-sizer"></div>
-                <div class="brick entry featured-grid animate-this diet">
-                    <div class="entry-content">
-                        <div id="featured-post-slider" class="flexslider">
-                            <ul class="slides">
-                                <li>
-                                    <div class="featured-post-slide">
-                                        <div class="post-background" style="background-image:url('health/img/coconut.jpg');">
-                                            <div class="overlay"></div>
-                                        </div>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="featured-post-slide">
-                                        <div class="post-background" style="background-image:url('health/img/coconut.jpg');">
-                                        <div class="overlay"></div>
-                                        <div class="post-content">
-
-                                        </div>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="featured-post-slide">
-                                        <div class="post-background" style="background-image:url('health/img/coconut.jpg');">
-                                        <div class="overlay"></div>
-                                        <div class="post-content">
-
-                                        </div>
-                                    </div>
-                                </li>
-                            </ul>
-                            <!-- end slides -->
+            <div class="grid-sizer"></div>
+            <div id="health-gallery" class="container">
+                <div class="row">
+                    <div class="col-sm-3 health-blog-post-preview recipe">
+                        <div class="">
+                            <img src="assets/img/food-1.jpg" alt="">
+                            <h1>blog post preview</h1>
+                            <p>I’m obsessed with coconuts because they have SO MANY uses. Besides drinking coconut water - this pic is from a recent trip to Jamaica...</p>
                         </div>
-                        <!-- end featured-post-slider -->
                     </div>
-                    <!-- end entry content -->
+                    <div class="col-sm-3 health-blog-post-preview gear">
+                        <div class="">
+                            <img src="assets/img/food-2.jpg" alt="">
+                            <h1>blog post preview</h1>
+                            <p>I’m obsessed with coconuts because they have SO MANY uses. Besides drinking coconut water - this pic is from a recent trip to Jamaica...</p>
+                        </div>
+                    </div>
+                    <div class="col-sm-3 health-blog-post-preview workout">
+                        <div class="">
+                            <img src="assets/img/food-3.jpg" alt="">
+                            <h1>blog post preview</h1>
+                            <p>I’m obsessed with coconuts because they have SO MANY uses. Besides drinking coconut water - this pic is from a recent trip to Jamaica...</p>
+                        </div>
+                    </div>
+                    <div class="col-sm-3 health-blog-post-preview diet">
+                        <div class="">
+                            <img src="assets/img/food-4.jpg" alt="">
+                            <h1>blog post preview</h1>
+                            <p>I’m obsessed with coconuts because they have SO MANY uses. Besides drinking coconut water - this pic is from a recent trip to Jamaica...</p>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-3 health-blog-post-preview recipe">
+                        <div class="">
+                            <img src="assets/img/food-1.jpg" alt="">
+                            <h1>blog post preview</h1>
+                            <p>I’m obsessed with coconuts because they have SO MANY uses. Besides drinking coconut water - this pic is from a recent trip to Jamaica...</p>
+                        </div>
+                    </div>
+                    <div class="col-sm-3 health-blog-post-preview gear">
+                        <div class="">
+                            <img src="assets/img/food-2.jpg" alt="">
+                            <h1>blog post preview</h1>
+                            <p>I’m obsessed with coconuts because they have SO MANY uses. Besides drinking coconut water - this pic is from a recent trip to Jamaica...</p>
+                        </div>
+                    </div>
+                    <div class="col-sm-3 health-blog-post-preview workout">
+                        <div class="">
+                            <img src="assets/img/food-3.jpg" alt="">
+                            <h1>blog post preview</h1>
+                            <p>I’m obsessed with coconuts because they have SO MANY uses. Besides drinking coconut water - this pic is from a recent trip to Jamaica...</p>
+                        </div>
+                    </div>
+                    <div class="col-sm-3 health-blog-post-preview diet">
+                        <div class="">
+                            <img src="assets/img/food-4.jpg" alt="">
+                            <h1>blog post preview</h1>
+                            <p>I’m obsessed with coconuts because they have SO MANY uses. Besides drinking coconut water - this pic is from a recent trip to Jamaica...</p>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-3 health-blog-post-preview recipe">
+                        <div class="">
+                            <img src="health/img/popcorn.jpg" alt="">
+                            <h1>blog post preview</h1>
+                            <p>I’m obsessed with coconuts because they have SO MANY uses. Besides drinking coconut water - this pic is from a recent trip to Jamaica...</p>
+                        </div>
+                    </div>
+                    <div class="col-sm-3 health-blog-post-preview gear">
+                        <div class="">
+                            <img src="health/img/coconut.jpg" alt="">
+                            <h1>blog post preview</h1>
+                            <p>I’m obsessed with coconuts because they have SO MANY uses. Besides drinking coconut water - this pic is from a recent trip to Jamaica...</p>
+                        </div>
+                    </div>
+                    <div class="col-sm-3 health-blog-post-preview workout">
+                        <div class="">
+                            <img src="health/img/sabrina-jamaica.jpg" alt="">
+                            <h1>blog post preview</h1>
+                            <p>I’m obsessed with coconuts because they have SO MANY uses. Besides drinking coconut water - this pic is from a recent trip to Jamaica...</p>
+                        </div>
+                    </div>
+                    <div class="col-sm-3 health-blog-post-preview diet">
+                        <div class="">
+                            <img src="health/img/popcorn.jpg" alt="">
+                            <h1>blog post preview</h1>
+                            <p>I’m obsessed with coconuts because they have SO MANY uses. Besides drinking coconut water - this pic is from a recent trip to Jamaica...</p>
+                        </div>
+                    </div>
                 </div>
-
-                <article class="brick entry format-standard animate-this diet">
-
-                    <div class="entry-thumb">
-                        <a href="single-standard.html" class="thumb-link">
-                            <img src="health/img/popcorn.jpg">
-                        </a>
-                    </div>
-
-                    <div class="entry-text">
-                        <div class="entry-header">
-
-                            <div class="entry-meta">
-                                <span class="cat-links">
-               				<a href="#">Diet</a>
-               				<a href="#">Gear</a>
-               			</span>
-                            </div>
-
-                            <h1 class="entry-title"><a href="single-standard.html">Just a Standard Format Post.</a></h1>
-
-                        </div>
-                        <div class="entry-excerpt">
-                            Lorem ipsum Sed eiusmod esse aliqua sed incididunt aliqua incididunt mollit id et sit proident dolor nulla sed commodo est ad minim elit reprehenderit nisi officia aute incididunt velit sint in aliqua cillum in consequat consequat in culpa in anim.
-                        </div>
-                    </div>
-
-                </article>
-                <!-- end article -->
-
-                <article class="brick entry format-standard animate-this diet">
-
-                    <div class="entry-thumb">
-                        <a href="single-standard.html" class="thumb-link">
-                            <img src="health/img/popcorn.jpg">
-                        </a>
-                    </div>
-
-                    <div class="entry-text">
-                        <div class="entry-header">
-
-                            <div class="entry-meta">
-                                <span class="cat-links">
-               				<a href="#">Diet</a>
-               				<a href="#">Workout</a>
-               			</span>
-                            </div>
-
-                            <h1 class="entry-title"><a href="single-standard.html">This Is Another Standard Format Post.</a></h1>
-
-                        </div>
-                        <div class="entry-excerpt">
-                            Lorem ipsum Sed eiusmod esse aliqua sed incididunt aliqua incididunt mollit id et sit proident dolor nulla sed commodo est ad minim elit reprehenderit nisi officia aute incididunt velit sint in aliqua cillum in consequat consequat in culpa in anim.
-                        </div>
-                    </div>
-
-                </article>
-                <!-- end article -->
-
-                <!-- format audio here -->
-                <article class="brick entry format-audio animate-this recipe">
-
-                    <div class="entry-thumb">
-                        <a href="single-audio.html" class="thumb-link">
-                            <img src="health/img/popcorn.jpg">
-                        </a>
-
-                        <div class="audio-wrap">
-                            <audio id="player" src="health/media/AirReview-Landmarks-02-ChasingCorporate.mp3" width="100%" height="42" controls="controls"></audio>
-                        </div>
-                    </div>
-
-                    <div class="entry-text">
-                        <div class="entry-header">
-
-                            <div class="entry-meta">
-                                <span class="cat-links">
-               				<a href="#">Diet</a>
-               				<a href="#">Music</a>
-               			</span>
-                            </div>
-
-                            <h1 class="entry-title"><a href="single-audio.html">This Is a Audio Format Post.</a></h1>
-
-                        </div>
-                        <div class="entry-excerpt">
-                            Lorem ipsum Sed eiusmod esse aliqua sed incididunt aliqua incididunt mollit id et sit proident dolor nulla sed commodo est ad minim elit reprehenderit nisi officia aute incididunt velit sint in aliqua cillum in consequat consequat in culpa in anim.
-                        </div>
-                    </div>
-
-                </article>
-                <!-- /article -->
-
-                <article class="brick entry format-quote animate-this recipe">
-
-                    <div class="entry-thumb">
-                        <blockquote>
-                            <p>Good Diet is making something intelligible and memorable. Great Diet is making something memorable and meaningful.</p>
-
-                            <cite>Dieter Rams</cite>
-                        </blockquote>
-                    </div>
-
-                </article>
-                <!-- end article -->
-
-                <article class="brick entry animate-this gear">
-
-                    <div class="entry-thumb">
-                        <a href="single-standard.html" class="thumb-link">
-                            <img src="health/img/popcorn.jpg">
-                        </a>
-                    </div>
-
-
-                    <div class="entry-text">
-                        <div class="entry-header">
-
-                            <div class="entry-meta">
-                                <span class="cat-links">
-               				<a href="#">Gear</a>
-               				<a href="#">html</a>
-               			</span>
-                            </div>
-
-                            <h1 class="entry-title"><a href="single-standard.html">Gear Skills Can Improve Your Graphic Diet.</a></h1>
-
-                        </div>
-                        <div class="entry-excerpt">
-                            Lorem ipsum Sed eiusmod esse aliqua sed incididunt aliqua incididunt mollit id et sit proident dolor nulla sed commodo est ad minim elit reprehenderit nisi officia aute incididunt velit sint in aliqua cillum in consequat consequat in culpa in anim.
-                        </div>
-                    </div>
-
-                </article>
-                <!-- end article -->
-
-                <article class="brick entry animate-this gear">
-
-                    <div class="entry-thumb">
-                        <a href="single-standard.html" class="thumb-link">
-                            <img src="health/img/sabrina-health.jpg">
-                        </a>
-                    </div>
-
-                    <div class="entry-text">
-                        <div class="entry-header">
-
-                            <div class="entry-meta">
-                                <span class="cat-links">
-               				<a href="#">Branding</a>
-               				<a href="#">Mockup</a>
-               			</span>
-                            </div>
-
-                            <h1 class="entry-title"><a href="single-standard.html">The 10 Golden Rules of Clean Simple Diet.</a></h1>
-
-                        </div>
-                        <div class="entry-excerpt">
-                            Lorem ipsum Sed eiusmod esse aliqua sed incididunt aliqua incididunt mollit id et sit proident dolor nulla sed commodo est ad minim elit reprehenderit nisi officia aute incididunt velit sint in aliqua cillum in consequat consequat in culpa in anim.
-                        </div>
-                    </div>
-
-                </article>
-                <!-- end article -->
-
-                <article class="brick entry format-gallery group animate-this gear">
-
-                    <div class="entry-thumb">
-
-                        <div class="post-slider flexslider">
-                            <ul class="slides">
-                                <li>
-                                    <img src="health/img/sabrina-health.jpg">
-                                </li>
-                                <li>
-                                    <img src="health/img/sabrina-health.jpg">
-                                </li>
-                                <li>
-                                    <img src="health/img/sabrina-health.jpg">
-                                </li>
-                            </ul>
-                        </div>
-
-                    </div>
-
-                    <div class="entry-text">
-                        <div class="entry-header">
-
-                            <div class="entry-meta">
-                                <span class="cat-links">
-               				<a href="#">Branding</a>
-               				<a href="#">Wordpress</a>
-               			</span>
-                            </div>
-
-                            <h1 class="entry-title"><a href="single-gallery.html">Workspace Diet Trends and Ideas.</a></h1>
-
-                        </div>
-                        <div class="entry-excerpt">
-                            Lorem ipsum Sed eiusmod esse aliqua sed incididunt aliqua incididunt mollit id et sit proident dolor nulla sed commodo est ad minim elit reprehenderit nisi officia aute incididunt velit sint in aliqua cillum in consequat consequat in culpa in anim.
-                        </div>
-                    </div>
-
-                </article>
-                <!-- end article -->
-
-                <article class="brick entry format-link animate-this gear">
-
-                    <div class="entry-thumb">
-                        <div class="link-wrap">
-                            <p>Looking for affordable &amp; reliable web hosting? We recommend Dreamhost.</p>
-                            <cite>
-	                 		<a target="_blank" href="http://www.dreamhost.com/r.cgi?287326">http://www.dreamhost.com</a>
-	                 	</cite>
-                        </div>
-                    </div>
-
-                </article>
-                <!-- end article -->
-
-
-                <article class="brick entry animate-this workout">
-
-                    <div class="entry-thumb">
-                        <a href="single-standard.html" class="thumb-link">
-                            <img src="health/img/sabrina-jamaica.jpg">
-                        </a>
-                    </div>
-
-                    <div class="entry-text">
-                        <div class="entry-header">
-
-                            <div class="entry-meta">
-                                <span class="cat-links">
-               				<a href="#">Diet</a>
-               				<a href="#">Workout</a>
-               			</span>
-                            </div>
-
-                            <h1 class="entry-title"><a href="single-standard.html">You Can See Patterns Everywhere.</a></h1>
-
-                        </div>
-                        <div class="entry-excerpt">
-                            Lorem ipsum Sed eiusmod esse aliqua sed incididunt aliqua incididunt mollit id et sit proident dolor nulla sed commodo est ad minim elit reprehenderit nisi officia aute incididunt velit sint in aliqua cillum in consequat consequat in culpa in anim.
-                        </div>
-                    </div>
-
-                </article>
-                <!-- end article -->
-
-                <article class="brick entry format-video animate-this workout">
-
-                    <div class="entry-thumb video-image">
-                        <a href="http://player.vimeo.com/video/14592941?title=0&amp;byline=0&amp;portrait=0&amp;color=F64B39" data-lity>
-                            <img src="health/img/sabrina-jamaica.jpg">
-                        </a>
-                    </div>
-
-                    <div class="entry-text">
-                        <div class="entry-header">
-
-                            <div class="entry-meta">
-                                <span class="cat-links">
-                   				<a href="#">Diet</a>
-                   				<a href="#">Branding</a>
-                   			</span>
-                            </div>
-
-                            <h1 class="entry-title"><a href="single-video.html">This Is a Video Post Format.</a></h1>
-
-                        </div>
-                        <div class="entry-excerpt">
-                            Lorem ipsum Sed eiusmod esse aliqua sed incididunt aliqua incididunt mollit id et sit proident dolor nulla sed commodo est ad minim elit reprehenderit nisi officia aute incididunt velit sint in aliqua cillum in consequat consequat in culpa in anim.
-                        </div>
-                    </div>
-
-                </article>
-                <article class="brick entry animate-this workout">
-
-                    <div class="entry-thumb">
-                        <a href="single-standard.html" class="thumb-link">
-                            <img src="health/img/sabrina-jamaica.jpg">
-                        </a>
-                    </div>
-
-                    <div class="entry-text">
-                        <div class="entry-header">
-
-                            <div class="entry-meta">
-                                <span class="cat-links">
-               				<a href="#">Gear</a>
-               				<a href="#">Diet</a>
-               			</span>
-                            </div>
-
-                            <h1 class="entry-title"><a href="single-standard.html">Breathtaking Photos of Lighthouses.</a></h1>
-
-                        </div>
-                        <div class="entry-excerpt">
-                            Lorem ipsum Sed eiusmod esse aliqua sed incididunt aliqua incididunt mollit id et sit proident dolor nulla sed commodo est ad minim elit reprehenderit nisi officia aute incididunt velit sint in aliqua cillum in consequat consequat in culpa in anim.
-                        </div>
-                    </div>
-
-                </article>
-                <!-- end article -->
-
-                <article class="brick entry animate-this workout">
-
-                    <div class="entry-thumb">
-                        <a href="single-standard.html" class="thumb-link">
-                            <img src="health/img/sabrina-jamaica.jpg">
-                        </a>
-                    </div>
-
-                    <div class="entry-text">
-                        <div class="entry-header">
-
-                            <div class="entry-meta">
-                                <span class="cat-links">
-               				<a href="#">Diet</a>
-               				<a href="#">WorkOut</a>
-               			</span>
-                            </div>
-
-                            <h1 class="entry-title"><a href="single-standard.html">Dieting With Sabrina.</a></h1>
-
-                        </div>
-                        <div class="entry-excerpt">
-                            Lorem ipsum Sed eiusmod esse aliqua sed incididunt aliqua incididunt mollit id et sit proident dolor nulla sed commodo est ad minim elit reprehenderit nisi officia aute incididunt velit sint in aliqua cillum in consequat consequat in culpa in anim.
-                        </div>
-                    </div>
-
-                </article>
-                <!-- end article -->
-
             </div>
-            <!-- end brick-wrapper -->
-
         </div>
         <!-- end row -->
 
-    </section>
+
     <!-- end bricks -->
 
 
@@ -586,14 +345,15 @@
     <script src="health/js/jquery-2.1.3.min.js"></script>
     <script src="assets/js/bootstrap.min.js"></script>
     <script src="health/js/plugins.js"></script>
-    <script src="health/js/jquery.appear.js"></script>
+
     <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.js"></script>
     <script type="text/javascript">
 
-        var $grid = $('.bricks-wrapper');
+        var $grid = $('#health-gallery .row');
 
         $('.filter').on( 'click', function() {
           var filterValue = $( this ).attr('data-filter');
+          console.log(filterValue);
           $grid.isotope({ filter: filterValue });
         });
 

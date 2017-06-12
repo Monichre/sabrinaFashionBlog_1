@@ -1,0 +1,319 @@
+$circle-w: 50px;
+$circle-bg: #fff;
+$arrow-bg:#55544F;
+$body-bg: #9DDCDC;
+$bezier: cubic-bezier(0.770, 0.000, 0.175, 1.000);
+$bezier-bounce: cubic-bezier(.87,-.41,.19,1.44);
+$anim-timing: 3s;
+
+
+.ico {
+  margin: 0 auto;
+  text-align: center;
+  width: $circle-w;
+  height: $circle-w;
+  position: relative;
+  top: 60%;
+  transform: translateY(-50%);
+  filter: url("#goo");
+  .circle {
+    background: $circle-bg;
+    border-radius: 50%;
+    display: inline-block;
+    height: $circle-w;
+    width: $circle-w;
+
+    position: absolute;
+    top: 50%;
+    left:50%;
+    transform: translateX(-50%) translateY(-50%);
+    transform-origin: 0%;
+
+    &.circle-top {
+      height: $circle-w / 3;
+      width: $circle-w / 2.4;
+      animation: blob-1-anim $anim-timing $bezier infinite;
+      z-index: 0;
+      top:0;
+    }
+    &.circle-bottom {
+      height: $circle-w / 3;
+      width: $circle-w / 2.4;
+      animation: blob-2-anim $anim-timing $bezier  infinite;
+      z-index: 9;
+      bottom:0px;
+    }
+
+  }
+
+
+  .st-arrow{
+    fill:$arrow-bg;
+    animation: scrolly $anim-timing $bezier forwards infinite;
+    perspective: 9000px;
+    transform: translateZ(0);
+    transform-origin: bottom;
+  }
+}
+
+.svg {z-index:9;position:relative;}
+
+@keyframes blob-1-anim {
+  0%{
+    transform:translateX(-50%) translateY(0);
+  }
+  14%{
+    transform:translateX(-50%) translateY(-8px);
+  }
+  24% {
+    transform:translateX(-50%) translateY(0);
+  }
+  100% {
+    transform:translateX(-50%) translateY(0);
+  }
+}
+
+@keyframes blob-2-anim {
+  0% {
+    //transform: scale(1) translate(-50%,-150%);
+    transform: scale(1) translate(-50%,10px);
+  }
+  30% {
+    //transform: scale(1) translate(-50%,-50%);
+    transform: scale(1) translate(-50%,10px);
+  }
+  70% {
+    //transform: scale(1) translate(-50%,-50%);
+    transform: scale(1) translate(-50%,10px);
+
+  }
+  95% {
+    //transform: scale(1) translate(-50%,-50%);
+    transform: scale(1) translate(-50%,26px);
+
+
+  }
+  100% {
+    //transform: scaleX(1.5) translate(-50%,140%);
+    transform: scale(1) translate(-50%,10px);
+  }
+}
+
+@keyframes scrolly {
+  0% {
+    transform: translate3d(0,-150%,0) rotateX(90deg) scale(0.5) skewX(3deg);
+  }
+  30% {
+    transform: translate3d(0,0,0) rotateX(0deg) scale(1) skewX(0deg);
+  }
+  70% {
+    transform: translate3d(0,0,0) rotateX(0deg) scale(1) skewX(0deg);
+  }
+  95% {
+    transform: translate3d(0,50%,0) rotateX(-90deg) scale(0.5) skewX(-3deg);
+  }
+  100% {
+    transform: translate3d(0,50%,0) rotateX(-90deg) scale(0.5) skewX(-3deg);
+  }
+}
+
+
+
+
+
+
+@mixin button($bcolor,
+$url,
+$x1,
+$y1,
+$bor,
+$col) {
+ background: #1a1a1a;
+ -webkit-mask: url($url);
+ mask: url($url);
+ -webkit-mask-size: $x1 $y1;
+ mask-size: $x1 $y1;
+ border: $bor;
+ color: $col;
+ margin: 0;
+ padding: 0;
+}
+.travel-button-bg {
+    // background: url(../assets/img/02.jpg);
+    // background-size: cover;
+    // height: 400px;
+}
+
+.travel-button-menu {
+    margin-top: -70px;
+    margin-left: -15px;
+
+
+    .button-container-1 {
+     position: relative;
+     width: 100px;
+     height: 50px;
+     margin-left: auto;
+     margin-right: auto;
+     margin-top: 6vh;
+     overflow: hidden;
+     border: 1px solid;
+     font-family: 'Fjalla One', sans-serif;
+
+     font-size: 20px;
+     transition: 0.5s;
+     letter-spacing: 1px;
+
+     button {
+      width: 101%;
+      height: 100%;
+      font-family: 'Fjalla One', sans-serif;
+    font-size: 20px;
+      letter-spacing: 1px;
+      @include button(#000,
+      "https://raw.githubusercontent.com/robin-dela/css-mask-animation/master/img/nature-sprite.png",
+      2300%,
+      100%,
+      none,
+      #fff);
+      cursor: pointer;
+      -webkit-animation: ani2 0.7s steps(22) forwards;
+      animation: ani2 0.7s steps(22) forwards;
+
+      &:hover {
+       -webkit-animation: ani 0.7s steps(22) forwards;
+       animation: ani 0.7s steps(22) forwards;
+      }
+     }
+    }
+
+    .button-container-2 {
+     position: relative;
+     width: 100px;
+     height: 50px;
+     margin-left: auto;
+     margin-right: auto;
+     margin-top: 7vh;
+     overflow: hidden;
+     border: 1px solid #000;
+     font-family: 'Fjalla One', sans-serif;
+
+     transition: 0.5s;
+     letter-spacing: 1px;
+
+     button {
+      width: 101%;
+      height: 100%;
+      font-family: 'Fjalla One', sans-serif;
+
+      font-size: 20px;
+      letter-spacing: 1px;
+      @include button(#000,
+      "https://raw.githubusercontent.com/robin-dela/css-mask-animation/master/img/urban-sprite.png",
+      3000%,
+      100%,
+      none,
+      #fff);
+      cursor: pointer;
+      -webkit-animation: ani2 0.7s steps(29) forwards;
+      animation: ani2 0.7s steps(29) forwards;
+
+      &:hover {
+       -webkit-animation: ani 0.7s steps(29) forwards;
+       animation: ani 0.7s steps(29) forwards;
+      }
+     }
+    }
+
+    .button-container-3 {
+     position: relative;
+     width: 100px;
+     height: 50px;
+     margin-left: auto;
+     margin-right: auto;
+     margin-top: 8vh;
+     overflow: hidden;
+     border: 1px solid #000;
+     font-family: 'Fjalla One', sans-serif;
+
+     transition: 0.5s;
+     letter-spacing: 1px;
+
+     button {
+      width: 101%;
+      height: 100%;
+      font-family: 'Fjalla One', sans-serif;
+
+      font-size: 20px;
+      letter-spacing: 1px;
+
+      @include button(#000,
+      "https://github.com/robin-dela/css-mask-animation/blob/master/img/nature-sprite-2.png?raw=true",
+      7100%,
+      100%,
+      none,
+      #fff);
+      cursor: pointer;
+      -webkit-animation: ani2 0.7s steps(70) forwards;
+      animation: ani2 0.7s steps(70) forwards;
+
+      &:hover {
+       -webkit-animation: ani 0.7s steps(70) forwards;
+       animation: ani 0.7s steps(70) forwards;
+      }
+     }
+    }
+
+    .mas {
+     position: absolute;
+     color: #000;
+     text-align: center;
+     width: 101%;
+     font-family: 'Fjalla One', sans-serif;
+
+     position: absolute;
+     font-size: 20px;
+     margin-top: 12px;
+     overflow: hidden;
+    }
+
+    a{
+    	color:#00ff95;
+    }
+}
+
+@-webkit-keyframes ani {
+ from {
+  -webkit-mask-position: 0 0;
+  mask-position: 0 0;
+ }
+
+ to {
+  -webkit-mask-position: 100% 0;
+  mask-position: 100% 0;
+ }
+}
+
+@keyframes ani {
+ from {
+  -webkit-mask-position: 0 0;
+  mask-position: 0 0;
+ }
+
+ to {
+  -webkit-mask-position: 100% 0;
+  mask-position: 100% 0;
+ }
+}
+
+@-webkit-keyframes ani2 {
+ from {
+  -webkit-mask-position: 100% 0;
+  mask-position: 100% 0;
+ }
+
+ to {
+  -webkit-mask-position: 0 0;
+  mask-position: 0 0;
+ }
+}

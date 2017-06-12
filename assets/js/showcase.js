@@ -249,7 +249,7 @@ var cards, nCards, cover, openContent, openContentText, pageIsOpen = false,
     openContentImage, closeContent, windowWidth, windowHeight, currentCard;
 
 // initiate the process
-init();
+// init();
 
 function init() {
   resize();

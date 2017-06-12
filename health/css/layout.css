@@ -30,6 +30,7 @@
 #menu-wrap{
 
 	padding-bottom:10px;
+	position: relative;
 	width:100%;
 	z-index:500;
 	top:0;
@@ -2930,7 +2931,7 @@ a.scroll-down.scroll-yt {
 .footer{
 	position: relative;
 	width:100%;
-	
+
     box-shadow: 0 0 40px rgba(0, 0, 0, 0.2);
 	background: #fff;
 }

@@ -53,6 +53,7 @@
 
     <!--Site Wide Template Styles -->
     <link href="assets/css/hedone.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="sass/button.css">
 
 
 </head>
@@ -61,195 +62,215 @@
 
 
 
-        <!-- header
+    <!-- header
        ================================================== -->
-        <div id="menu-wrap" class="menu-back cbp-af-header">
-            <div class="container-fluid">
-                <div class="row">
-                    <div class="col-sm-4">
-                        <ul class="slimmenu text-center social-nav">
-                            <li><a href="#" class=""><i class="ion-social-instagram"></i></a></li>
-                            <li><a href="#" class=""><i class="ion-social-youtube"></i></a></li>
-                            <li><a href="#" class=""><i class="ion-social-facebook"></i></a></li>
-                            <li><a href="#" class=""><i class="ion-social-pinterest"></i></a></li>
-                        </ul>
+    <div id="menu-wrap" class="menu-back cbp-af-header">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-sm-4">
+                    <ul class="slimmenu text-center social-nav">
+                        <li><a href="#" class=""><i class="ion-social-instagram"></i></a></li>
+                        <li><a href="#" class=""><i class="ion-social-youtube"></i></a></li>
+                        <li><a href="#" class=""><i class="ion-social-facebook"></i></a></li>
+                        <li><a href="#" class=""><i class="ion-social-pinterest"></i></a></li>
+                    </ul>
+                </div>
+                <div class="col-sm-4">
+                    <div class="logo">
+                        <!-- <img src="assets/img/logo.png" alt=""> -->
+                        <h2 class="site-title">Theresa on the Town</h2>
                     </div>
-                    <div class="col-sm-4">
-                        <div class="logo">
-                            <!-- <img src="assets/img/logo.png" alt=""> -->
-                            <h2 class="site-title">Theresa on the Town</h2>
-                        </div>
-                    </div>
-                    <div class="col-sm-4">
-                        <ul class="slimmenu signup-menu">
-                            <li class="dropdown">
-                               <a href="#" class="dropdown-toggle" data-toggle="dropdown">Sign up <b class="caret"></b></a>
-                               <ul class="dropdown-menu" style="">
-                                  <li>
-                                     <div class="row">
-                                         <h4 class="">Join the newsletter!</h4>
+                </div>
+                <div class="col-sm-4">
+                    <ul class="slimmenu signup-menu">
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Sign up <b class="caret"></b></a>
+                            <ul class="dropdown-menu" style="">
+                                <li>
+                                    <div class="row">
+                                        <h4 class="">Join the newsletter!</h4>
                                         <form id="subscribe-form" name="subscribe-form" method="post" class="">
                                             <input id="subscribe-email" type="text" placeholder="Email" name="email" required="required" class="subscribe-style">
                                             <button type="button" data-value="subscribe" data-wait="Please wait..." class="w-button subscribe-button">subscribe</button>
                                         </form>
-                                     </div>
-                                  </li>
-                               </ul>
-                            </li>
-                            <li><a class="search-trigger" href="#"><i class="fa fa-search"></i></a></li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-sm-8 col-sm-offset-2">
-                        <ul class="slimmenu">
-                            <li><a class="active-menu" href="./index.html">Home</a></li>
-                            <li><a href="./about.html" class="animsition-link">about</a></li>
-                            <li><a href="./fashion-style.html">Fashion & Style</a></li>
-                            <li><a href="./travel.html" class="animsition-link">travel</a></li>
-                            <li><a href="./health-wellness.html">Health & Wellness</a></li>
-                            <li><a href="./contact.html" class="animsition-link">Contact</a></li>
-                        </ul>
-                    </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </li>
+                        <li><a class="search-trigger" href="#"><i class="fa fa-search"></i></a></li>
+                    </ul>
                 </div>
             </div>
-            <div class="search-wrap">
-                <form role="search" method="get" class="search-form" action="#">
-                    <label>
+            <div class="row">
+                <div class="col-sm-8 col-sm-offset-2">
+                    <ul class="slimmenu">
+                        <li><a class="active-menu" href="./index.html">Home</a></li>
+                        <li><a href="./about.html" class="animsition-link">about</a></li>
+                        <li><a href="./fashion-style.html">Fashion & Style</a></li>
+                        <li><a href="./travel.html" class="animsition-link">travel</a></li>
+                        <li><a href="./health-wellness.html">Health & Wellness</a></li>
+                        <li><a href="./contact.html" class="animsition-link">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="search-wrap">
+            <form role="search" method="get" class="search-form" action="#">
+                <label>
                         <span class="hide-content">Search for:</span>
                         <input type="search" class="search-field" placeholder="Type Your Keywords" value="" name="s" title="Search for:" autocomplete="off">
                     </label>
-                    <input type="submit" class="search-submit" value="Search">
-                </form>
-                <a href="#" id="close-search" class="close-btn">Close</a>
-            </div>
+                <input type="submit" class="search-submit" value="Search">
+            </form>
+            <a href="#" id="close-search" class="close-btn">Close</a>
         </div>
+    </div>
 
-        <!-- Primary Page Layout
+    <!-- Primary Page Layout
 	================================================== -->
 
-        <section class="cd-section">
-            <div class="cd-block" style="background-image: url(assets/img/nyc-color.jpg); background-position: center; background-size: cover;">
-                <div class="contact-top">
-                    <div id="cd-google-map">
-                        <div id="google-container"></div>
-					<div id="cd-zoom-in"></div>
-					<div id="cd-zoom-out"></div>
-					<address>
+    <section class="cd-section">
+        <div class="cd-block" style="background-image: url(assets/img/nyc-color.jpg); background-position: center; background-size: cover;">
+            <div class="contact-top">
+                <div id="cd-google-map">
+                    <div id="google-container"></div>
+                    <div id="cd-zoom-in"></div>
+                    <div id="cd-zoom-out"></div>
+                    <address>
                         <div class="section-headline">
                             <h3>Contact Me<span class="red">.</span></h3>
                         </div><br>
                         Theresa on the Town<br>NYC</address>
+                </div>
+            </div>
+            <div class="ico animated">
+
+                <div class="circle circle-top"></div>
+                <div class="circle circle-main"></div>
+                <div class="circle circle-bottom"></div>
+
+                <svg class="svg" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 612 612" style="enable-background:new 0 0 612 612;" xml:space="preserve">
+                  <defs>
+                    <clipPath id="cut-off-arrow">
+                      <circle cx="306" cy="306" r="287"/>
+                    </clipPath>
+
+                    <filter id="goo">
+                      <feGaussianBlur in="SourceGraphic" stdDeviation="10" result="blur" />
+                      <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 18 -7" result="goo" />
+                      <feBlend in="SourceGraphic" in2="goo" />
+                    </filter>
+
+                  </defs>
+                    <path  class="st-arrow" d="M317.5,487.6c0.3-0.3,0.4-0.7,0.7-1.1l112.6-112.6c6.3-6.3,6.3-16.5,0-22.7c-6.3-6.3-16.5-6.3-22.7,0
+                					l-86,86V136.1c0-8.9-7.3-16.2-16.2-16.2c-8.9,0-16.2,7.3-16.2,16.2v301.1l-86-86c-6.3-6.3-16.5-6.3-22.7,0
+                					c-6.3,6.3-6.3,16.5,0,22.7l112.7,112.7c0.3,0.3,0.4,0.7,0.7,1c0.5,0.5,1.2,0.5,1.7,0.9c1.7,1.4,3.6,2.3,5.6,2.9
+                					c0.8,0.2,1.5,0.4,2.3,0.4C308.8,492.6,313.8,491.3,317.5,487.6z"/>
+                </svg>
+            </div>
+        </div>
+    </section>
+    <!-- .cd-section -->
+
+    <section class="section white-background padding-top-bottom shadow-sec" id="scroll-link">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-6 col-sm-offset-3">
+                    <div class="section-header-text">
+                        <h4>Get in touch<span>.</span></h4>
+                        <p>For all inquiries</p>
+                        <div class="line-header"></div>
                     </div>
                 </div>
             </div>
-        </section>
-        <!-- .cd-section -->
 
-        <section class="section white-background padding-top-bottom shadow-sec" id="scroll-link">
-            <div class="container">
-                <div class="row">
-                    <div class="col-sm-6 col-sm-offset-3">
-                        <div class="section-header-text">
-                            <h4>Get in touch<span>.</span></h4>
-                            <p>For all inquiries</p>
-                            <div class="line-header"></div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="row">
-                    <div class="col-sm-6 col-sm-offset-3">
-                        <form name="ajax-form" id="ajax-form" action="mail-it.php" method="post">
-                            <div class="col-sm-6" data-scroll-reveal="enter bottom move 100px over 0.6s after 0.2s">
-                                <label for="name">
+            <div class="row">
+                <div class="col-sm-6 col-sm-offset-3">
+                    <form name="ajax-form" id="ajax-form" action="mail-it.php" method="post">
+                        <div class="col-sm-6" data-scroll-reveal="enter bottom move 100px over 0.6s after 0.2s">
+                            <label for="name">
         							<span class="error" id="err-name">please enter name</span>
         						</label>
-                                <input name="name" id="name" type="text" placeholder="Name: *" />
-                            </div>
-                            <div class="col-sm-6" data-scroll-reveal="enter bottom move 100px over 0.6s after 0.2s">
-                                <label for="email">
+                            <input name="name" id="name" type="text" placeholder="Name: *" />
+                        </div>
+                        <div class="col-sm-6" data-scroll-reveal="enter bottom move 100px over 0.6s after 0.2s">
+                            <label for="email">
         							<span class="error" id="err-email">please enter e-mail</span>
         							<span class="error" id="err-emailvld">e-mail is not a valid format</span>
         						</label>
-                                <input name="email" id="email" type="text" placeholder="E-Mail: *" />
-                            </div>
-                            <div class="col-sm-12" data-scroll-reveal="enter bottom move 100px over 0.6s after 0.2s">
-                                <label for="message"></label>
-                                <textarea name="message" id="message" placeholder="Message"></textarea>
-                            </div>
-                            <div class="col-sm-12" data-scroll-reveal="enter bottom move 100px over 0.6s after 0.2s">
-                                <div id="button-con"><button class="send_message" id="send"><span data-hover="submit">Send</span></button></div>
-                            </div>
+                            <input name="email" id="email" type="text" placeholder="E-Mail: *" />
+                        </div>
+                        <div class="col-sm-12" data-scroll-reveal="enter bottom move 100px over 0.6s after 0.2s">
+                            <label for="message"></label>
+                            <textarea name="message" id="message" placeholder="Message"></textarea>
+                        </div>
+                        <div class="col-sm-12" data-scroll-reveal="enter bottom move 100px over 0.6s after 0.2s">
+                            <div id="button-con"><button class="send_message" id="send"><span data-hover="submit">Send</span></button></div>
+                        </div>
 
-                            <div class="error text-align-center" id="err-form">There was a problem validating the form please check!</div>
-                            <div class="error text-align-center" id="err-timedout">The connection to the server timed out!</div>
-                            <div class="error" id="err-state"></div>
+                        <div class="error text-align-center" id="err-form">There was a problem validating the form please check!</div>
+                        <div class="error text-align-center" id="err-timedout">The connection to the server timed out!</div>
+                        <div class="error" id="err-state"></div>
+                    </form>
+                </div>
+            </div>
+
+            <div id="ajaxsuccess">Successfully sent!!</div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="container-fluid">
+            <div class="widget-row row">
+                <div class="col-xs-12">
+                    <header class="instagram-header">
+                        <img class="travel-logo" src="assets/img/travel-logo.png" height="100px" width="100px" alt="" class="center-block">
+                        <h4>Instagram</h4>
+                        <hr>
+                    </header>
+                    <div class="widget">
+                        <script src="http://lightwidget.com/widgets/lightwidget.js"></script>
+                        <iframe src="http://lightwidget.com/widgets/52a12044a9aa5f2f84d7cd0c15214cb1.html" scrolling="no" allowtransparency="true" class="lightwidget-widget" style="width: 100%; border: 0; overflow: hidden;"></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid footer-bottom">
+            <div class="row">
+                <div class="col-xs-12 col-sm-4 col-sm-offset-4">
+                    <div class="footer-form">
+                        <div class="section-headline">
+                            <h3>Are You A Tall <span class="red">Fashionista</span> Or <span class="red">Fashion Fanatic?</span></h3>
+                        </div>
+                        <p>Join the mailing list and be the first to know about product picks, style inspiration, and money saving tips. </p>
+                        <form id="" name="subscribe-form" method="post">
+                            <input id="" type="text" placeholder="Email" name="email" required="required" class="subscribe-style">
+                            <button type="button" data-value="subscribe" data-wait="Please wait..." class="w-button subscribe-button">subscribe</button>
                         </form>
                     </div>
                 </div>
-
-                <div id="ajaxsuccess">Successfully sent!!</div>
             </div>
-        </section>
-
-        <!-- FOOTER -->
-        <footer class="footer">
-            <div class="container-fluid">
-                <div class="widget-row row">
-                    <div class="col-xs-12">
-                        <header class="instagram-header">
-                            <img class="travel-logo" src="assets/img/travel-logo.png" height="100px" width="100px" alt="" class="center-block">
-                            <h4>Instagram</h4>
-                            <hr>
-                        </header>
-                        <div class="widget">
-                            <script src="http://lightwidget.com/widgets/lightwidget.js"></script>
-                            <iframe src="http://lightwidget.com/widgets/52a12044a9aa5f2f84d7cd0c15214cb1.html" scrolling="no" allowtransparency="true" class="lightwidget-widget" style="width: 100%; border: 0; overflow: hidden;"></iframe>
-                        </div>
+            <hr>
+            <div class="row">
+                <div class="col-xs-12">
+                    <div class="footer-social-block">
+                        <a href="#" class="w-inline-block social-wrap"><i class="ion-social-instagram"></i></a>
+                        <a href="#" class="w-inline-block social-wrap"><i class="ion-social-youtube"></i></a>
+                        <a href="#" class="w-inline-block social-wrap"><i class="ion-social-facebook"></i></a>
+                        <a href="#" class="w-inline-block social-wrap"><i class="ion-social-pinterest"></i></a>
                     </div>
                 </div>
-            </div>
-            <div class="container-fluid footer-bottom">
-                <div class="row">
-                    <div class="col-xs-12 col-sm-6 col-sm-offset-3">
-                        <div class="footer-form">
-                            <div class="section-headline">
-                                <h3>Are You A Tall <span class="red">Fashionista</span> Or <span class="red">Fashion Fanatic?</span></h3>
-                            </div>
-                            <p>Join the mailing list and be the first to know about product picks, style inspiration, and money saving tips. </p>
 
-                            <form id="" name="subscribe-form" method="post">
-
-                                    <input id="" type="text" placeholder="Email" name="email" required="required" class="subscribe-style">
-
-
-                                    <button type="button" data-value="subscribe" data-wait="Please wait..." class="w-button subscribe-button">subscribe</button>
-
-                            </form>
-                        </div>
-                    </div>
+                <div class="footer-text">
+                    <span class="footer-text-span">Theresa on the Town</span>
                 </div>
-                <hr>
-                <div class="row">
-                    <div class="col-xs-12">
-                        <div class="footer-social-block">
-                            <a href="#" class="w-inline-block social-wrap"><i class="ion-social-instagram"></i></a>
-                            <a href="#" class="w-inline-block social-wrap"><i class="ion-social-youtube"></i></a>
-                            <a href="#" class="w-inline-block social-wrap"><i class="ion-social-facebook"></i></a>
-                            <a href="#" class="w-inline-block social-wrap"><i class="ion-social-pinterest"></i></a>
-                        </div>
-                    </div>
-
-                    <div class="footer-text">
-                        <span class="footer-text-span">Theresa on the Town</span>
-                    </div>
-                    <div id="loveCraft">
-                        <span class="loveCraft"><span class="blue">Love</span><span class="red">Craft</span><span class="white">.io</span></span>
-                    </div>
+                <div id="loveCraft">
+                    <span class="loveCraft"><span class="blue">Love</span><span class="red">Craft</span><span class="white">.io</span></span>
                 </div>
             </div>
-        </footer>
+        </div>
+    </footer>
 
 
 

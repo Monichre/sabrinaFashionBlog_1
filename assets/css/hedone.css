@@ -1616,6 +1616,11 @@ address .section-headline h3 {
     color: #fff;
 }
 
+#button-con {
+    display: block;
+    margin-top: 20px;
+}
+
 
 /*Profile Hover Image*/
 
@@ -2227,8 +2232,9 @@ ul.portfolio-filter li a {
 .health {
     /*background-image: url(../../health/img/10.jpg);
     background-size: cover;*/
-    background-color: #f5f5f5;
-
+}
+.health  .head-subtitle {
+    font-size: 75px!important;
 }
 /* line 5, ../../sass/showcase.scss */
 #health-showcase {
@@ -2246,7 +2252,7 @@ ul.portfolio-filter li a {
   position: relative;
   width: 25%;
   height: 100%;
-  background-size: cover;
+  background-size: contain;
 }
 /* line 20, ../../sass/showcase.scss */
 #health-showcase section:after {
@@ -2267,6 +2273,7 @@ ul.portfolio-filter li a {
   -webkit-animation: section-1 8s both infinite;
   animation: section-1 8s both infinite;
 }
+
 
 @-moz-keyframes section-1 {
   0%, 20%, 100% {
@@ -2505,6 +2512,7 @@ ul.portfolio-filter li a {
     -webkit-clip-path: polygon(0% 77%, 5% 18%, 47% 21%, 32% 67%);
   }
 }
+
 @media (max-width: 1000px) {
   /* line 94, ../../sass/showcase.scss */
   #health-showcase {
@@ -2880,29 +2888,64 @@ ul.portfolio-filter li a {
 .health #filter-row{
     margin: 40px auto 0;
 }
-.health #filter-row .head-subtitle {
+.health .section-header {
     font-size: 40px;
+    padding-bottom: 0;
 }
-
 .health ul {
     margin-bottom: 0!important;
 }
-
 .filter-menu {
     margin: 0!important;
     padding-top: 0!important;
 }
-
-.health #bricks {
-    margin-top: 150px;
-    padding-top: 0!important;
+.filter-menu li {
+    color: #fff;
+    cursor: pointer;
+    margin: 0px 12px;
+    font-family: 'Lato', sans-serif;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    transition: all .5s;
+    font-size: 11px;
 }
-
+.filter-menu li:hover {
+    color: #ba2424;
+}
 .health ul.social-nav {
-
     text-align: left;
 }
+#health-gallery {
+    padding: 50px 0;
+}
+.health-blog-post-preview {
+    padding: 10px;
+    margin-top: 20px;
 
+}
+.health-blog-post-preview img {
+    border-bottom: 5px solid #1a1a1a;
+    height: 100%;
+    width: 100%;
+}
+
+.health-blog-post-preview  h1 {
+    margin-bottom: 0;
+    padding: 10px;
+}
+.health-blog-post-preview  h1:after {
+    content: ' ';
+    display: block;
+    width: 15px;
+    height: 1px;
+    background-color: #ba2424;
+    margin: 15px 0;
+}
+
+.health-post {
+    padding-top: 100px;
+}
 
 /*
  * 14. FOOTER
@@ -3069,38 +3112,6 @@ a.social-wrap i {
 .widget-row h5, .widget-row p {
     text-align: center;
     color: #333;
-}
-
-
-/*
- * 15. BACKGROUND VIDEO SECTION
- */
-
-.jquery-background-video-wrapper {
-    position: relative;
-    overflow: hidden;
-    background-position: center center;
-    background-repeat: no-repeat;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    background-size: cover;
-}
-
-.jquery-background-video {
-    position: absolute;
-    min-width: 100%;
-    min-height: 100%;
-    width: auto;
-    height: auto;
-    top: 50%;
-    left: 50%;
-    -o-object-fit: cover;
-    object-fit: cover;
-    -webkit-transform: translate(-50%, -50%);
-    -moz-transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
-    -o-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
 }
 
 
@@ -4760,7 +4771,7 @@ input#subscribe-email:-webkit-autofill {
     /*border:  5px double #ba2424;*/
 
 }
-.travel-post img {
+.travel-post img, .health-post img {
     width: 200px;
 
 }
